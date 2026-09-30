@@ -2417,7 +2417,7 @@
 		},
 		{
 			"PosX": -1.333374,
-			"PosY": -5.855821,
+			"PosY": -5.8558207,
 			"PosZ": -71.48451,
 			"PropId": "crystal_flower_prop",
 			"RotationY": 0,
@@ -2441,7 +2441,7 @@
 		},
 		{
 			"PosX": 8.852755,
-			"PosY": -5.8558207,
+			"PosY": -5.855821,
 			"PosZ": -60.22088,
 			"PropId": "crystal_flower_prop",
 			"RotationY": 0,
@@ -2465,7 +2465,7 @@
 		},
 		{
 			"PosX": -3.5174952,
-			"PosY": -3.074824,
+			"PosY": -3.1282659,
 			"PosZ": 37.665886,
 			"PropId": "crystal_flower_prop",
 			"RotationY": 0,
@@ -3428,7 +3428,7 @@
 			"PosY": 3,
 			"PosZ": 33.128998,
 			"PropId": "Resource_001",
-			"RotationY": 314.99997,
+			"RotationY": 314.99994,
 			"Scale": 5
 		},
 		{
@@ -3436,7 +3436,7 @@
 			"PosY": 3,
 			"PosZ": -83.65346,
 			"PropId": "Resource_001",
-			"RotationY": 299.99997,
+			"RotationY": 299.99994,
 			"Scale": 5
 		},
 		{
@@ -3444,7 +3444,7 @@
 			"PosY": 3,
 			"PosZ": 92.25337,
 			"PropId": "Resource_001",
-			"RotationY": 224.99998,
+			"RotationY": 224.99997,
 			"Scale": 5
 		},
 		{
@@ -3460,7 +3460,7 @@
 			"PosY": 2.9255672,
 			"PosZ": 93.32293,
 			"PropId": "Resource_001",
-			"RotationY": 164.99998,
+			"RotationY": 164.99997,
 			"Scale": 5
 		}
 	],
@@ -3482,7 +3482,7 @@
 			"PosX": 77.37567,
 			"PosY": 2.5626268,
 			"PosZ": -62.765472,
-			"RotationY": 344.99997,
+			"RotationY": 344.99994,
 			"Scale": 2.2000008,
 			"UnitId": "dark_tower_keep"
 		},
@@ -3502,7 +3502,7 @@
 			"PosX": -62.69764,
 			"PosY": 2.9155097,
 			"PosZ": 89.96145,
-			"RotationY": 164.99998,
+			"RotationY": 164.99997,
 			"Scale": 4,
 			"UnitId": "fairytale_castle"
 		},
@@ -3512,7 +3512,7 @@
 			"PosX": -68.97118,
 			"PosY": 2.8190234,
 			"PosZ": 67.53322,
-			"RotationY": 164.99998,
+			"RotationY": 164.99997,
 			"Scale": 3,
 			"UnitId": "watch_tower_building"
 		},

@@ -48,6 +48,7 @@
 		"icons": {},
 		"noise_textures": {},
 		"ribbons": {},
+		"shaders": {},
 		"skyboxes": {},
 		"textures": {
 			"ancient_jungle_overgrown_path.rtex": "fb435a844e25897385139b550782eef607376867383c37a40b561f5441b8bf16",

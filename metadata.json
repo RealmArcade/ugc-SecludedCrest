@@ -1391,14 +1391,6 @@
 	"ribbons": {},
 	"skyboxes": {},
 	"textures": {
-		"abyssal_trench_benthic_mud.rtex": {
-			"Scale_Factor": 4,
-			"swatchIndex": 22
-		},
-		"ancient_jungle_mossy_stone.rtex": {
-			"Scale_Factor": 4,
-			"swatchIndex": 0
-		},
 		"ancient_jungle_overgrown_path.rtex": {
 			"Brightness": 2.5,
 			"Crevice_Power": 1,
@@ -1415,110 +1407,38 @@
 			"brightness": 2.5,
 			"cross_fade": 0,
 			"stochastic_tile_size": 1,
-			"swatchIndex": 1,
+			"swatchIndex": 0,
 			"tile_mode": "Stochastic",
 			"tint": "#ffffff",
 			"uv_scale": 1
 		},
-		"ancient_jungle_river_bed.rtex": {
-			"Scale_Factor": 3.592909,
-			"swatchIndex": 2
-		},
-		"ancient_jungle_tropical_leaf.rtex": {
-			"Scale_Factor": 4,
-			"swatchIndex": 24
-		},
 		"bioluminescent_jungle_fungi_bloom.rtex": {
 			"Scale_Factor": 2.48128,
-			"swatchIndex": 3
-		},
-		"bioluminescent_jungle_prism_leaf.rtex": {
-			"Scale_Factor": 1.0255201,
-			"swatchIndex": 4
+			"swatchIndex": 1
 		},
 		"crystal_caverns_shining_tuff.rtex": {
 			"Scale_Factor": 1.6514777,
-			"swatchIndex": 5
-		},
-		"deep_trench_dense_mud.rtex": {
-			"Scale_Factor": 4,
-			"swatchIndex": 6
-		},
-		"dusty_canyon_granite_basin.rtex": {
-			"Scale_Factor": 3.0833614,
-			"swatchIndex": 7
-		},
-		"dusty_canyon_scarce_soil.rtex": {
-			"Scale_Factor": 0.45711967,
-			"swatchIndex": 8
-		},
-		"floating_isles_core_peat.rtex": {
-			"Scale_Factor": 4,
-			"swatchIndex": 25
+			"swatchIndex": 2
 		},
 		"floating_isles_grass_high_peak.rtex": {
 			"Scale_Factor": 2.0292048,
-			"swatchIndex": 23
-		},
-		"floating_isles_orbit_tile.rtex": {
-			"Scale_Factor": 3.5199025,
-			"swatchIndex": 26
-		},
-		"frozen_tundra_mud.rtex": {
-			"Scale_Factor": 0.86354446,
-			"swatchIndex": 9
-		},
-		"mangrove_swamp_bog_grass.rtex": {
-			"Scale_Factor": 4,
-			"swatchIndex": 10
-		},
-		"overgrown_ruin_dense_brush.rtex": {
-			"Scale_Factor": 4,
-			"swatchIndex": 11
-		},
-		"overgrown_ruin_mossy_dirt.rtex": {
-			"Scale_Factor": 4,
-			"swatchIndex": 12
-		},
-		"petrified_forest_gray_granite.rtex": {
-			"Scale_Factor": 2.60119,
-			"swatchIndex": 13
-		},
-		"sunken_ruins_crushed_granite.rtex": {
-			"Scale_Factor": 4,
-			"swatchIndex": 14
+			"swatchIndex": 6
 		},
 		"sunken_ruins_mossy_dirt.rtex": {
 			"Scale_Factor": 4,
-			"swatchIndex": 15
-		},
-		"sunken_ruins_mossy_stone.rtex": {
-			"Scale_Factor": 4,
-			"swatchIndex": 16
-		},
-		"sunken_ruins_reef_stone.rtex": {
-			"Scale_Factor": 1.123252,
-			"swatchIndex": 17
-		},
-		"whispering_forest_dense_brush.rtex": {
-			"Scale_Factor": 4,
-			"swatchIndex": 18
+			"swatchIndex": 3
 		},
 		"whispering_forest_fern_leaf.rtex": {
 			"Scale_Factor": 4,
-			"swatchIndex": 19
+			"swatchIndex": 4
 		},
 		"whispering_woods_dry_twig.rtex": {
 			"Scale_Factor": 2.690607,
-			"swatchIndex": 27
+			"swatchIndex": 7
 		},
 		"whispering_woods_emerald_leaf.rtex": {
 			"Scale_Factor": 4,
-			"swatchIndex": 20
-		},
-		"whispering_woods_soft_grass.rtex": {
-			"Scale_Factor": 1.3279647,
-			"swatchIndex": 21
+			"swatchIndex": 5
 		}
 	},
 	"vfx_spritesheets": {}

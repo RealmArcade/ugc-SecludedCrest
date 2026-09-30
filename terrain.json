@@ -3256,9 +3256,9 @@
 			"Scale": 1.3
 		},
 		{
-			"PosX": -3.4311724,
-			"PosY": -5.8558207,
-			"PosZ": -92.8294,
+			"PosX": -3.8371305,
+			"PosY": -5.855821,
+			"PosZ": -92.94642,
 			"PropId": "mossy_rock_3",
 			"RotationY": 0,
 			"Scale": 2.5
@@ -3392,9 +3392,9 @@
 			"Scale": 0.95
 		},
 		{
-			"PosX": 0.5311136,
+			"PosX": 0.67744637,
 			"PosY": -3,
-			"PosZ": 87.67506,
+			"PosZ": 88.04496,
 			"PropId": "mossy_rock_3",
 			"RotationY": 0,
 			"Scale": 2.9
@@ -3470,7 +3470,7 @@
 			"IsEnemy": false,
 			"Player": 0,
 			"PosX": 58.488556,
-			"PosY": 3.3802943,
+			"PosY": 3.4758062,
 			"PosZ": -59.55932,
 			"RotationY": 15,
 			"Scale": 2.3000007,
@@ -3480,7 +3480,7 @@
 			"IsEnemy": false,
 			"Player": 0,
 			"PosX": 77.37567,
-			"PosY": 2.5626268,
+			"PosY": 2.7819033,
 			"PosZ": -62.765472,
 			"RotationY": 344.99994,
 			"Scale": 2.2000008,
@@ -3490,7 +3490,7 @@
 			"IsEnemy": false,
 			"Player": 0,
 			"PosX": 70.20771,
-			"PosY": 2.4799373,
+			"PosY": 2.310038,
 			"PosZ": -88.68944,
 			"RotationY": 0,
 			"Scale": 4.9,
@@ -3510,7 +3510,7 @@
 			"IsEnemy": false,
 			"Player": 0,
 			"PosX": -68.97118,
-			"PosY": 2.8190234,
+			"PosY": 3.0479717,
 			"PosZ": 67.53322,
 			"RotationY": 164.99997,
 			"Scale": 3,

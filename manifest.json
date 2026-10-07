@@ -1,70 +1,76 @@
 {
-	"Assets": {
-		"decals": {},
-		"glb": {
-			"buildings": {
-				"dark_tower_keep.rmesh": "524e9cf864841d677e3f88fb390e3c81ffd749a73eca9e2ca9befb48a4b129f7",
-				"dark_tower_keep_1.rmesh": "06366725a7660e13d79599235a54007d74404e44551a18c84465388833f9c485",
-				"fairytale_castle.rmesh": "919792367b95b171cc21f43e1955a393e4dc8cc939a180f1c14cd5d21513d68c",
-				"fantasy_tower_building_4.rmesh": "ccb17588f9a45587b63df63396385b6a5f77d4a8868e380dc5fe7033f5729bba",
-				"ice_castle_1.rmesh": "ae37095ceee57c2068b30c2496120268b60283a284fac78bc659fa32163f17f9",
-				"scroll_and_scroll_holder.rmesh": "4c7ba5f00b72885aed30ba2cdba3612d338f7bd7bb4ce3743e3b4d6e77ab4ad5",
-				"timber_framed_house.rmesh": "535691fe5bb11e5c627aab9e80ca19a1b411c248c985758db7381fa5a78b5044",
-				"watch_tower_building.rmesh": "931296b50c6c9b3a27bc702ea8db75dc097f2c1b365f996309208c85fa64022a"
-			},
-			"projectiles": {
-				"ornate_spear_1.rmesh": "b93ae81237c0956a976d23b4c9d3e007020def4e6dc44b1294aa16d2ad9f83de",
-				"wooden_spear_2.rmesh": "5aa261917ddc28e195240080be1f386b069fcc65669be70c71149b375cb8bdd5"
-			},
-			"props": {
-				"coniferous_tree_3.rmesh": "3383e6a2a51cad61dab54e4a01f0050040136706941158b7aa340992f61d7b29",
-				"crystal_cluster_24.rmesh": "e64f04f2a16aefd00cdf8c8e6e483b507a54b559c01aba48d0f5f71e8397bdca",
-				"crystal_cluster_25.rmesh": "602300031f67eecb5c0c712c30b3a5ef650bf453e3ca07353bc68de412e069cc",
-				"crystal_cluster_29.rmesh": "2abee4a7b80df38806b094205e78db7dc68c814f6a4a4d7afc393858e450b9f7",
-				"crystal_flower_prop.rmesh": "5d61cea5ee01ca372f59a1749ccdd449d9737ac778f769f4b190715d69d0cc9f",
-				"spiked_wooden_stake.rmesh": "722915e14b6fc455ad1f0aab42f89c9420f117fdb8cdf3532583f08c13903c06"
-			},
-			"resources": {
-				"bonsai_tree.rmesh": "d11cedaa969544a8f8193d8c554879f72ac8a9f6ed95c126b101a52a2956bf26",
-				"cherry_blossom_tree.rmesh": "c5b3477a9008d9c7ed79bfe2276ecc2a82eb6ca5a50a402c0e470a7b9447830a",
-				"coniferous_tree_1.rmesh": "ec56d4202cab84dd93e028b09306595330ad8816665efcbb9266d21f14b1e47d",
-				"crystal_shard_formation.rmesh": "90b6c51e3a6f21b1e519ce59581767e95b4b7c94c01024a12702f6da87820c21",
-				"fantasy_pine_tree_1.rmesh": "976e0b872e461086208dc16e4ca2b065bfbe65d6975f7b9b99ea0d1958a79a00",
-				"fantasy_tree_9.rmesh": "2d30432946edad1970341e7bee346008836736ec3136be735ef42e67fe4050c3",
-				"fungal_tree.rmesh": "01ba126d8f662abd4eff463630116df4becb0875e4959043a98a14eda9c4e9b7",
-				"gold_mine.rmesh": "fd9f48c047358f68cf6a5b551e819a903b246d432b6f37cf523d7dd9ffd9d3e6",
-				"grass_tuft_1.rmesh": "08dd16b6902ff9b626a139feac0fc13387e6aac766c4d4bd57163f7b41d9fee6",
-				"mossy_rock_3.rmesh": "0549d02076f3aa56374896d4c617745a319d26944a7506abab3814faae83a6e8",
-				"palm_tree.rmesh": "b14f53c16bf7734dc70fe1febcc5caf41c4c291dcd0abb285f33e245b0aa965a",
-				"rock_formation_8.rmesh": "3898768419b55ca55230bc5799f5491cace369f7b5c54ddca6619d23ca96e490",
-				"spirit_tree_2.rmesh": "31865a7a6d4d9a9a32382a0d0262f57e1f96e2cccdc5f63d4db3d421be28448b",
-				"volcanic_terrain_1.rmesh": "59ba18595ce085accca4f66fca139758ca4670f027248defff6c5843924a094a"
-			},
-			"units": {
-				"fantasy_warrior_unit_1.rmesh": "c0e16b9c16871a5d2e4ff820d6d25138ba1121feda3db1327bfa7a7116363b6d",
-				"orc_warrior_7.rmesh": "b01affb5917119fb76052db8440e56af2140866c60904729b2ffaecd4324efa2"
-			}
-		},
-		"icons": {},
-		"noise_textures": {},
-		"ribbons": {},
-		"shaders": {},
-		"skyboxes": {},
-		"textures": {
-			"ancient_jungle_overgrown_path.rtex": "fb435a844e25897385139b550782eef607376867383c37a40b561f5441b8bf16",
-			"bioluminescent_jungle_fungi_bloom.rtex": "64c5729f1001d2aa607de5496f88cc44488ba5217a12da050c20c93076fde7c0",
-			"crystal_caverns_shining_tuff.rtex": "f143bd89631d06726da4b107c67c08e27e3b5b979591cd591845bcfc1ed8410d",
-			"floating_isles_grass_high_peak.rtex": "a8ad177e767ab261747385183a165515f0ce03d9e2afd16948dd2e73b2a79aff",
-			"sunken_ruins_mossy_dirt.rtex": "ccf24c9b2c0588813b28c02c148a3804f82c66592494bd569004d91f01371679",
-			"whispering_forest_fern_leaf.rtex": "39ebf68ca32669cbb43bf365cc95f3ce300e19fb8fa76097bb7021152fdc8324",
-			"whispering_woods_dry_twig.rtex": "33836da26abbe0e0486d961159de79fabef2af8616fa73d0882ff5743524c339",
-			"whispering_woods_emerald_leaf.rtex": "1bcf2801139a9f0091271a756e22389855bf34a56d7a76e7fb7a405e3a26fb00"
-		},
-		"vfx_spritesheets": {
-			"arcane_surge_sheet.rtex": "614bdba93d3ca573a77fcc606bb547a7b7fcbcfe30668651b26bb8ac786a55ba",
-			"solar_flare_sheet.rtex": "f95cda0ad135fdaefa243d2f269844ad003c7c0ad9de2434ca4ad57dc5fb16a9"
-		}
-	},
-	"MapName": "Secluded Crest",
-	"Version": "1.0.0"
+  "MapName": "Secluded Crest",
+  "Author": "",
+  "Version": "1.0.0",
+  "Description": "",
+  "Tags": [],
+  "Maintainers": [],
+  "GreenlitReferences": [],
+  "Assets": {
+    "Animation": null,
+    "Building": {
+      "dark_tower_keep.rmesh": "524e9cf864841d677e3f88fb390e3c81ffd749a73eca9e2ca9befb48a4b129f7",
+      "dark_tower_keep_1.rmesh": "06366725a7660e13d79599235a54007d74404e44551a18c84465388833f9c485",
+      "fairytale_castle.rmesh": "919792367b95b171cc21f43e1955a393e4dc8cc939a180f1c14cd5d21513d68c",
+      "fantasy_tower_building_4.rmesh": "ccb17588f9a45587b63df63396385b6a5f77d4a8868e380dc5fe7033f5729bba",
+      "ice_castle_1.rmesh": "ae37095ceee57c2068b30c2496120268b60283a284fac78bc659fa32163f17f9",
+      "scroll_and_scroll_holder.rmesh": "4c7ba5f00b72885aed30ba2cdba3612d338f7bd7bb4ce3743e3b4d6e77ab4ad5",
+      "timber_framed_house.rmesh": "535691fe5bb11e5c627aab9e80ca19a1b411c248c985758db7381fa5a78b5044",
+      "watch_tower_building.rmesh": "931296b50c6c9b3a27bc702ea8db75dc097f2c1b365f996309208c85fa64022a"
+    },
+    "Character": {
+      "fantasy_warrior_unit_1.rmesh": "c0e16b9c16871a5d2e4ff820d6d25138ba1121feda3db1327bfa7a7116363b6d",
+      "orc_warrior_7.rmesh": "b01affb5917119fb76052db8440e56af2140866c60904729b2ffaecd4324efa2"
+    },
+    "Decal": {},
+    "Icon": {},
+    "Item": {
+      "ornate_spear_1.rmesh": "b93ae81237c0956a976d23b4c9d3e007020def4e6dc44b1294aa16d2ad9f83de",
+      "wooden_spear_2.rmesh": "5aa261917ddc28e195240080be1f386b069fcc65669be70c71149b375cb8bdd5"
+    },
+    "Music": null,
+    "Noise": {},
+    "Prop": {
+      "bonsai_tree.rmesh": "d11cedaa969544a8f8193d8c554879f72ac8a9f6ed95c126b101a52a2956bf26",
+      "cherry_blossom_tree.rmesh": "c5b3477a9008d9c7ed79bfe2276ecc2a82eb6ca5a50a402c0e470a7b9447830a",
+      "coniferous_tree_1.rmesh": "ec56d4202cab84dd93e028b09306595330ad8816665efcbb9266d21f14b1e47d",
+      "coniferous_tree_3.rmesh": "3383e6a2a51cad61dab54e4a01f0050040136706941158b7aa340992f61d7b29",
+      "crystal_cluster_24.rmesh": "e64f04f2a16aefd00cdf8c8e6e483b507a54b559c01aba48d0f5f71e8397bdca",
+      "crystal_cluster_25.rmesh": "602300031f67eecb5c0c712c30b3a5ef650bf453e3ca07353bc68de412e069cc",
+      "crystal_cluster_29.rmesh": "2abee4a7b80df38806b094205e78db7dc68c814f6a4a4d7afc393858e450b9f7",
+      "crystal_flower_prop.rmesh": "5d61cea5ee01ca372f59a1749ccdd449d9737ac778f769f4b190715d69d0cc9f",
+      "crystal_shard_formation.rmesh": "90b6c51e3a6f21b1e519ce59581767e95b4b7c94c01024a12702f6da87820c21",
+      "fantasy_pine_tree_1.rmesh": "976e0b872e461086208dc16e4ca2b065bfbe65d6975f7b9b99ea0d1958a79a00",
+      "fantasy_tree_9.rmesh": "2d30432946edad1970341e7bee346008836736ec3136be735ef42e67fe4050c3",
+      "fungal_tree.rmesh": "01ba126d8f662abd4eff463630116df4becb0875e4959043a98a14eda9c4e9b7",
+      "gold_mine.rmesh": "fd9f48c047358f68cf6a5b551e819a903b246d432b6f37cf523d7dd9ffd9d3e6",
+      "grass_tuft_1.rmesh": "08dd16b6902ff9b626a139feac0fc13387e6aac766c4d4bd57163f7b41d9fee6",
+      "mossy_rock_3.rmesh": "0549d02076f3aa56374896d4c617745a319d26944a7506abab3814faae83a6e8",
+      "palm_tree.rmesh": "b14f53c16bf7734dc70fe1febcc5caf41c4c291dcd0abb285f33e245b0aa965a",
+      "rock_formation_8.rmesh": "3898768419b55ca55230bc5799f5491cace369f7b5c54ddca6619d23ca96e490",
+      "spiked_wooden_stake.rmesh": "722915e14b6fc455ad1f0aab42f89c9420f117fdb8cdf3532583f08c13903c06",
+      "spirit_tree_2.rmesh": "31865a7a6d4d9a9a32382a0d0262f57e1f96e2cccdc5f63d4db3d421be28448b",
+      "volcanic_terrain_1.rmesh": "59ba18595ce085accca4f66fca139758ca4670f027248defff6c5843924a094a"
+    },
+    "Ribbon": {},
+    "Shader": {},
+    "Skybox": {},
+    "SoundEffect": null,
+    "Spritesheet": {
+      "arcane_surge_sheet.rtex": "614bdba93d3ca573a77fcc606bb547a7b7fcbcfe30668651b26bb8ac786a55ba",
+      "solar_flare_sheet.rtex": "f95cda0ad135fdaefa243d2f269844ad003c7c0ad9de2434ca4ad57dc5fb16a9"
+    },
+    "Terrain": {
+      "ancient_jungle_overgrown_path.rtex": "fb435a844e25897385139b550782eef607376867383c37a40b561f5441b8bf16",
+      "bioluminescent_jungle_fungi_bloom.rtex": "64c5729f1001d2aa607de5496f88cc44488ba5217a12da050c20c93076fde7c0",
+      "crystal_caverns_shining_tuff.rtex": "f143bd89631d06726da4b107c67c08e27e3b5b979591cd591845bcfc1ed8410d",
+      "floating_isles_grass_high_peak.rtex": "a8ad177e767ab261747385183a165515f0ce03d9e2afd16948dd2e73b2a79aff",
+      "sunken_ruins_mossy_dirt.rtex": "ccf24c9b2c0588813b28c02c148a3804f82c66592494bd569004d91f01371679",
+      "whispering_forest_fern_leaf.rtex": "39ebf68ca32669cbb43bf365cc95f3ce300e19fb8fa76097bb7021152fdc8324",
+      "whispering_woods_dry_twig.rtex": "33836da26abbe0e0486d961159de79fabef2af8616fa73d0882ff5743524c339",
+      "whispering_woods_emerald_leaf.rtex": "1bcf2801139a9f0091271a756e22389855bf34a56d7a76e7fb7a405e3a26fb00"
+    },
+    "vfx_radial": null,
+    "vfx_vertical": null
+  }
 }

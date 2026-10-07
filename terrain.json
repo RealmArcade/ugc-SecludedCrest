@@ -1,3532 +1,3532 @@
 {
-	"CameraBoundsBottom": 125,
-	"CameraBoundsLeft": -95,
-	"CameraBoundsRight": 95,
-	"CameraBoundsTop": -95,
-	"Coordinates": [],
-	"Decals": [],
-	"Depth": 128,
-	"Props": [
-		{
-			"PosX": -49.992786,
-			"PosY": 3,
-			"PosZ": -56.440464,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": -46.79031,
-			"PosY": 3,
-			"PosZ": -65.645195,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": -51.922684,
-			"PosY": 3,
-			"PosZ": -48.781296,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": -47.3573,
-			"PosY": 3,
-			"PosZ": -76.80183,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": -43.319576,
-			"PosY": 3,
-			"PosZ": -54.058968,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": -67.393135,
-			"PosY": 3,
-			"PosZ": -87.911804,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -82.13302,
-			"PosY": 3.3858159,
-			"PosZ": -47.085506,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -39.31053,
-			"PosY": 3,
-			"PosZ": -73.60062,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": -48.375816,
-			"PosY": 3,
-			"PosZ": -86.91466,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -54.559692,
-			"PosY": 3,
-			"PosZ": -90.330894,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -41.030636,
-			"PosY": 3,
-			"PosZ": -85.628136,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": -90.56014,
-			"PosY": 3.0341206,
-			"PosZ": -43.62968,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -60.326767,
-			"PosY": 3,
-			"PosZ": -28.772633,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": -70.23421,
-			"PosY": 3,
-			"PosZ": -99.25471,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -52.035885,
-			"PosY": 3,
-			"PosZ": -28.77264,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": -74.66397,
-			"PosY": 3,
-			"PosZ": -100.2896,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -98.3564,
-			"PosY": 3,
-			"PosZ": -47.972313,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -101.40404,
-			"PosY": 3,
-			"PosZ": -74.777985,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -63.028763,
-			"PosY": 3,
-			"PosZ": -103.452324,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -60.94992,
-			"PosY": 3.9748173,
-			"PosZ": -23.944223,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": -95.321915,
-			"PosY": 2.9732473,
-			"PosZ": -89.71939,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -24.266434,
-			"PosY": 3.0000002,
-			"PosZ": -55.844566,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -95.70961,
-			"PosY": 3,
-			"PosZ": -38.176144,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -105,
-			"PosY": 3,
-			"PosZ": -69,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -71.73097,
-			"PosY": 3,
-			"PosZ": -104.88662,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -31.660439,
-			"PosY": 2.9442263,
-			"PosZ": -36.052937,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -102.73065,
-			"PosY": 2.769002,
-			"PosZ": -82.419624,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -107,
-			"PosY": 2.25,
-			"PosZ": -63,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -107,
-			"PosY": 0,
-			"PosZ": -55,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -75.756805,
-			"PosY": 2.9999998,
-			"PosZ": -107.0721,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -25.551685,
-			"PosY": 3,
-			"PosZ": -41.275032,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -51.79451,
-			"PosY": 3.1006436,
-			"PosZ": -20.875217,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": -107.25197,
-			"PosY": 3,
-			"PosZ": -75.874405,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -96.16637,
-			"PosY": 3,
-			"PosZ": -31.605824,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -103.90675,
-			"PosY": 3,
-			"PosZ": -41.403896,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -15.630558,
-			"PosY": 3,
-			"PosZ": -59.30877,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -95.76124,
-			"PosY": 3.013443,
-			"PosZ": -101.334076,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -105.74763,
-			"PosY": 3,
-			"PosZ": -36.86891,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -102.41566,
-			"PosY": 3.0594287,
-			"PosZ": -96.206215,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -86.998474,
-			"PosY": 3,
-			"PosZ": -108.92528,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -96.56477,
-			"PosY": 3,
-			"PosZ": -24.89085,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -15.456266,
-			"PosY": 3,
-			"PosZ": -47.939007,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -92.05133,
-			"PosY": 3,
-			"PosZ": -20.179342,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -108.22627,
-			"PosY": 3,
-			"PosZ": -92.59081,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -28.063446,
-			"PosY": 2.6234999,
-			"PosZ": -25.214943,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -80.725464,
-			"PosY": 3,
-			"PosZ": -114.27504,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -101.7429,
-			"PosY": 3.0012937,
-			"PosZ": -102.38827,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -91.98825,
-			"PosY": 3,
-			"PosZ": -110.05144,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -105.1034,
-			"PosY": 3,
-			"PosZ": -26.910488,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -88.67863,
-			"PosY": 3,
-			"PosZ": -12.748436,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -97.239044,
-			"PosY": 3,
-			"PosZ": -16.545671,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -83.90553,
-			"PosY": 3.8240435,
-			"PosZ": -6.3658037,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -14.991957,
-			"PosY": 3,
-			"PosZ": -27.097319,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -19.811153,
-			"PosY": 3.3916087,
-			"PosZ": -20.178698,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -93.087395,
-			"PosY": 3.0168788,
-			"PosZ": -6.1504593,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -97.58406,
-			"PosY": 3,
-			"PosZ": -5.9407587,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -87.86263,
-			"PosY": 3.6062803,
-			"PosZ": -1.0091543,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -4.413126,
-			"PosY": 3,
-			"PosZ": -29.204288,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -9.0569,
-			"PosY": 3,
-			"PosZ": -15.678345,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 3.8203487,
-			"PosY": 3,
-			"PosZ": -30.518173,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -95.56918,
-			"PosY": 3.0796413,
-			"PosZ": 5.188431,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -100.77957,
-			"PosY": 3,
-			"PosZ": 4.683605,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 3.4256563,
-			"PosY": 3,
-			"PosZ": -19.138397,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 0.00365448,
-			"PosY": 3,
-			"PosZ": -13.870178,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.1999998
-		},
-		{
-			"PosX": 9.727533,
-			"PosY": 3,
-			"PosZ": -24.830143,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -101.42074,
-			"PosY": 3.494626,
-			"PosZ": 11.111456,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -22.284637,
-			"PosY": 3,
-			"PosZ": 19.606495,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -30.882584,
-			"PosY": 3,
-			"PosZ": 24.132175,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -107.76981,
-			"PosY": 3,
-			"PosZ": 19.476637,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -76.96636,
-			"PosY": 2.6783688,
-			"PosZ": 29.493484,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 25.29485,
-			"PosY": 3,
-			"PosZ": -95.328415,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -39.61269,
-			"PosY": 3,
-			"PosZ": 27.58013,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -102.13588,
-			"PosY": 3,
-			"PosZ": 23.624895,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -45.4061,
-			"PosY": 3.011535,
-			"PosZ": 32.55528,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -84.42049,
-			"PosY": 3,
-			"PosZ": 32.91646,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 28.611214,
-			"PosY": 3,
-			"PosZ": -100.207436,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -16.320547,
-			"PosY": 3,
-			"PosZ": 23.635893,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -95.48013,
-			"PosY": 3,
-			"PosZ": 32.600365,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -108.40568,
-			"PosY": 3,
-			"PosZ": 27.595827,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 33.688225,
-			"PosY": 3,
-			"PosZ": -93.516106,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -102.97777,
-			"PosY": 3,
-			"PosZ": 31.726727,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 38.817047,
-			"PosY": 3,
-			"PosZ": -80.76158,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -19.271313,
-			"PosY": 3,
-			"PosZ": 30.439945,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 37.824936,
-			"PosY": 3,
-			"PosZ": -89.345085,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -51.195747,
-			"PosY": 3.3796759,
-			"PosZ": 40.357433,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -90.22826,
-			"PosY": 3.0000002,
-			"PosZ": 38.033745,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -81.230576,
-			"PosY": 3,
-			"PosZ": 40.18197,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -22.498905,
-			"PosY": 3,
-			"PosZ": 33.72927,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 43.64275,
-			"PosY": 3,
-			"PosZ": -70.76055,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 36.12353,
-			"PosY": 3.0000002,
-			"PosZ": -107.04483,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 38.462914,
-			"PosY": 3.0000002,
-			"PosZ": -101.23291,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 44.54852,
-			"PosY": 3,
-			"PosZ": -50.04756,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 42.639317,
-			"PosY": 3.0000002,
-			"PosZ": -33.040012,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 45.963894,
-			"PosY": 2.9034288,
-			"PosZ": -42.848114,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 47.93031,
-			"PosY": 3,
-			"PosZ": -59.362873,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -80.57921,
-			"PosY": 2.9898343,
-			"PosZ": 49.062088,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -29.642889,
-			"PosY": 3,
-			"PosZ": 45.38056,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 52.298332,
-			"PosY": 3,
-			"PosZ": -73.08508,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 52.334145,
-			"PosY": 3.0131164,
-			"PosZ": -49.27277,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 50.267776,
-			"PosY": 2.9999998,
-			"PosZ": -93.516106,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 49.02878,
-			"PosY": 3,
-			"PosZ": -101.67886,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 48.22746,
-			"PosY": 3.0000002,
-			"PosZ": -106.05305,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -39.30075,
-			"PosY": 3,
-			"PosZ": 53.46352,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -77.05873,
-			"PosY": 2.841289,
-			"PosZ": 56.44423,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -48.480495,
-			"PosY": 3.0076108,
-			"PosZ": 60.313305,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -76.038284,
-			"PosY": 2.672296,
-			"PosZ": 62.057266,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 57.825417,
-			"PosY": 3.0000002,
-			"PosZ": -108.04618,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 59.330032,
-			"PosY": 3,
-			"PosZ": -104.09763,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 47.79498,
-			"PosY": 3,
-			"PosZ": 2.5858936,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": 25.04798,
-			"PosY": 3,
-			"PosZ": 32.328472,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -37.9007,
-			"PosY": 3,
-			"PosZ": 64.967575,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 48.166332,
-			"PosY": 3.024578,
-			"PosZ": 12.211538,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": 55.363075,
-			"PosY": 3,
-			"PosZ": 1.5565319,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": 66.47654,
-			"PosY": 3,
-			"PosZ": -103.454025,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -23.567894,
-			"PosY": 3,
-			"PosZ": 66.50151,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -11.835724,
-			"PosY": 2.9999998,
-			"PosZ": 62.774845,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 22.038641,
-			"PosY": 3.0000002,
-			"PosZ": 42.739395,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 54.074173,
-			"PosY": 3,
-			"PosZ": 9.679567,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": 73.25056,
-			"PosY": 3.0363097,
-			"PosZ": -32.997078,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 68.641174,
-			"PosY": 3,
-			"PosZ": -112.03516,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -87.01377,
-			"PosY": 3.4797797,
-			"PosZ": 75.93345,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 18.221733,
-			"PosY": 3,
-			"PosZ": 52.44294,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 74.311356,
-			"PosY": 2.977091,
-			"PosZ": -27.13687,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -14.983114,
-			"PosY": 3,
-			"PosZ": 72.02678,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 31.53771,
-			"PosY": 3,
-			"PosZ": 44.906475,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 75.74694,
-			"PosY": 3,
-			"PosZ": -102.49617,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 80.63627,
-			"PosY": 3,
-			"PosZ": -44.18015,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 75.10222,
-			"PosY": 3,
-			"PosZ": -18.57341,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -23.723251,
-			"PosY": 3.0254846,
-			"PosZ": 76.72865,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -96.10008,
-			"PosY": 3,
-			"PosZ": 81.917,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -84.88327,
-			"PosY": 3.5338168,
-			"PosZ": 84.50159,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 85.88676,
-			"PosY": 3,
-			"PosZ": -53.72618,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 83.644356,
-			"PosY": 3,
-			"PosZ": -35.016792,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 35.643166,
-			"PosY": 3,
-			"PosZ": 49.56022,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 27.857897,
-			"PosY": 3,
-			"PosZ": 56.459236,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 83.67437,
-			"PosY": 3,
-			"PosZ": -98.46202,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 81.87386,
-			"PosY": 3,
-			"PosZ": -16.390184,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -94.39145,
-			"PosY": 3.2192547,
-			"PosZ": 87.95398,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 85.25303,
-			"PosY": 3,
-			"PosZ": -106.70799,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -18.708353,
-			"PosY": 3,
-			"PosZ": 84.50815,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 93.3878,
-			"PosY": 3,
-			"PosZ": -62.6518,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 90.01419,
-			"PosY": 3,
-			"PosZ": -98.25046,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 87.47814,
-			"PosY": 3,
-			"PosZ": -19.164085,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -85.44389,
-			"PosY": 3.43011,
-			"PosZ": 92.80465,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 94.47017,
-			"PosY": 3,
-			"PosZ": -88.39116,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 33.714355,
-			"PosY": 3,
-			"PosZ": 64.150986,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -21.91261,
-			"PosY": 3,
-			"PosZ": 92.39667,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 95.28807,
-			"PosY": 3,
-			"PosZ": -96.70215,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 98.59827,
-			"PosY": 3,
-			"PosZ": -56.063675,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -101.062706,
-			"PosY": 3.0140076,
-			"PosZ": 95.15731,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 76.512375,
-			"PosY": 3.0002818,
-			"PosZ": 20.037762,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -25.88922,
-			"PosY": 3,
-			"PosZ": 95.49326,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 100.52596,
-			"PosY": 3,
-			"PosZ": -66.50584,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 100.9729,
-			"PosY": 3,
-			"PosZ": -76.57392,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 95.08935,
-			"PosY": 3,
-			"PosZ": -17.11027,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -63.607037,
-			"PosY": 2.9623573,
-			"PosZ": 101.941574,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 42.094776,
-			"PosY": 3,
-			"PosZ": 63.776745,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -51.70211,
-			"PosY": 3,
-			"PosZ": 102.21568,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -91.53793,
-			"PosY": 2.9920468,
-			"PosZ": 100.560936,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 101.739136,
-			"PosY": 3,
-			"PosZ": -83.48962,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -75.39041,
-			"PosY": 2.8258717,
-			"PosZ": 103.03409,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 102.120255,
-			"PosY": 3.0000002,
-			"PosZ": -87.60701,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 88.1685,
-			"PosY": 3,
-			"PosZ": 9.049955,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -28.503502,
-			"PosY": 3,
-			"PosZ": 102.48915,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -35.826477,
-			"PosY": 3,
-			"PosZ": 104.65325,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 107.087265,
-			"PosY": 3,
-			"PosZ": -66.072136,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -100.95044,
-			"PosY": 2.9808774,
-			"PosZ": 103.30557,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -44.35022,
-			"PosY": 3,
-			"PosZ": 106.24929,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 101.16819,
-			"PosY": 3,
-			"PosZ": -16.241549,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -57.590195,
-			"PosY": 3,
-			"PosZ": 108.34227,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 108.6208,
-			"PosY": 3,
-			"PosZ": -76.23925,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -85.33837,
-			"PosY": 3.0273829,
-			"PosZ": 108.08282,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -65.037224,
-			"PosY": 3,
-			"PosZ": 109.63048,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 88.03073,
-			"PosY": 3,
-			"PosZ": 21.634808,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 95.13227,
-			"PosY": 3,
-			"PosZ": 11.507675,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -96.70166,
-			"PosY": 3,
-			"PosZ": 109.117,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 112.09804,
-			"PosY": 3,
-			"PosZ": -78.4435,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -70.08905,
-			"PosY": 3,
-			"PosZ": 112.91026,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 104.19815,
-			"PosY": 3,
-			"PosZ": -7.647169,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 102.07834,
-			"PosY": 3.0000002,
-			"PosZ": 2.2609081,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -77.74113,
-			"PosY": 3,
-			"PosZ": 114.88014,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 90.15693,
-			"PosY": 3,
-			"PosZ": 29.722916,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -86.57433,
-			"PosY": 3,
-			"PosZ": 115.123856,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 105.76059,
-			"PosY": 3,
-			"PosZ": -1.9421167,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 87.57991,
-			"PosY": 3,
-			"PosZ": 36.99149,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 98.94863,
-			"PosY": 3,
-			"PosZ": 20.037737,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 40.54602,
-			"PosY": 3,
-			"PosZ": 88.40763,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 94.762695,
-			"PosY": 3,
-			"PosZ": 37.77454,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 97.84071,
-			"PosY": 2.9923463,
-			"PosZ": 34.85325,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 102.969086,
-			"PosY": 3,
-			"PosZ": 25.932215,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 92.831955,
-			"PosY": 3,
-			"PosZ": 44.53858,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 50.62962,
-			"PosY": 3,
-			"PosZ": 90.1183,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 43.05236,
-			"PosY": 3,
-			"PosZ": 97.123505,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 100.652756,
-			"PosY": 3,
-			"PosZ": 41.84603,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 107.6768,
-			"PosY": 3,
-			"PosZ": 36.28266,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 103.84543,
-			"PosY": 3,
-			"PosZ": 45.86339,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 97.594444,
-			"PosY": 3,
-			"PosZ": 56.278698,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 49.86592,
-			"PosY": 3,
-			"PosZ": 102.41721,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 56.582104,
-			"PosY": 3,
-			"PosZ": 99.602646,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 50.583435,
-			"PosY": 3,
-			"PosZ": 109.05362,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 99.62817,
-			"PosY": 3,
-			"PosZ": 65.296364,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 98.03899,
-			"PosY": 3,
-			"PosZ": 69.964676,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 60.11145,
-			"PosY": 2.9999998,
-			"PosZ": 107.8157,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 67.77571,
-			"PosY": 3,
-			"PosZ": 102.305855,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 94.33502,
-			"PosY": 3,
-			"PosZ": 78.32945,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 87.51037,
-			"PosY": 3,
-			"PosZ": 87.3232,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 77.69801,
-			"PosY": 3,
-			"PosZ": 102.305855,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 88.94184,
-			"PosY": 3,
-			"PosZ": 96.83565,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 73.23013,
-			"PosY": 3,
-			"PosZ": 110.58421,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 94.7039,
-			"PosY": 3,
-			"PosZ": 95.0825,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 82.40192,
-			"PosY": 3,
-			"PosZ": 113.29332,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 94.64607,
-			"PosY": 3,
-			"PosZ": 104.02855,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 90.30061,
-			"PosY": 2.9369678,
-			"PosZ": 110.27958,
-			"PropId": "bonsai_tree",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -36.150475,
-			"PosY": 3.0432532,
-			"PosZ": -40.342037,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": -85.73996,
-			"PosY": 3,
-			"PosZ": -102.060104,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.3
-		},
-		{
-			"PosX": -82.7808,
-			"PosY": 3,
-			"PosZ": -105.69371,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.3
-		},
-		{
-			"PosX": -31.874432,
-			"PosY": 2.6709146,
-			"PosZ": -28.86398,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": -50.578613,
-			"PosY": 3.0680265,
-			"PosZ": -17.813986,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": -35.554405,
-			"PosY": 3.3084064,
-			"PosZ": -14.532402,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.9
-		},
-		{
-			"PosX": -32.64035,
-			"PosY": 2.9351523,
-			"PosZ": -15.960371,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 2.25
-		},
-		{
-			"PosX": -32.364853,
-			"PosY": 3.6164773,
-			"PosZ": -12.583304,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.9
-		},
-		{
-			"PosX": -87.69954,
-			"PosY": 4.6382504,
-			"PosZ": 3.3251934,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.95
-		},
-		{
-			"PosX": -89.17815,
-			"PosY": 4.7751784,
-			"PosZ": 4.3959503,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.55
-		},
-		{
-			"PosX": -95.8461,
-			"PosY": 3,
-			"PosZ": 1.923708,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.95
-		},
-		{
-			"PosX": 7.956856,
-			"PosY": 2.9999998,
-			"PosZ": -9.927741,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 3.1499991
-		},
-		{
-			"PosX": 5.045121,
-			"PosY": 3.020467,
-			"PosZ": -5.4550004,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 2.35
-		},
-		{
-			"PosX": 15.261022,
-			"PosY": 3.0176053,
-			"PosZ": -10.802416,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 5
-		},
-		{
-			"PosX": -80.57616,
-			"PosY": 2.828278,
-			"PosZ": 30.335222,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.55
-		},
-		{
-			"PosX": -82.623215,
-			"PosY": 3.027001,
-			"PosZ": 30.226639,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.95
-		},
-		{
-			"PosX": -88.31333,
-			"PosY": 3,
-			"PosZ": 30.87444,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.55
-		},
-		{
-			"PosX": -90.59532,
-			"PosY": 3,
-			"PosZ": 30.272903,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.95
-		},
-		{
-			"PosX": 19.376139,
-			"PosY": 3.0945551,
-			"PosZ": -7.100832,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.95
-		},
-		{
-			"PosX": 43.959526,
-			"PosY": 3.0000002,
-			"PosZ": -79.46035,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.75
-		},
-		{
-			"PosX": 43.441284,
-			"PosY": 2.9176798,
-			"PosZ": -88.87033,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": 45.853054,
-			"PosY": 3,
-			"PosZ": -77.76274,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": 43.95475,
-			"PosY": 2.9750037,
-			"PosZ": -91.629944,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.75
-		},
-		{
-			"PosX": 47.149284,
-			"PosY": 3,
-			"PosZ": -79.68147,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": 46.668167,
-			"PosY": 2.9012446,
-			"PosZ": -91.49055,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": 52.087643,
-			"PosY": 3,
-			"PosZ": -66.87773,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.75
-		},
-		{
-			"PosX": 53.632626,
-			"PosY": 3,
-			"PosZ": -58.87304,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.75
-		},
-		{
-			"PosX": 53.822174,
-			"PosY": 3,
-			"PosZ": -64.91637,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": 54.86758,
-			"PosY": 3.0461679,
-			"PosZ": -61.08485,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": 55.045017,
-			"PosY": 3,
-			"PosZ": -94.274376,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": 60.958218,
-			"PosY": 3,
-			"PosZ": -96.52104,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": -80.04818,
-			"PosY": 2.9807386,
-			"PosZ": 66.83504,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.6
-		},
-		{
-			"PosX": -30.006538,
-			"PosY": 3,
-			"PosZ": 66.52185,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.6
-		},
-		{
-			"PosX": -79.32924,
-			"PosY": 3.1225572,
-			"PosZ": 71.866486,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 3.3
-		},
-		{
-			"PosX": -33.010624,
-			"PosY": 3.0118847,
-			"PosZ": 69.70978,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.6
-		},
-		{
-			"PosX": -83.23684,
-			"PosY": 3.4975626,
-			"PosZ": 76.1638,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.6
-		},
-		{
-			"PosX": 79.332756,
-			"PosY": 3.08638,
-			"PosZ": -54.229446,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": 83.237404,
-			"PosY": 3.0218668,
-			"PosZ": -58.659798,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": 80.272575,
-			"PosY": 3,
-			"PosZ": -12.529461,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.1
-		},
-		{
-			"PosX": 93.292435,
-			"PosY": 3,
-			"PosZ": -80.38168,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": 94.54127,
-			"PosY": 3,
-			"PosZ": -76.11258,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": -38.884678,
-			"PosY": 3,
-			"PosZ": 98.1304,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.3
-		},
-		{
-			"PosX": -43.597923,
-			"PosY": 2.978973,
-			"PosZ": 99.33047,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 2.7
-		},
-		{
-			"PosX": 53.39173,
-			"PosY": 3,
-			"PosZ": 85.22226,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 3.2
-		},
-		{
-			"PosX": 57.28252,
-			"PosY": 3,
-			"PosZ": 88.97006,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.9
-		},
-		{
-			"PosX": 83.89906,
-			"PosY": 3,
-			"PosZ": 90.78807,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 2.85
-		},
-		{
-			"PosX": 80.82968,
-			"PosY": 3,
-			"PosZ": 94.552284,
-			"PropId": "crystal_cluster_24",
-			"RotationY": 0,
-			"Scale": 1.8
-		},
-		{
-			"PosX": -65.82484,
-			"PosY": 3,
-			"PosZ": -82.60759,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.8
-		},
-		{
-			"PosX": -59.890408,
-			"PosY": 3,
-			"PosZ": -83.76526,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 3.7
-		},
-		{
-			"PosX": -100.7996,
-			"PosY": 3,
-			"PosZ": -66.36495,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 2.75
-		},
-		{
-			"PosX": -100.73857,
-			"PosY": 3,
-			"PosZ": -60.3697,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 3.7
-		},
-		{
-			"PosX": 17.016207,
-			"PosY": 3,
-			"PosZ": -18.499527,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 3.85
-		},
-		{
-			"PosX": 9.86499,
-			"PosY": 3.0372639,
-			"PosZ": -5.7023516,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.95
-		},
-		{
-			"PosX": 27.419035,
-			"PosY": 3,
-			"PosZ": -19.66181,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 5
-		},
-		{
-			"PosX": 23.948292,
-			"PosY": 3.0001607,
-			"PosZ": -12.631371,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 3.85
-		},
-		{
-			"PosX": 23.280176,
-			"PosY": 3.066649,
-			"PosZ": -8.444233,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.95
-		},
-		{
-			"PosX": 36.680847,
-			"PosY": 3,
-			"PosZ": -27.899857,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 2.6
-		},
-		{
-			"PosX": 34.654366,
-			"PosY": 3,
-			"PosZ": -22.553139,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 2.6
-		},
-		{
-			"PosX": 38.44096,
-			"PosY": 3,
-			"PosZ": -23.94753,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.1
-		},
-		{
-			"PosX": 42.000435,
-			"PosY": 3,
-			"PosZ": -28.29896,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.1
-		},
-		{
-			"PosX": 47.018326,
-			"PosY": 3.3410676,
-			"PosZ": -27.431952,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.95
-		},
-		{
-			"PosX": 57.960785,
-			"PosY": 3,
-			"PosZ": -94.87948,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.95
-		},
-		{
-			"PosX": 43.49277,
-			"PosY": 3.292542,
-			"PosZ": 10.822371,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 43.959694,
-			"PosY": 3.9169493,
-			"PosZ": 14.736019,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1
-		},
-		{
-			"PosX": 47.284252,
-			"PosY": 3.3179998,
-			"PosZ": 16.515175,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1
-		},
-		{
-			"PosX": 30.288319,
-			"PosY": 3,
-			"PosZ": 36.3074,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 2.2
-		},
-		{
-			"PosX": 50.559948,
-			"PosY": 2.976992,
-			"PosZ": 15.84936,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 82.09496,
-			"PosY": 3,
-			"PosZ": -55.355927,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.95
-		},
-		{
-			"PosX": 74.05758,
-			"PosY": 2.9999998,
-			"PosZ": -13.217541,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 0.75
-		},
-		{
-			"PosX": 76.56142,
-			"PosY": 3,
-			"PosZ": -11.741749,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.95
-		},
-		{
-			"PosX": -29,
-			"PosY": 3.1119797,
-			"PosZ": 83,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": -28.141745,
-			"PosY": 3,
-			"PosZ": 86.30915,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 2
-		},
-		{
-			"PosX": 37.599735,
-			"PosY": 3,
-			"PosZ": 56.31612,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 2.95
-		},
-		{
-			"PosX": 96.188446,
-			"PosY": 3,
-			"PosZ": -80.12319,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.95
-		},
-		{
-			"PosX": 42.628094,
-			"PosY": 3.015763,
-			"PosZ": 57.319244,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.85
-		},
-		{
-			"PosX": -61.727833,
-			"PosY": 2.419875,
-			"PosZ": 99.04161,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.2
-		},
-		{
-			"PosX": -71.91399,
-			"PosY": 2.6311214,
-			"PosZ": 102.01214,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.2
-		},
-		{
-			"PosX": -86.1944,
-			"PosY": 2.5188556,
-			"PosZ": 101.1904,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.2
-		},
-		{
-			"PosX": -78.80159,
-			"PosY": 2.9863205,
-			"PosZ": 103.471306,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.2
-		},
-		{
-			"PosX": -89.04761,
-			"PosY": 2.922673,
-			"PosZ": 103.7156,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.2
-		},
-		{
-			"PosX": 85.34273,
-			"PosY": 3,
-			"PosZ": 24.882065,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.95
-		},
-		{
-			"PosX": 84.4302,
-			"PosY": 3.0000002,
-			"PosZ": 30.698565,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": 83.076515,
-			"PosY": 3,
-			"PosZ": 33.508514,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": 43.33792,
-			"PosY": 3,
-			"PosZ": 76.34412,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.85
-		},
-		{
-			"PosX": 81.85826,
-			"PosY": 3,
-			"PosZ": 36.766083,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.95
-		},
-		{
-			"PosX": 42.257587,
-			"PosY": 3,
-			"PosZ": 81.2262,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 2.95
-		},
-		{
-			"PosX": 91.285965,
-			"PosY": 3,
-			"PosZ": 53.50723,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 1.85
-		},
-		{
-			"PosX": 91.996635,
-			"PosY": 3,
-			"PosZ": 58.624107,
-			"PropId": "crystal_cluster_25",
-			"RotationY": 0,
-			"Scale": 2.95
-		},
-		{
-			"PosX": -1.333374,
-			"PosY": -5.8558207,
-			"PosZ": -71.48451,
-			"PropId": "crystal_flower_prop",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": -0.7617998,
-			"PosY": -5.8558207,
-			"PosZ": -76.27914,
-			"PropId": "crystal_flower_prop",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": 6.8558474,
-			"PosY": -5.855821,
-			"PosZ": -78.66845,
-			"PropId": "crystal_flower_prop",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": 8.852755,
-			"PosY": -5.855821,
-			"PosZ": -60.22088,
-			"PropId": "crystal_flower_prop",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": 17.911102,
-			"PosY": -5.8558207,
-			"PosZ": -61.78208,
-			"PropId": "crystal_flower_prop",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": 17.593132,
-			"PosY": -5.8558216,
-			"PosZ": -49.868057,
-			"PropId": "crystal_flower_prop",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": -3.5174952,
-			"PosY": -3.1282659,
-			"PosZ": 37.665886,
-			"PropId": "crystal_flower_prop",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": -15.464347,
-			"PosY": -3,
-			"PosZ": 45.882835,
-			"PropId": "crystal_flower_prop",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": 5.8280525,
-			"PosY": -2.9995565,
-			"PosZ": 36.71484,
-			"PropId": "crystal_flower_prop",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": 4.457922,
-			"PosY": -3,
-			"PosZ": 46.93165,
-			"PropId": "crystal_flower_prop",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": 7.6265984,
-			"PosY": -3,
-			"PosZ": 60.23896,
-			"PropId": "crystal_flower_prop",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": 5.737011,
-			"PosY": -3,
-			"PosZ": 73.20766,
-			"PropId": "crystal_flower_prop",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": 15.657904,
-			"PosY": -3,
-			"PosZ": 72.268936,
-			"PropId": "crystal_flower_prop",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": 29.184492,
-			"PosY": -3,
-			"PosZ": 76.24486,
-			"PropId": "crystal_flower_prop",
-			"RotationY": 0,
-			"Scale": 1.15
-		},
-		{
-			"PosX": -91.42014,
-			"PosY": 2.352577,
-			"PosZ": -52.031853,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -72.39621,
-			"PosY": 3,
-			"PosZ": -93.857666,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.5
-		},
-		{
-			"PosX": -87.77876,
-			"PosY": 3.3178728,
-			"PosZ": -43.18704,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.5
-		},
-		{
-			"PosX": -94.17644,
-			"PosY": 2.5457516,
-			"PosZ": -54.617126,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.5
-		},
-		{
-			"PosX": -73.87721,
-			"PosY": 3,
-			"PosZ": -94.95274,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -94.651184,
-			"PosY": 2.606378,
-			"PosZ": -52.458267,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -94.20365,
-			"PosY": 2.0776083,
-			"PosZ": -79.453514,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -94.54429,
-			"PosY": 2.5987859,
-			"PosZ": -82.03365,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -93.61925,
-			"PosY": 2.8603086,
-			"PosZ": -84.23265,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -96.72715,
-			"PosY": 2.5188198,
-			"PosZ": -82.469864,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -92.89145,
-			"PosY": 3,
-			"PosZ": -36.02495,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.5
-		},
-		{
-			"PosX": -63.7155,
-			"PosY": 3.5923884,
-			"PosZ": -22.668793,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.5
-		},
-		{
-			"PosX": -89.53772,
-			"PosY": 3,
-			"PosZ": -18.793015,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.5
-		},
-		{
-			"PosX": -35.760487,
-			"PosY": 2.978105,
-			"PosZ": -16.704428,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -34.17374,
-			"PosY": 3.8554451,
-			"PosZ": -13.130064,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -30.109707,
-			"PosY": 3.1434608,
-			"PosZ": -13.376169,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -33.835323,
-			"PosY": 3.9155924,
-			"PosZ": -10.684966,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -69.37249,
-			"PosY": 1.9461665,
-			"PosZ": -2.8130407,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -72.01135,
-			"PosY": 2.3109078,
-			"PosZ": -2.710023,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -65.13708,
-			"PosY": 2.1394062,
-			"PosZ": -1.2891178,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -68.10983,
-			"PosY": 1.841362,
-			"PosZ": -1.2393332,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -71.18141,
-			"PosY": 2.3644397,
-			"PosZ": 0.08750534,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -60.833168,
-			"PosY": 2.7782483,
-			"PosZ": 13.913721,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -63.881298,
-			"PosY": 2.8747416,
-			"PosZ": 15.494993,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 1.1
-		},
-		{
-			"PosX": -94.18955,
-			"PosY": 3.455511,
-			"PosZ": 10.455574,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.5
-		},
-		{
-			"PosX": -66.04325,
-			"PosY": 2.951436,
-			"PosZ": 16.604464,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -62.335995,
-			"PosY": 2.932385,
-			"PosZ": 16.994507,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -64.179924,
-			"PosY": 2.9628358,
-			"PosZ": 17.68628,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 1.7501144,
-			"PosY": 3.022803,
-			"PosZ": -6.7657604,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 1.9466567,
-			"PosY": 3.043913,
-			"PosZ": -5.1309557,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 3.6348972,
-			"PosY": 3.071757,
-			"PosZ": -2.5392437,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 21.521852,
-			"PosY": 3,
-			"PosZ": -17.502155,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 21.722404,
-			"PosY": 3,
-			"PosZ": -15.671476,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 21.976576,
-			"PosY": 3.0022779,
-			"PosZ": -13.491658,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -73.90246,
-			"PosY": 3,
-			"PosZ": 35.342426,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 22.543829,
-			"PosY": 3.0142326,
-			"PosZ": -11.057175,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -75.48948,
-			"PosY": 3,
-			"PosZ": 37.029854,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 24.824015,
-			"PosY": 3,
-			"PosZ": -14.451281,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -74.20826,
-			"PosY": 2.990647,
-			"PosZ": 38.63179,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -77.47774,
-			"PosY": 3,
-			"PosZ": 38.53981,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -76.223694,
-			"PosY": 2.9980893,
-			"PosZ": 40.154564,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -53.76053,
-			"PosY": 3.2153485,
-			"PosZ": 41.116333,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.5
-		},
-		{
-			"PosX": 23.613125,
-			"PosY": 3.2208982,
-			"PosZ": -4.3792553,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -53.537796,
-			"PosY": 3.1762872,
-			"PosZ": 42.715393,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.5
-		},
-		{
-			"PosX": -52.1071,
-			"PosY": 3.235993,
-			"PosZ": 43.024605,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.5
-		},
-		{
-			"PosX": 25.088478,
-			"PosY": 3.0472705,
-			"PosZ": -3.3604112,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 24.334835,
-			"PosY": 2.971427,
-			"PosZ": -2.2538228,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 28.909832,
-			"PosY": 3,
-			"PosZ": -5.463502,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 30.37891,
-			"PosY": 2.9931386,
-			"PosZ": -6.233532,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -43.312176,
-			"PosY": 3.0025835,
-			"PosZ": 62.328312,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -79.164505,
-			"PosY": 2.5110555,
-			"PosZ": 63.51451,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.5
-		},
-		{
-			"PosX": -78.69396,
-			"PosY": 2.4315445,
-			"PosZ": 65.12753,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.5
-		},
-		{
-			"PosX": -44.407036,
-			"PosY": 3.0291858,
-			"PosZ": 64.67563,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -42.955685,
-			"PosY": 2.968423,
-			"PosZ": 66.59503,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 67.28905,
-			"PosY": 3,
-			"PosZ": -17.979254,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 68.72817,
-			"PosY": 3,
-			"PosZ": -20.375338,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 68.7751,
-			"PosY": 3,
-			"PosZ": -18.902815,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -49.29743,
-			"PosY": 2.3888602,
-			"PosZ": 81.13101,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -50.464725,
-			"PosY": 2.5787396,
-			"PosZ": 82.34369,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -51.74753,
-			"PosY": 2.8154926,
-			"PosZ": 83.52394,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -49.3446,
-			"PosY": 2.4433913,
-			"PosZ": 83.67668,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 68.668625,
-			"PosY": 2.904283,
-			"PosZ": 7.665987,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.4
-		},
-		{
-			"PosX": 69.34519,
-			"PosY": 2.9614837,
-			"PosZ": 6.4616528,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 87.64531,
-			"PosY": 2.9241168,
-			"PosZ": -65.869675,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 69.9234,
-			"PosY": 2.8030674,
-			"PosZ": 7.86434,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.4
-		},
-		{
-			"PosX": 57.374252,
-			"PosY": 3.6257265,
-			"PosZ": 27.770435,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 59.85667,
-			"PosY": 2.976861,
-			"PosZ": 24.668163,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 58.87998,
-			"PosY": 3.1874785,
-			"PosZ": 26.38431,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 59.74341,
-			"PosY": 4.601056,
-			"PosZ": 27.90692,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 90.14646,
-			"PosY": 3.0011892,
-			"PosZ": -70.07068,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 91.22175,
-			"PosY": 3.0154164,
-			"PosZ": -72.31378,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 60.242172,
-			"PosY": 4.7392817,
-			"PosZ": 30.03993,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 91.81615,
-			"PosY": 3,
-			"PosZ": -69.88312,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 93.678665,
-			"PosY": 3,
-			"PosZ": -73.73372,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 45.8313,
-			"PosY": 3,
-			"PosZ": 65.25451,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 44.79151,
-			"PosY": 3,
-			"PosZ": 69.0534,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 46.06992,
-			"PosY": 3,
-			"PosZ": 68.34737,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 46.284073,
-			"PosY": 3,
-			"PosZ": 72.1337,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 78.48675,
-			"PosY": 3.0000002,
-			"PosZ": 62.19957,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 76.88364,
-			"PosY": 3,
-			"PosZ": 64.125824,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": 79.26256,
-			"PosY": 3,
-			"PosZ": 64.504265,
-			"PropId": "grass_tuft_1",
-			"RotationY": 0,
-			"Scale": 0.65
-		},
-		{
-			"PosX": -95.447205,
-			"PosY": 2.987387,
-			"PosZ": -69.609634,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 0.5
-		},
-		{
-			"PosX": -95.39672,
-			"PosY": 2.9817004,
-			"PosZ": -57.82375,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 0.5
-		},
-		{
-			"PosX": -97.873055,
-			"PosY": 2.9943192,
-			"PosZ": -56.368725,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": -99.05705,
-			"PosY": 2.9999998,
-			"PosZ": -69.49379,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": -102.47273,
-			"PosY": 3,
-			"PosZ": -72.08385,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": -104.199974,
-			"PosY": 0,
-			"PosZ": -54.512787,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 0.7
-		},
-		{
-			"PosX": -20.20383,
-			"PosY": -5.855821,
-			"PosZ": -76.217674,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 2.35
-		},
-		{
-			"PosX": -20.334402,
-			"PosY": -5.855821,
-			"PosZ": -85.59807,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 2.35
-		},
-		{
-			"PosX": -9.027117,
-			"PosY": -5.855821,
-			"PosZ": -81.24504,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 1
-		},
-		{
-			"PosX": -11.805764,
-			"PosY": -5.855821,
-			"PosZ": -89.93088,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 1.3
-		},
-		{
-			"PosX": -3.8371305,
-			"PosY": -5.855821,
-			"PosZ": -92.94642,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 2.5
-		},
-		{
-			"PosX": 1.0380678,
-			"PosY": -5.8558216,
-			"PosZ": -85.91675,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 1.3
-		},
-		{
-			"PosX": 11.863341,
-			"PosY": -5.855821,
-			"PosZ": -37.738487,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 1.5
-		},
-		{
-			"PosX": -94.83098,
-			"PosY": 3.8254213,
-			"PosZ": 14.816547,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 0.6
-		},
-		{
-			"PosX": -94.01199,
-			"PosY": 3.322499,
-			"PosZ": 16.1556,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 0.35
-		},
-		{
-			"PosX": 17.375118,
-			"PosY": -5.855821,
-			"PosZ": -34.25484,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 2.65
-		},
-		{
-			"PosX": -98.93353,
-			"PosY": 3.6541734,
-			"PosZ": 16.25123,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 1.2
-		},
-		{
-			"PosX": 23.49935,
-			"PosY": -5.855821,
-			"PosZ": -41.388916,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 1
-		},
-		{
-			"PosX": -91.10216,
-			"PosY": 3,
-			"PosZ": 25.20234,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 0.35
-		},
-		{
-			"PosX": 26.021927,
-			"PosY": -5.855821,
-			"PosZ": -35.628983,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 1.5
-		},
-		{
-			"PosX": -93.34845,
-			"PosY": 3,
-			"PosZ": 27.159222,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 0.6
-		},
-		{
-			"PosX": -93.250565,
-			"PosY": 3,
-			"PosZ": 28.779406,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 0.35
-		},
-		{
-			"PosX": -97.397514,
-			"PosY": 3,
-			"PosZ": 27.645214,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 1.2
-		},
-		{
-			"PosX": 12.844019,
-			"PosY": -3.0482626,
-			"PosZ": 17.747837,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": 2.786008,
-			"PosY": -3,
-			"PosZ": 27.221546,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 1.7
-		},
-		{
-			"PosX": 16.418375,
-			"PosY": -3,
-			"PosZ": 23.657993,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 2.05
-		},
-		{
-			"PosX": -2.159606,
-			"PosY": -3,
-			"PosZ": 78.24491,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 0.95
-		},
-		{
-			"PosX": 0.67744637,
-			"PosY": -3,
-			"PosZ": 88.04496,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 2.9
-		},
-		{
-			"PosX": 10.289425,
-			"PosY": -3,
-			"PosZ": 85.288925,
-			"PropId": "mossy_rock_3",
-			"RotationY": 0,
-			"Scale": 1.8
-		},
-		{
-			"PosX": -94.382545,
-			"PosY": 2.9894567,
-			"PosZ": -63.29796,
-			"PropId": "Resource_001",
-			"RotationY": 90,
-			"Scale": 5
-		},
-		{
-			"PosX": -94.1894,
-			"PosY": 3,
-			"PosZ": 20.520788,
-			"PropId": "Resource_001",
-			"RotationY": 120,
-			"Scale": 5
-		},
-		{
-			"PosX": -32.199715,
-			"PosY": 3,
-			"PosZ": 33.128998,
-			"PropId": "Resource_001",
-			"RotationY": 314.99994,
-			"Scale": 5
-		},
-		{
-			"PosX": 88.148476,
-			"PosY": 3,
-			"PosZ": -83.65346,
-			"PropId": "Resource_001",
-			"RotationY": 299.99994,
-			"Scale": 5
-		},
-		{
-			"PosX": -33.839375,
-			"PosY": 3,
-			"PosZ": 92.25337,
-			"PropId": "Resource_001",
-			"RotationY": 224.99997,
-			"Scale": 5
-		},
-		{
-			"PosX": 93.24375,
-			"PosY": 3,
-			"PosZ": -3.6150837,
-			"PropId": "Resource_001",
-			"RotationY": 284.99997,
-			"Scale": 5
-		},
-		{
-			"PosX": 63.448097,
-			"PosY": 2.9255672,
-			"PosZ": 93.32293,
-			"PropId": "Resource_001",
-			"RotationY": 164.99997,
-			"Scale": 5
-		}
-	],
-	"SkyboxPath": "Assets/skyboxes/jade_shrine.png",
-	"Units": [
-		{
-			"IsEnemy": false,
-			"Player": 0,
-			"PosX": 58.488556,
-			"PosY": 3.4758062,
-			"PosZ": -59.55932,
-			"RotationY": 15,
-			"Scale": 2.3000007,
-			"UnitId": "dark_tower_keep"
-		},
-		{
-			"IsEnemy": false,
-			"Player": 0,
-			"PosX": 77.37567,
-			"PosY": 2.7819033,
-			"PosZ": -62.765472,
-			"RotationY": 344.99994,
-			"Scale": 2.2000008,
-			"UnitId": "dark_tower_keep"
-		},
-		{
-			"IsEnemy": false,
-			"Player": 0,
-			"PosX": 70.20771,
-			"PosY": 2.310038,
-			"PosZ": -88.68944,
-			"RotationY": 0,
-			"Scale": 4.9,
-			"UnitId": "dark_tower_keep_1"
-		},
-		{
-			"IsEnemy": false,
-			"Player": 0,
-			"PosX": -62.69764,
-			"PosY": 2.9155097,
-			"PosZ": 89.96145,
-			"RotationY": 164.99997,
-			"Scale": 4,
-			"UnitId": "fairytale_castle"
-		},
-		{
-			"IsEnemy": false,
-			"Player": 0,
-			"PosX": -68.97118,
-			"PosY": 3.0479717,
-			"PosZ": 67.53322,
-			"RotationY": 164.99997,
-			"Scale": 3,
-			"UnitId": "watch_tower_building"
-		},
-		{
-			"IsEnemy": false,
-			"Player": 0,
-			"PosX": -52.5965,
-			"PosY": 4.684634,
-			"PosZ": 68.2028,
-			"RotationY": 194.99998,
-			"Scale": 3,
-			"UnitId": "watch_tower_building"
-		}
-	],
-	"Vfx": [],
-	"Width": 128
+  "Width": 128,
+  "Depth": 128,
+  "Units": [
+    {
+      "TemplateId": "building/dark_tower_keep",
+      "PosX": 58.488556,
+      "PosY": 3.4758062,
+      "PosZ": -59.55932,
+      "RotationY": 15,
+      "Scale": 2.3000007,
+      "IsEnemy": false,
+      "Player": 0
+    },
+    {
+      "TemplateId": "building/dark_tower_keep",
+      "PosX": 77.37567,
+      "PosY": 2.7819033,
+      "PosZ": -62.765472,
+      "RotationY": 344.99994,
+      "Scale": 2.2000008,
+      "IsEnemy": false,
+      "Player": 0
+    },
+    {
+      "TemplateId": "building/dark_tower_keep_1",
+      "PosX": 70.20771,
+      "PosY": 2.310038,
+      "PosZ": -88.68944,
+      "RotationY": 0,
+      "Scale": 4.9,
+      "IsEnemy": false,
+      "Player": 0
+    },
+    {
+      "TemplateId": "building/fairytale_castle",
+      "PosX": -62.69764,
+      "PosY": 2.9155097,
+      "PosZ": 89.96145,
+      "RotationY": 164.99997,
+      "Scale": 4,
+      "IsEnemy": false,
+      "Player": 0
+    },
+    {
+      "TemplateId": "building/watch_tower_building",
+      "PosX": -68.97118,
+      "PosY": 3.0479717,
+      "PosZ": 67.53322,
+      "RotationY": 164.99997,
+      "Scale": 3,
+      "IsEnemy": false,
+      "Player": 0
+    },
+    {
+      "TemplateId": "building/watch_tower_building",
+      "PosX": -52.5965,
+      "PosY": 4.684634,
+      "PosZ": 68.2028,
+      "RotationY": 194.99998,
+      "Scale": 3,
+      "IsEnemy": false,
+      "Player": 0
+    }
+  ],
+  "Props": [
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -36.150475,
+      "PosY": 3.0432532,
+      "PosZ": -40.342037,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -85.73996,
+      "PosY": 3,
+      "PosZ": -102.060104,
+      "RotationY": 0,
+      "Scale": 1.3
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -82.7808,
+      "PosY": 3,
+      "PosZ": -105.69371,
+      "RotationY": 0,
+      "Scale": 1.3
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -31.874432,
+      "PosY": 2.6709146,
+      "PosZ": -28.86398,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -50.578613,
+      "PosY": 3.0680265,
+      "PosZ": -17.813986,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -35.554405,
+      "PosY": 3.3084064,
+      "PosZ": -14.532402,
+      "RotationY": 0,
+      "Scale": 0.9
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -32.64035,
+      "PosY": 2.9351523,
+      "PosZ": -15.960371,
+      "RotationY": 0,
+      "Scale": 2.25
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -32.364853,
+      "PosY": 3.6164773,
+      "PosZ": -12.583304,
+      "RotationY": 0,
+      "Scale": 0.9
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -87.69954,
+      "PosY": 4.6382504,
+      "PosZ": 3.3251934,
+      "RotationY": 0,
+      "Scale": 0.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -89.17815,
+      "PosY": 4.7751784,
+      "PosZ": 4.3959503,
+      "RotationY": 0,
+      "Scale": 0.55
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -95.8461,
+      "PosY": 3,
+      "PosZ": 1.923708,
+      "RotationY": 0,
+      "Scale": 0.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 7.956856,
+      "PosY": 2.9999998,
+      "PosZ": -9.927741,
+      "RotationY": 0,
+      "Scale": 3.1499991
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 5.045121,
+      "PosY": 3.020467,
+      "PosZ": -5.4550004,
+      "RotationY": 0,
+      "Scale": 2.35
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 15.261022,
+      "PosY": 3.0176053,
+      "PosZ": -10.802416,
+      "RotationY": 0,
+      "Scale": 5
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -80.57616,
+      "PosY": 2.828278,
+      "PosZ": 30.335222,
+      "RotationY": 0,
+      "Scale": 0.55
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -82.623215,
+      "PosY": 3.027001,
+      "PosZ": 30.226639,
+      "RotationY": 0,
+      "Scale": 0.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -88.31333,
+      "PosY": 3,
+      "PosZ": 30.87444,
+      "RotationY": 0,
+      "Scale": 0.55
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -90.59532,
+      "PosY": 3,
+      "PosZ": 30.272903,
+      "RotationY": 0,
+      "Scale": 0.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 19.376139,
+      "PosY": 3.0945551,
+      "PosZ": -7.100832,
+      "RotationY": 0,
+      "Scale": 1.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 43.959526,
+      "PosY": 3.0000002,
+      "PosZ": -79.46035,
+      "RotationY": 0,
+      "Scale": 1.75
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 43.441284,
+      "PosY": 2.9176798,
+      "PosZ": -88.87033,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 45.853054,
+      "PosY": 3,
+      "PosZ": -77.76274,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 43.95475,
+      "PosY": 2.9750037,
+      "PosZ": -91.629944,
+      "RotationY": 0,
+      "Scale": 1.75
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 47.149284,
+      "PosY": 3,
+      "PosZ": -79.68147,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 46.668167,
+      "PosY": 2.9012446,
+      "PosZ": -91.49055,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 52.087643,
+      "PosY": 3,
+      "PosZ": -66.87773,
+      "RotationY": 0,
+      "Scale": 1.75
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 53.632626,
+      "PosY": 3,
+      "PosZ": -58.87304,
+      "RotationY": 0,
+      "Scale": 1.75
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 53.822174,
+      "PosY": 3,
+      "PosZ": -64.91637,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 54.86758,
+      "PosY": 3.0461679,
+      "PosZ": -61.08485,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 55.045017,
+      "PosY": 3,
+      "PosZ": -94.274376,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 60.958218,
+      "PosY": 3,
+      "PosZ": -96.52104,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -80.04818,
+      "PosY": 2.9807386,
+      "PosZ": 66.83504,
+      "RotationY": 0,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -30.006538,
+      "PosY": 3,
+      "PosZ": 66.52185,
+      "RotationY": 0,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -79.32924,
+      "PosY": 3.1225572,
+      "PosZ": 71.866486,
+      "RotationY": 0,
+      "Scale": 3.3
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -33.010624,
+      "PosY": 3.0118847,
+      "PosZ": 69.70978,
+      "RotationY": 0,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -83.23684,
+      "PosY": 3.4975626,
+      "PosZ": 76.1638,
+      "RotationY": 0,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 79.332756,
+      "PosY": 3.08638,
+      "PosZ": -54.229446,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 83.237404,
+      "PosY": 3.0218668,
+      "PosZ": -58.659798,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 80.272575,
+      "PosY": 3,
+      "PosZ": -12.529461,
+      "RotationY": 0,
+      "Scale": 1.1
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 93.292435,
+      "PosY": 3,
+      "PosZ": -80.38168,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 94.54127,
+      "PosY": 3,
+      "PosZ": -76.11258,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -38.884678,
+      "PosY": 3,
+      "PosZ": 98.1304,
+      "RotationY": 0,
+      "Scale": 1.3
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": -43.597923,
+      "PosY": 2.978973,
+      "PosZ": 99.33047,
+      "RotationY": 0,
+      "Scale": 2.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 53.39173,
+      "PosY": 3,
+      "PosZ": 85.22226,
+      "RotationY": 0,
+      "Scale": 3.2
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 57.28252,
+      "PosY": 3,
+      "PosZ": 88.97006,
+      "RotationY": 0,
+      "Scale": 1.9
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 83.89906,
+      "PosY": 3,
+      "PosZ": 90.78807,
+      "RotationY": 0,
+      "Scale": 2.85
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_24",
+      "PosX": 80.82968,
+      "PosY": 3,
+      "PosZ": 94.552284,
+      "RotationY": 0,
+      "Scale": 1.8
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": -65.82484,
+      "PosY": 3,
+      "PosZ": -82.60759,
+      "RotationY": 0,
+      "Scale": 1.8
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": -59.890408,
+      "PosY": 3,
+      "PosZ": -83.76526,
+      "RotationY": 0,
+      "Scale": 3.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": -100.7996,
+      "PosY": 3,
+      "PosZ": -66.36495,
+      "RotationY": 0,
+      "Scale": 2.75
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": -100.73857,
+      "PosY": 3,
+      "PosZ": -60.3697,
+      "RotationY": 0,
+      "Scale": 3.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 17.016207,
+      "PosY": 3,
+      "PosZ": -18.499527,
+      "RotationY": 0,
+      "Scale": 3.85
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 9.86499,
+      "PosY": 3.0372639,
+      "PosZ": -5.7023516,
+      "RotationY": 0,
+      "Scale": 1.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 27.419035,
+      "PosY": 3,
+      "PosZ": -19.66181,
+      "RotationY": 0,
+      "Scale": 5
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 23.948292,
+      "PosY": 3.0001607,
+      "PosZ": -12.631371,
+      "RotationY": 0,
+      "Scale": 3.85
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 23.280176,
+      "PosY": 3.066649,
+      "PosZ": -8.444233,
+      "RotationY": 0,
+      "Scale": 1.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 36.680847,
+      "PosY": 3,
+      "PosZ": -27.899857,
+      "RotationY": 0,
+      "Scale": 2.6
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 34.654366,
+      "PosY": 3,
+      "PosZ": -22.553139,
+      "RotationY": 0,
+      "Scale": 2.6
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 38.44096,
+      "PosY": 3,
+      "PosZ": -23.94753,
+      "RotationY": 0,
+      "Scale": 1.1
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 42.000435,
+      "PosY": 3,
+      "PosZ": -28.29896,
+      "RotationY": 0,
+      "Scale": 1.1
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 47.018326,
+      "PosY": 3.3410676,
+      "PosZ": -27.431952,
+      "RotationY": 0,
+      "Scale": 1.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 57.960785,
+      "PosY": 3,
+      "PosZ": -94.87948,
+      "RotationY": 0,
+      "Scale": 1.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 43.49277,
+      "PosY": 3.292542,
+      "PosZ": 10.822371,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 43.959694,
+      "PosY": 3.9169493,
+      "PosZ": 14.736019,
+      "RotationY": 0,
+      "Scale": 1
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 47.284252,
+      "PosY": 3.3179998,
+      "PosZ": 16.515175,
+      "RotationY": 0,
+      "Scale": 1
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 30.288319,
+      "PosY": 3,
+      "PosZ": 36.3074,
+      "RotationY": 0,
+      "Scale": 2.2
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 50.559948,
+      "PosY": 2.976992,
+      "PosZ": 15.84936,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 82.09496,
+      "PosY": 3,
+      "PosZ": -55.355927,
+      "RotationY": 0,
+      "Scale": 1.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 74.05758,
+      "PosY": 2.9999998,
+      "PosZ": -13.217541,
+      "RotationY": 0,
+      "Scale": 0.75
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 76.56142,
+      "PosY": 3,
+      "PosZ": -11.741749,
+      "RotationY": 0,
+      "Scale": 1.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": -29,
+      "PosY": 3.1119797,
+      "PosZ": 83,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": -28.141745,
+      "PosY": 3,
+      "PosZ": 86.30915,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 37.599735,
+      "PosY": 3,
+      "PosZ": 56.31612,
+      "RotationY": 0,
+      "Scale": 2.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 96.188446,
+      "PosY": 3,
+      "PosZ": -80.12319,
+      "RotationY": 0,
+      "Scale": 1.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 42.628094,
+      "PosY": 3.015763,
+      "PosZ": 57.319244,
+      "RotationY": 0,
+      "Scale": 1.85
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": -61.727833,
+      "PosY": 2.419875,
+      "PosZ": 99.04161,
+      "RotationY": 0,
+      "Scale": 1.2
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": -71.91399,
+      "PosY": 2.6311214,
+      "PosZ": 102.01214,
+      "RotationY": 0,
+      "Scale": 1.2
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": -86.1944,
+      "PosY": 2.5188556,
+      "PosZ": 101.1904,
+      "RotationY": 0,
+      "Scale": 1.2
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": -78.80159,
+      "PosY": 2.9863205,
+      "PosZ": 103.471306,
+      "RotationY": 0,
+      "Scale": 1.2
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": -89.04761,
+      "PosY": 2.922673,
+      "PosZ": 103.7156,
+      "RotationY": 0,
+      "Scale": 1.2
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 85.34273,
+      "PosY": 3,
+      "PosZ": 24.882065,
+      "RotationY": 0,
+      "Scale": 1.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 84.4302,
+      "PosY": 3.0000002,
+      "PosZ": 30.698565,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 83.076515,
+      "PosY": 3,
+      "PosZ": 33.508514,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 43.33792,
+      "PosY": 3,
+      "PosZ": 76.34412,
+      "RotationY": 0,
+      "Scale": 1.85
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 81.85826,
+      "PosY": 3,
+      "PosZ": 36.766083,
+      "RotationY": 0,
+      "Scale": 1.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 42.257587,
+      "PosY": 3,
+      "PosZ": 81.2262,
+      "RotationY": 0,
+      "Scale": 2.95
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 91.285965,
+      "PosY": 3,
+      "PosZ": 53.50723,
+      "RotationY": 0,
+      "Scale": 1.85
+    },
+    {
+      "TemplateId": "prop/crystal_cluster_25",
+      "PosX": 91.996635,
+      "PosY": 3,
+      "PosZ": 58.624107,
+      "RotationY": 0,
+      "Scale": 2.95
+    },
+    {
+      "TemplateId": "prop/crystal_flower_prop",
+      "PosX": -1.333374,
+      "PosY": -5.8558207,
+      "PosZ": -71.48451,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_flower_prop",
+      "PosX": -0.7617998,
+      "PosY": -5.8558207,
+      "PosZ": -76.27914,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_flower_prop",
+      "PosX": 6.8558474,
+      "PosY": -5.855821,
+      "PosZ": -78.66845,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_flower_prop",
+      "PosX": 8.852755,
+      "PosY": -5.855821,
+      "PosZ": -60.22088,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_flower_prop",
+      "PosX": 17.911102,
+      "PosY": -5.8558207,
+      "PosZ": -61.78208,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_flower_prop",
+      "PosX": 17.593132,
+      "PosY": -5.8558216,
+      "PosZ": -49.868057,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_flower_prop",
+      "PosX": -3.5174952,
+      "PosY": -3.1282659,
+      "PosZ": 37.665886,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_flower_prop",
+      "PosX": -15.464347,
+      "PosY": -3,
+      "PosZ": 45.882835,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_flower_prop",
+      "PosX": 5.8280525,
+      "PosY": -2.9995565,
+      "PosZ": 36.71484,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_flower_prop",
+      "PosX": 4.457922,
+      "PosY": -3,
+      "PosZ": 46.93165,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_flower_prop",
+      "PosX": 7.6265984,
+      "PosY": -3,
+      "PosZ": 60.23896,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_flower_prop",
+      "PosX": 5.737011,
+      "PosY": -3,
+      "PosZ": 73.20766,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_flower_prop",
+      "PosX": 15.657904,
+      "PosY": -3,
+      "PosZ": 72.268936,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "prop/crystal_flower_prop",
+      "PosX": 29.184492,
+      "PosY": -3,
+      "PosZ": 76.24486,
+      "RotationY": 0,
+      "Scale": 1.15
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -49.992786,
+      "PosY": 3,
+      "PosZ": -56.440464,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -46.79031,
+      "PosY": 3,
+      "PosZ": -65.645195,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -51.922684,
+      "PosY": 3,
+      "PosZ": -48.781296,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -47.3573,
+      "PosY": 3,
+      "PosZ": -76.80183,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -43.319576,
+      "PosY": 3,
+      "PosZ": -54.058968,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -67.393135,
+      "PosY": 3,
+      "PosZ": -87.911804,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -82.13302,
+      "PosY": 3.3858159,
+      "PosZ": -47.085506,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -39.31053,
+      "PosY": 3,
+      "PosZ": -73.60062,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -48.375816,
+      "PosY": 3,
+      "PosZ": -86.91466,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -54.559692,
+      "PosY": 3,
+      "PosZ": -90.330894,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -41.030636,
+      "PosY": 3,
+      "PosZ": -85.628136,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -90.56014,
+      "PosY": 3.0341206,
+      "PosZ": -43.62968,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -60.326767,
+      "PosY": 3,
+      "PosZ": -28.772633,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -70.23421,
+      "PosY": 3,
+      "PosZ": -99.25471,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -52.035885,
+      "PosY": 3,
+      "PosZ": -28.77264,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -74.66397,
+      "PosY": 3,
+      "PosZ": -100.2896,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -98.3564,
+      "PosY": 3,
+      "PosZ": -47.972313,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -101.40404,
+      "PosY": 3,
+      "PosZ": -74.777985,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -63.028763,
+      "PosY": 3,
+      "PosZ": -103.452324,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -60.94992,
+      "PosY": 3.9748173,
+      "PosZ": -23.944223,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -95.321915,
+      "PosY": 2.9732473,
+      "PosZ": -89.71939,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -24.266434,
+      "PosY": 3.0000002,
+      "PosZ": -55.844566,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -95.70961,
+      "PosY": 3,
+      "PosZ": -38.176144,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -105,
+      "PosY": 3,
+      "PosZ": -69,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -71.73097,
+      "PosY": 3,
+      "PosZ": -104.88662,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -31.660439,
+      "PosY": 2.9442263,
+      "PosZ": -36.052937,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -102.73065,
+      "PosY": 2.769002,
+      "PosZ": -82.419624,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -107,
+      "PosY": 2.25,
+      "PosZ": -63,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -107,
+      "PosY": 0,
+      "PosZ": -55,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -75.756805,
+      "PosY": 2.9999998,
+      "PosZ": -107.0721,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -25.551685,
+      "PosY": 3,
+      "PosZ": -41.275032,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -51.79451,
+      "PosY": 3.1006436,
+      "PosZ": -20.875217,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -107.25197,
+      "PosY": 3,
+      "PosZ": -75.874405,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -96.16637,
+      "PosY": 3,
+      "PosZ": -31.605824,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -103.90675,
+      "PosY": 3,
+      "PosZ": -41.403896,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -15.630558,
+      "PosY": 3,
+      "PosZ": -59.30877,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -95.76124,
+      "PosY": 3.013443,
+      "PosZ": -101.334076,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -105.74763,
+      "PosY": 3,
+      "PosZ": -36.86891,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -102.41566,
+      "PosY": 3.0594287,
+      "PosZ": -96.206215,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -86.998474,
+      "PosY": 3,
+      "PosZ": -108.92528,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -96.56477,
+      "PosY": 3,
+      "PosZ": -24.89085,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -15.456266,
+      "PosY": 3,
+      "PosZ": -47.939007,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -92.05133,
+      "PosY": 3,
+      "PosZ": -20.179342,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -108.22627,
+      "PosY": 3,
+      "PosZ": -92.59081,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -28.063446,
+      "PosY": 2.6234999,
+      "PosZ": -25.214943,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -80.725464,
+      "PosY": 3,
+      "PosZ": -114.27504,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -101.7429,
+      "PosY": 3.0012937,
+      "PosZ": -102.38827,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -91.98825,
+      "PosY": 3,
+      "PosZ": -110.05144,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -105.1034,
+      "PosY": 3,
+      "PosZ": -26.910488,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -88.67863,
+      "PosY": 3,
+      "PosZ": -12.748436,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -97.239044,
+      "PosY": 3,
+      "PosZ": -16.545671,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -83.90553,
+      "PosY": 3.8240435,
+      "PosZ": -6.3658037,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -14.991957,
+      "PosY": 3,
+      "PosZ": -27.097319,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -19.811153,
+      "PosY": 3.3916087,
+      "PosZ": -20.178698,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -93.087395,
+      "PosY": 3.0168788,
+      "PosZ": -6.1504593,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -97.58406,
+      "PosY": 3,
+      "PosZ": -5.9407587,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -87.86263,
+      "PosY": 3.6062803,
+      "PosZ": -1.0091543,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -4.413126,
+      "PosY": 3,
+      "PosZ": -29.204288,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -9.0569,
+      "PosY": 3,
+      "PosZ": -15.678345,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 3.8203487,
+      "PosY": 3,
+      "PosZ": -30.518173,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -95.56918,
+      "PosY": 3.0796413,
+      "PosZ": 5.188431,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -100.77957,
+      "PosY": 3,
+      "PosZ": 4.683605,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 3.4256563,
+      "PosY": 3,
+      "PosZ": -19.138397,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 0.00365448,
+      "PosY": 3,
+      "PosZ": -13.870178,
+      "RotationY": 0,
+      "Scale": 2.1999998
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 9.727533,
+      "PosY": 3,
+      "PosZ": -24.830143,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -101.42074,
+      "PosY": 3.494626,
+      "PosZ": 11.111456,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -22.284637,
+      "PosY": 3,
+      "PosZ": 19.606495,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -30.882584,
+      "PosY": 3,
+      "PosZ": 24.132175,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -107.76981,
+      "PosY": 3,
+      "PosZ": 19.476637,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -76.96636,
+      "PosY": 2.6783688,
+      "PosZ": 29.493484,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 25.29485,
+      "PosY": 3,
+      "PosZ": -95.328415,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -39.61269,
+      "PosY": 3,
+      "PosZ": 27.58013,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -102.13588,
+      "PosY": 3,
+      "PosZ": 23.624895,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -45.4061,
+      "PosY": 3.011535,
+      "PosZ": 32.55528,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -84.42049,
+      "PosY": 3,
+      "PosZ": 32.91646,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 28.611214,
+      "PosY": 3,
+      "PosZ": -100.207436,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -16.320547,
+      "PosY": 3,
+      "PosZ": 23.635893,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -95.48013,
+      "PosY": 3,
+      "PosZ": 32.600365,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -108.40568,
+      "PosY": 3,
+      "PosZ": 27.595827,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 33.688225,
+      "PosY": 3,
+      "PosZ": -93.516106,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -102.97777,
+      "PosY": 3,
+      "PosZ": 31.726727,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 38.817047,
+      "PosY": 3,
+      "PosZ": -80.76158,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -19.271313,
+      "PosY": 3,
+      "PosZ": 30.439945,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 37.824936,
+      "PosY": 3,
+      "PosZ": -89.345085,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -51.195747,
+      "PosY": 3.3796759,
+      "PosZ": 40.357433,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -90.22826,
+      "PosY": 3.0000002,
+      "PosZ": 38.033745,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -81.230576,
+      "PosY": 3,
+      "PosZ": 40.18197,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -22.498905,
+      "PosY": 3,
+      "PosZ": 33.72927,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 43.64275,
+      "PosY": 3,
+      "PosZ": -70.76055,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 36.12353,
+      "PosY": 3.0000002,
+      "PosZ": -107.04483,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 38.462914,
+      "PosY": 3.0000002,
+      "PosZ": -101.23291,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 44.54852,
+      "PosY": 3,
+      "PosZ": -50.04756,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 42.639317,
+      "PosY": 3.0000002,
+      "PosZ": -33.040012,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 45.963894,
+      "PosY": 2.9034288,
+      "PosZ": -42.848114,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 47.93031,
+      "PosY": 3,
+      "PosZ": -59.362873,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -80.57921,
+      "PosY": 2.9898343,
+      "PosZ": 49.062088,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -29.642889,
+      "PosY": 3,
+      "PosZ": 45.38056,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 52.298332,
+      "PosY": 3,
+      "PosZ": -73.08508,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 52.334145,
+      "PosY": 3.0131164,
+      "PosZ": -49.27277,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 50.267776,
+      "PosY": 2.9999998,
+      "PosZ": -93.516106,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 49.02878,
+      "PosY": 3,
+      "PosZ": -101.67886,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 48.22746,
+      "PosY": 3.0000002,
+      "PosZ": -106.05305,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -39.30075,
+      "PosY": 3,
+      "PosZ": 53.46352,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -77.05873,
+      "PosY": 2.841289,
+      "PosZ": 56.44423,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -48.480495,
+      "PosY": 3.0076108,
+      "PosZ": 60.313305,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -76.038284,
+      "PosY": 2.672296,
+      "PosZ": 62.057266,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 57.825417,
+      "PosY": 3.0000002,
+      "PosZ": -108.04618,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 59.330032,
+      "PosY": 3,
+      "PosZ": -104.09763,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 47.79498,
+      "PosY": 3,
+      "PosZ": 2.5858936,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 25.04798,
+      "PosY": 3,
+      "PosZ": 32.328472,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -37.9007,
+      "PosY": 3,
+      "PosZ": 64.967575,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 48.166332,
+      "PosY": 3.024578,
+      "PosZ": 12.211538,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 55.363075,
+      "PosY": 3,
+      "PosZ": 1.5565319,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 66.47654,
+      "PosY": 3,
+      "PosZ": -103.454025,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -23.567894,
+      "PosY": 3,
+      "PosZ": 66.50151,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -11.835724,
+      "PosY": 2.9999998,
+      "PosZ": 62.774845,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 22.038641,
+      "PosY": 3.0000002,
+      "PosZ": 42.739395,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 54.074173,
+      "PosY": 3,
+      "PosZ": 9.679567,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 73.25056,
+      "PosY": 3.0363097,
+      "PosZ": -32.997078,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 68.641174,
+      "PosY": 3,
+      "PosZ": -112.03516,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -87.01377,
+      "PosY": 3.4797797,
+      "PosZ": 75.93345,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 18.221733,
+      "PosY": 3,
+      "PosZ": 52.44294,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 74.311356,
+      "PosY": 2.977091,
+      "PosZ": -27.13687,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -14.983114,
+      "PosY": 3,
+      "PosZ": 72.02678,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 31.53771,
+      "PosY": 3,
+      "PosZ": 44.906475,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 75.74694,
+      "PosY": 3,
+      "PosZ": -102.49617,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 80.63627,
+      "PosY": 3,
+      "PosZ": -44.18015,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 75.10222,
+      "PosY": 3,
+      "PosZ": -18.57341,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -23.723251,
+      "PosY": 3.0254846,
+      "PosZ": 76.72865,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -96.10008,
+      "PosY": 3,
+      "PosZ": 81.917,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -84.88327,
+      "PosY": 3.5338168,
+      "PosZ": 84.50159,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 85.88676,
+      "PosY": 3,
+      "PosZ": -53.72618,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 83.644356,
+      "PosY": 3,
+      "PosZ": -35.016792,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 35.643166,
+      "PosY": 3,
+      "PosZ": 49.56022,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 27.857897,
+      "PosY": 3,
+      "PosZ": 56.459236,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 83.67437,
+      "PosY": 3,
+      "PosZ": -98.46202,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 81.87386,
+      "PosY": 3,
+      "PosZ": -16.390184,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -94.39145,
+      "PosY": 3.2192547,
+      "PosZ": 87.95398,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 85.25303,
+      "PosY": 3,
+      "PosZ": -106.70799,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -18.708353,
+      "PosY": 3,
+      "PosZ": 84.50815,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 93.3878,
+      "PosY": 3,
+      "PosZ": -62.6518,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 90.01419,
+      "PosY": 3,
+      "PosZ": -98.25046,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 87.47814,
+      "PosY": 3,
+      "PosZ": -19.164085,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -85.44389,
+      "PosY": 3.43011,
+      "PosZ": 92.80465,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 94.47017,
+      "PosY": 3,
+      "PosZ": -88.39116,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 33.714355,
+      "PosY": 3,
+      "PosZ": 64.150986,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -21.91261,
+      "PosY": 3,
+      "PosZ": 92.39667,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 95.28807,
+      "PosY": 3,
+      "PosZ": -96.70215,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 98.59827,
+      "PosY": 3,
+      "PosZ": -56.063675,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -101.062706,
+      "PosY": 3.0140076,
+      "PosZ": 95.15731,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 76.512375,
+      "PosY": 3.0002818,
+      "PosZ": 20.037762,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -25.88922,
+      "PosY": 3,
+      "PosZ": 95.49326,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 100.52596,
+      "PosY": 3,
+      "PosZ": -66.50584,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 100.9729,
+      "PosY": 3,
+      "PosZ": -76.57392,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 95.08935,
+      "PosY": 3,
+      "PosZ": -17.11027,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -63.607037,
+      "PosY": 2.9623573,
+      "PosZ": 101.941574,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 42.094776,
+      "PosY": 3,
+      "PosZ": 63.776745,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -51.70211,
+      "PosY": 3,
+      "PosZ": 102.21568,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -91.53793,
+      "PosY": 2.9920468,
+      "PosZ": 100.560936,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 101.739136,
+      "PosY": 3,
+      "PosZ": -83.48962,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -75.39041,
+      "PosY": 2.8258717,
+      "PosZ": 103.03409,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 102.120255,
+      "PosY": 3.0000002,
+      "PosZ": -87.60701,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 88.1685,
+      "PosY": 3,
+      "PosZ": 9.049955,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -28.503502,
+      "PosY": 3,
+      "PosZ": 102.48915,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -35.826477,
+      "PosY": 3,
+      "PosZ": 104.65325,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 107.087265,
+      "PosY": 3,
+      "PosZ": -66.072136,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -100.95044,
+      "PosY": 2.9808774,
+      "PosZ": 103.30557,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -44.35022,
+      "PosY": 3,
+      "PosZ": 106.24929,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 101.16819,
+      "PosY": 3,
+      "PosZ": -16.241549,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -57.590195,
+      "PosY": 3,
+      "PosZ": 108.34227,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 108.6208,
+      "PosY": 3,
+      "PosZ": -76.23925,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -85.33837,
+      "PosY": 3.0273829,
+      "PosZ": 108.08282,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -65.037224,
+      "PosY": 3,
+      "PosZ": 109.63048,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 88.03073,
+      "PosY": 3,
+      "PosZ": 21.634808,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 95.13227,
+      "PosY": 3,
+      "PosZ": 11.507675,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -96.70166,
+      "PosY": 3,
+      "PosZ": 109.117,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 112.09804,
+      "PosY": 3,
+      "PosZ": -78.4435,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -70.08905,
+      "PosY": 3,
+      "PosZ": 112.91026,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 104.19815,
+      "PosY": 3,
+      "PosZ": -7.647169,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 102.07834,
+      "PosY": 3.0000002,
+      "PosZ": 2.2609081,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -77.74113,
+      "PosY": 3,
+      "PosZ": 114.88014,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 90.15693,
+      "PosY": 3,
+      "PosZ": 29.722916,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": -86.57433,
+      "PosY": 3,
+      "PosZ": 115.123856,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 105.76059,
+      "PosY": 3,
+      "PosZ": -1.9421167,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 87.57991,
+      "PosY": 3,
+      "PosZ": 36.99149,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 98.94863,
+      "PosY": 3,
+      "PosZ": 20.037737,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 40.54602,
+      "PosY": 3,
+      "PosZ": 88.40763,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 94.762695,
+      "PosY": 3,
+      "PosZ": 37.77454,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 97.84071,
+      "PosY": 2.9923463,
+      "PosZ": 34.85325,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 102.969086,
+      "PosY": 3,
+      "PosZ": 25.932215,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 92.831955,
+      "PosY": 3,
+      "PosZ": 44.53858,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 50.62962,
+      "PosY": 3,
+      "PosZ": 90.1183,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 43.05236,
+      "PosY": 3,
+      "PosZ": 97.123505,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 100.652756,
+      "PosY": 3,
+      "PosZ": 41.84603,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 107.6768,
+      "PosY": 3,
+      "PosZ": 36.28266,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 103.84543,
+      "PosY": 3,
+      "PosZ": 45.86339,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 97.594444,
+      "PosY": 3,
+      "PosZ": 56.278698,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 49.86592,
+      "PosY": 3,
+      "PosZ": 102.41721,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 56.582104,
+      "PosY": 3,
+      "PosZ": 99.602646,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 50.583435,
+      "PosY": 3,
+      "PosZ": 109.05362,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 99.62817,
+      "PosY": 3,
+      "PosZ": 65.296364,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 98.03899,
+      "PosY": 3,
+      "PosZ": 69.964676,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 60.11145,
+      "PosY": 2.9999998,
+      "PosZ": 107.8157,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 67.77571,
+      "PosY": 3,
+      "PosZ": 102.305855,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 94.33502,
+      "PosY": 3,
+      "PosZ": 78.32945,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 87.51037,
+      "PosY": 3,
+      "PosZ": 87.3232,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 77.69801,
+      "PosY": 3,
+      "PosZ": 102.305855,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 88.94184,
+      "PosY": 3,
+      "PosZ": 96.83565,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 73.23013,
+      "PosY": 3,
+      "PosZ": 110.58421,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 94.7039,
+      "PosY": 3,
+      "PosZ": 95.0825,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 82.40192,
+      "PosY": 3,
+      "PosZ": 113.29332,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 94.64607,
+      "PosY": 3,
+      "PosZ": 104.02855,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/bonsai_tree",
+      "PosX": 90.30061,
+      "PosY": 2.9369678,
+      "PosZ": 110.27958,
+      "RotationY": 0,
+      "Scale": 2
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -91.42014,
+      "PosY": 2.352577,
+      "PosZ": -52.031853,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -72.39621,
+      "PosY": 3,
+      "PosZ": -93.857666,
+      "RotationY": 0,
+      "Scale": 0.5
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -87.77876,
+      "PosY": 3.3178728,
+      "PosZ": -43.18704,
+      "RotationY": 0,
+      "Scale": 0.5
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -94.17644,
+      "PosY": 2.5457516,
+      "PosZ": -54.617126,
+      "RotationY": 0,
+      "Scale": 0.5
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -73.87721,
+      "PosY": 3,
+      "PosZ": -94.95274,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -94.651184,
+      "PosY": 2.606378,
+      "PosZ": -52.458267,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -94.20365,
+      "PosY": 2.0776083,
+      "PosZ": -79.453514,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -94.54429,
+      "PosY": 2.5987859,
+      "PosZ": -82.03365,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -93.61925,
+      "PosY": 2.8603086,
+      "PosZ": -84.23265,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -96.72715,
+      "PosY": 2.5188198,
+      "PosZ": -82.469864,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -92.89145,
+      "PosY": 3,
+      "PosZ": -36.02495,
+      "RotationY": 0,
+      "Scale": 0.5
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -63.7155,
+      "PosY": 3.5923884,
+      "PosZ": -22.668793,
+      "RotationY": 0,
+      "Scale": 0.5
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -89.53772,
+      "PosY": 3,
+      "PosZ": -18.793015,
+      "RotationY": 0,
+      "Scale": 0.5
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -35.760487,
+      "PosY": 2.978105,
+      "PosZ": -16.704428,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -34.17374,
+      "PosY": 3.8554451,
+      "PosZ": -13.130064,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -30.109707,
+      "PosY": 3.1434608,
+      "PosZ": -13.376169,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -33.835323,
+      "PosY": 3.9155924,
+      "PosZ": -10.684966,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -69.37249,
+      "PosY": 1.9461665,
+      "PosZ": -2.8130407,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -72.01135,
+      "PosY": 2.3109078,
+      "PosZ": -2.710023,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -65.13708,
+      "PosY": 2.1394062,
+      "PosZ": -1.2891178,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -68.10983,
+      "PosY": 1.841362,
+      "PosZ": -1.2393332,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -71.18141,
+      "PosY": 2.3644397,
+      "PosZ": 0.08750534,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -60.833168,
+      "PosY": 2.7782483,
+      "PosZ": 13.913721,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -63.881298,
+      "PosY": 2.8747416,
+      "PosZ": 15.494993,
+      "RotationY": 0,
+      "Scale": 1.1
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -94.18955,
+      "PosY": 3.455511,
+      "PosZ": 10.455574,
+      "RotationY": 0,
+      "Scale": 0.5
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -66.04325,
+      "PosY": 2.951436,
+      "PosZ": 16.604464,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -62.335995,
+      "PosY": 2.932385,
+      "PosZ": 16.994507,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -64.179924,
+      "PosY": 2.9628358,
+      "PosZ": 17.68628,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 1.7501144,
+      "PosY": 3.022803,
+      "PosZ": -6.7657604,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 1.9466567,
+      "PosY": 3.043913,
+      "PosZ": -5.1309557,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 3.6348972,
+      "PosY": 3.071757,
+      "PosZ": -2.5392437,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 21.521852,
+      "PosY": 3,
+      "PosZ": -17.502155,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 21.722404,
+      "PosY": 3,
+      "PosZ": -15.671476,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 21.976576,
+      "PosY": 3.0022779,
+      "PosZ": -13.491658,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -73.90246,
+      "PosY": 3,
+      "PosZ": 35.342426,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 22.543829,
+      "PosY": 3.0142326,
+      "PosZ": -11.057175,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -75.48948,
+      "PosY": 3,
+      "PosZ": 37.029854,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 24.824015,
+      "PosY": 3,
+      "PosZ": -14.451281,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -74.20826,
+      "PosY": 2.990647,
+      "PosZ": 38.63179,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -77.47774,
+      "PosY": 3,
+      "PosZ": 38.53981,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -76.223694,
+      "PosY": 2.9980893,
+      "PosZ": 40.154564,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -53.76053,
+      "PosY": 3.2153485,
+      "PosZ": 41.116333,
+      "RotationY": 0,
+      "Scale": 0.5
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 23.613125,
+      "PosY": 3.2208982,
+      "PosZ": -4.3792553,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -53.537796,
+      "PosY": 3.1762872,
+      "PosZ": 42.715393,
+      "RotationY": 0,
+      "Scale": 0.5
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -52.1071,
+      "PosY": 3.235993,
+      "PosZ": 43.024605,
+      "RotationY": 0,
+      "Scale": 0.5
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 25.088478,
+      "PosY": 3.0472705,
+      "PosZ": -3.3604112,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 24.334835,
+      "PosY": 2.971427,
+      "PosZ": -2.2538228,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 28.909832,
+      "PosY": 3,
+      "PosZ": -5.463502,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 30.37891,
+      "PosY": 2.9931386,
+      "PosZ": -6.233532,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -43.312176,
+      "PosY": 3.0025835,
+      "PosZ": 62.328312,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -79.164505,
+      "PosY": 2.5110555,
+      "PosZ": 63.51451,
+      "RotationY": 0,
+      "Scale": 0.5
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -78.69396,
+      "PosY": 2.4315445,
+      "PosZ": 65.12753,
+      "RotationY": 0,
+      "Scale": 0.5
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -44.407036,
+      "PosY": 3.0291858,
+      "PosZ": 64.67563,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -42.955685,
+      "PosY": 2.968423,
+      "PosZ": 66.59503,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 67.28905,
+      "PosY": 3,
+      "PosZ": -17.979254,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 68.72817,
+      "PosY": 3,
+      "PosZ": -20.375338,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 68.7751,
+      "PosY": 3,
+      "PosZ": -18.902815,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -49.29743,
+      "PosY": 2.3888602,
+      "PosZ": 81.13101,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -50.464725,
+      "PosY": 2.5787396,
+      "PosZ": 82.34369,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -51.74753,
+      "PosY": 2.8154926,
+      "PosZ": 83.52394,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": -49.3446,
+      "PosY": 2.4433913,
+      "PosZ": 83.67668,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 68.668625,
+      "PosY": 2.904283,
+      "PosZ": 7.665987,
+      "RotationY": 0,
+      "Scale": 0.4
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 69.34519,
+      "PosY": 2.9614837,
+      "PosZ": 6.4616528,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 87.64531,
+      "PosY": 2.9241168,
+      "PosZ": -65.869675,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 69.9234,
+      "PosY": 2.8030674,
+      "PosZ": 7.86434,
+      "RotationY": 0,
+      "Scale": 0.4
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 57.374252,
+      "PosY": 3.6257265,
+      "PosZ": 27.770435,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 59.85667,
+      "PosY": 2.976861,
+      "PosZ": 24.668163,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 58.87998,
+      "PosY": 3.1874785,
+      "PosZ": 26.38431,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 59.74341,
+      "PosY": 4.601056,
+      "PosZ": 27.90692,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 90.14646,
+      "PosY": 3.0011892,
+      "PosZ": -70.07068,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 91.22175,
+      "PosY": 3.0154164,
+      "PosZ": -72.31378,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 60.242172,
+      "PosY": 4.7392817,
+      "PosZ": 30.03993,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 91.81615,
+      "PosY": 3,
+      "PosZ": -69.88312,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 93.678665,
+      "PosY": 3,
+      "PosZ": -73.73372,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 45.8313,
+      "PosY": 3,
+      "PosZ": 65.25451,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 44.79151,
+      "PosY": 3,
+      "PosZ": 69.0534,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 46.06992,
+      "PosY": 3,
+      "PosZ": 68.34737,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 46.284073,
+      "PosY": 3,
+      "PosZ": 72.1337,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 78.48675,
+      "PosY": 3.0000002,
+      "PosZ": 62.19957,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 76.88364,
+      "PosY": 3,
+      "PosZ": 64.125824,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/grass_tuft_1",
+      "PosX": 79.26256,
+      "PosY": 3,
+      "PosZ": 64.504265,
+      "RotationY": 0,
+      "Scale": 0.65
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -95.447205,
+      "PosY": 2.987387,
+      "PosZ": -69.609634,
+      "RotationY": 0,
+      "Scale": 0.5
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -95.39672,
+      "PosY": 2.9817004,
+      "PosZ": -57.82375,
+      "RotationY": 0,
+      "Scale": 0.5
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -97.873055,
+      "PosY": 2.9943192,
+      "PosZ": -56.368725,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -99.05705,
+      "PosY": 2.9999998,
+      "PosZ": -69.49379,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -102.47273,
+      "PosY": 3,
+      "PosZ": -72.08385,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -104.199974,
+      "PosY": 0,
+      "PosZ": -54.512787,
+      "RotationY": 0,
+      "Scale": 0.7
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -20.20383,
+      "PosY": -5.855821,
+      "PosZ": -76.217674,
+      "RotationY": 0,
+      "Scale": 2.35
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -20.334402,
+      "PosY": -5.855821,
+      "PosZ": -85.59807,
+      "RotationY": 0,
+      "Scale": 2.35
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -9.027117,
+      "PosY": -5.855821,
+      "PosZ": -81.24504,
+      "RotationY": 0,
+      "Scale": 1
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -11.805764,
+      "PosY": -5.855821,
+      "PosZ": -89.93088,
+      "RotationY": 0,
+      "Scale": 1.3
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -3.8371305,
+      "PosY": -5.855821,
+      "PosZ": -92.94642,
+      "RotationY": 0,
+      "Scale": 2.5
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": 1.0380678,
+      "PosY": -5.8558216,
+      "PosZ": -85.91675,
+      "RotationY": 0,
+      "Scale": 1.3
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": 11.863341,
+      "PosY": -5.855821,
+      "PosZ": -37.738487,
+      "RotationY": 0,
+      "Scale": 1.5
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -94.83098,
+      "PosY": 3.8254213,
+      "PosZ": 14.816547,
+      "RotationY": 0,
+      "Scale": 0.6
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -94.01199,
+      "PosY": 3.322499,
+      "PosZ": 16.1556,
+      "RotationY": 0,
+      "Scale": 0.35
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": 17.375118,
+      "PosY": -5.855821,
+      "PosZ": -34.25484,
+      "RotationY": 0,
+      "Scale": 2.65
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -98.93353,
+      "PosY": 3.6541734,
+      "PosZ": 16.25123,
+      "RotationY": 0,
+      "Scale": 1.2
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": 23.49935,
+      "PosY": -5.855821,
+      "PosZ": -41.388916,
+      "RotationY": 0,
+      "Scale": 1
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -91.10216,
+      "PosY": 3,
+      "PosZ": 25.20234,
+      "RotationY": 0,
+      "Scale": 0.35
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": 26.021927,
+      "PosY": -5.855821,
+      "PosZ": -35.628983,
+      "RotationY": 0,
+      "Scale": 1.5
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -93.34845,
+      "PosY": 3,
+      "PosZ": 27.159222,
+      "RotationY": 0,
+      "Scale": 0.6
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -93.250565,
+      "PosY": 3,
+      "PosZ": 28.779406,
+      "RotationY": 0,
+      "Scale": 0.35
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -97.397514,
+      "PosY": 3,
+      "PosZ": 27.645214,
+      "RotationY": 0,
+      "Scale": 1.2
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": 12.844019,
+      "PosY": -3.0482626,
+      "PosZ": 17.747837,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": 2.786008,
+      "PosY": -3,
+      "PosZ": 27.221546,
+      "RotationY": 0,
+      "Scale": 1.7
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": 16.418375,
+      "PosY": -3,
+      "PosZ": 23.657993,
+      "RotationY": 0,
+      "Scale": 2.05
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": -2.159606,
+      "PosY": -3,
+      "PosZ": 78.24491,
+      "RotationY": 0,
+      "Scale": 0.95
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": 0.67744637,
+      "PosY": -3,
+      "PosZ": 88.04496,
+      "RotationY": 0,
+      "Scale": 2.9
+    },
+    {
+      "TemplateId": "resource/mossy_rock_3",
+      "PosX": 10.289425,
+      "PosY": -3,
+      "PosZ": 85.288925,
+      "RotationY": 0,
+      "Scale": 1.8
+    },
+    {
+      "TemplateId": "resource/resource_001",
+      "PosX": -94.382545,
+      "PosY": 2.9894567,
+      "PosZ": -63.29796,
+      "RotationY": 90,
+      "Scale": 5
+    },
+    {
+      "TemplateId": "resource/resource_001",
+      "PosX": -94.1894,
+      "PosY": 3,
+      "PosZ": 20.520788,
+      "RotationY": 120,
+      "Scale": 5
+    },
+    {
+      "TemplateId": "resource/resource_001",
+      "PosX": -32.199715,
+      "PosY": 3,
+      "PosZ": 33.128998,
+      "RotationY": 314.99994,
+      "Scale": 5
+    },
+    {
+      "TemplateId": "resource/resource_001",
+      "PosX": 88.148476,
+      "PosY": 3,
+      "PosZ": -83.65346,
+      "RotationY": 299.99994,
+      "Scale": 5
+    },
+    {
+      "TemplateId": "resource/resource_001",
+      "PosX": -33.839375,
+      "PosY": 3,
+      "PosZ": 92.25337,
+      "RotationY": 224.99997,
+      "Scale": 5
+    },
+    {
+      "TemplateId": "resource/resource_001",
+      "PosX": 93.24375,
+      "PosY": 3,
+      "PosZ": -3.6150837,
+      "RotationY": 284.99997,
+      "Scale": 5
+    },
+    {
+      "TemplateId": "resource/resource_001",
+      "PosX": 63.448097,
+      "PosY": 2.9255672,
+      "PosZ": 93.32293,
+      "RotationY": 164.99997,
+      "Scale": 5
+    }
+  ],
+  "Decals": [],
+  "Vfx": [],
+  "CameraBoundsLeft": -95,
+  "CameraBoundsRight": 95,
+  "CameraBoundsTop": -95,
+  "CameraBoundsBottom": 125,
+  "SkyboxPath": "Assets/skyboxes/jade_shrine.png",
+  "Coordinates": []
 }

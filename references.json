@@ -1,0 +1,14 @@
+{
+  "FormatVersion": 1,
+  "References": [
+    {
+      "MapName": "Melee Ruleset",
+      "Version": "1.0.0",
+      "ManifestBlake3": "750a0671cfb46cfb730e2729a021dc527d376d806bdabc1a5c2581820b456c1e",
+      "FolderPath": "D:/git/Realm/MeleeRuleset"
+    }
+  ],
+  "ConflictPriorities": {
+    "MapScript.cs": "Melee Ruleset"
+  }
+}

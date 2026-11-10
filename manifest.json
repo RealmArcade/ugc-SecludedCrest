@@ -6,39 +6,68 @@
   "Tags": [],
   "Maintainers": [],
   "GreenlitReferences": [],
+  "Attribution_SourceMap": [],
+  "IsTestVersion": false,
   "Assets": {
-    "Animation": null,
+    "Animation": {
+      "Bored - Standing Around Bored Idle.ranim": "1959208c023156ced292286a89c646c75dbd7cd70ad0cd16aeaf4b68f67fafbd",
+      "Death - Death From Standing Idle.ranim": "46f3a52c06b56b126012ac75397d5f3c093f1d08c344f7e954648c3df257868d",
+      "Heavy Weapon Swing - Two Handed Heavy Weapon Swing.ranim": "4e4e01a042128bdbfdd72e19d8397c6a26cb86eba65486c1a843ed7981ab579d",
+      "Magic Spell Casting - Casting A Spell With One Hand.ranim": "9774c9cbd0a23876d4a3438f794beb6a8a6c4c0fd49605e7c76f12ac6753464f",
+      "Northern Soul Floor Spin - Northern Soul Dance Spin On Floor.ranim": "8738f39026322dcf5d06f8c5676c25fa6eaa0111d1643612cdd512158d3e12a5",
+      "Standard Walk - Standard Walk.ranim": "54b3360ee4eb2026dc824fa510b330a9f91565088a4ee92ccf2dd7202db29326",
+      "Upward Thrust - Upward Weapon Thrust.ranim": "f7e5ae04ed7a0a6fc2e00f41bf0e3844d2f53fa87c28037467c4ada271c65bca"
+    },
     "Building": {
       "dark_tower_keep.rmesh": "de35add5928138e2aafbbe6a773091773e98a47aa062b859f81622d85231a061",
       "dark_tower_keep_1.rmesh": "5a7921a44e850a7d0f0cb6b9391c2259e3fcdc701e8d5e753e951fdc0f8d553d",
       "fairytale_castle.rmesh": "6fed73296e898e076aaa5accf4749cb1039a818a707eea515f97128c84c815cb",
       "fantasy_tower_building_4.rmesh": "991f55fef7368d98d488388ecf2884b6b5a1082e99c2ce01617cc46c74d3d91b",
+      "ice_castle_1.glb": "e90cb3c572ea11d557a3d01bbbb04ee8cdbffc50dc2bf28143d153666f7c2e17",
       "ice_castle_1.rmesh": "911b78347244bc9a7ebaf6961622d9319d0e90d3c2ab18a2da7672d97df3a14e",
       "scroll_and_scroll_holder.rmesh": "f7d8b7d1105cd1bebf18c7a2b38e44d79114bf0108920d21252b6f01b1110bc3",
+      "timber_framed_house.glb": "4fc15184620f6183263d218430a7f5a765e218c1b9c3c93f33a8fcf912ad7c2a",
       "timber_framed_house.rmesh": "ba91635b292724e33f89b8134cc62e33bc8338c9bc8a20811523c520233f3e53",
       "watch_tower_building.rmesh": "42f8c6210b2575ead9eea7a3a4adad0838df5786fb220cca15ebc6d097b5fe74"
     },
     "Character": {
+      "fantasy_warrior_unit_1.glb": "363ca09f7d6c96f6eb4509035e13d81ba5691f1af1d8f4ef07ad1a5b53e6cb05",
       "fantasy_warrior_unit_1.rmesh": "747923008cb07c9aafc7b001a1cb657b944f6c6e3ab25822b62834545ef22bb5",
+      "orc_warrior_7.glb": "81f25d7dcafb3328fdcf08718d191d76055b3c70846548ede86cc9a1307a76e0",
       "orc_warrior_7.rmesh": "9f6b267e4cd7e812ff232f22f8546375ac45ea2f3f19258c07436b534ed68926"
     },
-    "Decal": {},
-    "Icon": {},
+    "Decal": {
+      "acid_drip.rtex": "303aa61310bae34e7f40ed4d2614d772e6fe3a313e1c2bcd7255c2f1c47a5884",
+      "arcane_spark.rtex": "af0f579d808584b4080c97ab2fe6d7a30e24cff6970a37de55ffe79819612aec"
+    },
+    "Icon": {
+      "victory_flag.rtex": "e117e306e33320b3591ee3b7b55a2fcac3aa29419b4c2c8d3e63768dca6eb8c0",
+      "wood_logs.rtex": "5e6a8f4408f4f9e5b691a5bf7d6679bb3cb29c273def5f882afbff40ef8cef2c"
+    },
     "Item": {
+      "ornate_spear_1.glb": "054e94c13684a8ba7f26039b7c5476325445936326737303c94cdbf9636c21ba",
       "ornate_spear_1.rmesh": "6c1cd3a5e913610f83aeda0c36c02722cbf5c1c0bc640f659471c9714cdaf2d2",
+      "wooden_spear_2.glb": "db09cc2335cafac5de928ea29b41b00369cdd0d85fae8654ab77cf003be04035",
       "wooden_spear_2.rmesh": "8b616073d85ec2930e21a7f083f39fa3c5f64ef4a42a4404d2c347fcb38b1e23"
     },
-    "Music": null,
+    "Music": {
+      "dragon_tavern.ogg": "e4c0e7139a52d62454e3e5c5e40b0b88e84898a1888e67ee3913095964862ba4",
+      "dragon_tavern.raud": "a1f23039849a6f788c5b1540b1acfa0437bf52243a3b838076bc0a8f3b566c70"
+    },
     "Noise": {},
     "Prop": {
-      "bonsai_tree.rmesh": "f063687e13b244a91d0bc7b62df18f491de133a0834e81eb2e8cfadfd0a74364",
-      "cherry_blossom_tree.rmesh": "bebba6c86c414b150510996852ea916e0961edf4ed9c90f498066435b79f5a69",
-      "coniferous_tree_1.rmesh": "7d0eba4c717eda4b83c259d90d7bac95113b71fe6e5ab7e21bbf0c4c386ab714",
       "coniferous_tree_3.rmesh": "f7108559c4361502018fb7fc335af659e141aa37c09a0f261a68eec3d6550478",
       "crystal_cluster_24.rmesh": "ec34f232d999336772b74126d4e4be841e8399cd1b49e0a43986f4781ee0d145",
       "crystal_cluster_25.rmesh": "4157bcdeec9dae6692fedd43b8430688594f492f63cb99671a9386d422420551",
+      "crystal_cluster_29.glb": "4c5b84606667035c1bce1cbf83561df10407175578df2b08c4fd17e72c70b7c4",
       "crystal_cluster_29.rmesh": "a0c17badd2964ee2c6d09b2097e81ac5b78a371c111575ec2ca213a116f12d7f",
       "crystal_flower_prop.rmesh": "2c8cd548255d4ba6a0b85b20570edd62854daa2d9d71e0d5400e8cc9bd4b2b2d",
+      "spiked_wooden_stake.glb": "a0085ea8eddb5791ffa0789eec6b689e70922cf739cdbb08aceff0bce0b00188",
+      "spiked_wooden_stake.rmesh": "a79ca2a9e6f79af0c59be8dd872ff09a369796619c83c018c86d7b15058ea97f",
+      "bonsai_tree.rmesh": "f063687e13b244a91d0bc7b62df18f491de133a0834e81eb2e8cfadfd0a74364",
+      "cherry_blossom_tree.rmesh": "bebba6c86c414b150510996852ea916e0961edf4ed9c90f498066435b79f5a69",
+      "coniferous_tree_1.glb": "c77f10b75eaccc7e72a0f1b8a2d3e440b8f04f3de20e6fba428d8568c7059c8d",
+      "coniferous_tree_1.rmesh": "7d0eba4c717eda4b83c259d90d7bac95113b71fe6e5ab7e21bbf0c4c386ab714",
       "crystal_shard_formation.rmesh": "c837d2e3b1939863bdf522bcf1b1d1cdf1be553a746c353c8224d31182e25042",
       "fantasy_pine_tree_1.rmesh": "83160452070029bf6edc770ce1f1e1e6a4b48a9620c7f5d0209897908b7c7bd2",
       "fantasy_tree_9.rmesh": "82fa8db713fe03ef05ed92b9b788d09a4632d6e69eaf721b1019a901a8c61073",
@@ -46,16 +75,27 @@
       "gold_mine.rmesh": "6cac39609ebef0dc508dd1b68f76f5a4f7bcf3bcb9b540941dc4cf50caf0f92b",
       "grass_tuft_1.rmesh": "7700cf26ad3b7e60a13d6efee6f4d7d7ade31267f23a9a0aaa29a4b11d81a7b0",
       "mossy_rock_3.rmesh": "f5e935f30dda99862176c337d83e194f46a8f861184f1953ecdfe0952d78bcde",
+      "palm_tree.glb": "6f5e06c2fbdc46545d7c3e99a45b39df5a5b5fea51f2c5f5dc16952aff01c788",
       "palm_tree.rmesh": "24b216a064f5095d1ed675266b2a54fe5678b886a556607220e684685f7b94c1",
       "rock_formation_8.rmesh": "e35959153d3ddc998a525a6cc9570740926f6fb7aaa41f0d9021c42f625b8c18",
-      "spiked_wooden_stake.rmesh": "a79ca2a9e6f79af0c59be8dd872ff09a369796619c83c018c86d7b15058ea97f",
       "spirit_tree_2.rmesh": "3f25d128799fed1c164cdaefb546a462da14f60ad21e4dddd9e1c26368d5507d",
       "volcanic_terrain_1.rmesh": "4edf7ba4f3ba17656f758fd9d640002a5d91cff80bfb3c4a4e9df14b2654dbee"
     },
-    "Ribbon": {},
+    "Ribbon": {
+      "frost_shard_beam.rtex": "030e8a5d5a42bedab4d769cf1ab4e0b82ec48529a811d1508c9e3dc70b9423f0",
+      "magma_flow_lava_vein.rtex": "f1820082dff26a367759d1d1bbe38455341a633d81292fb8d038eaa8f063f22e"
+    },
     "Shader": {},
-    "Skybox": {},
-    "SoundEffect": null,
+    "Skybox": {
+      "jade_shrine.rtex": "128fbaed7adbb0d6fd54edb36808fcc3991b478a927e144323d7896cae71c93e",
+      "star_reach.rtex": "9c7fb6d80ea74d61b11cfc9ccddf072aa187c80cd4ac46b3d16ff3a83c1e2790"
+    },
+    "SoundEffect": {
+      "achievement_unlock_chime.ogg": "e0667dceb40f9c401ed1788cb0697e80b7e04c28a9406641d9b8938cc90f0636",
+      "achievement_unlock_chime.raud": "d9479e8f7a3a87d69d0c4c6d171c6f03b599e69726224b88897c02ced2b2a76d",
+      "orc_victory_howl.ogg": "e114d043d8db66c5fc8014cb7d49c32ef28ebf10454f28bb693fae9aee720c79",
+      "orc_victory_howl.raud": "ce430e441d0d7867fb5eef4b26a1c157bd8a2899aba4ddf03309cf67885c94db"
+    },
     "Spritesheet": {
       "arcane_surge_sheet.rtex": "614bdba93d3ca573a77fcc606bb547a7b7fcbcfe30668651b26bb8ac786a55ba",
       "solar_flare_sheet.rtex": "f95cda0ad135fdaefa243d2f269844ad003c7c0ad9de2434ca4ad57dc5fb16a9"
@@ -71,6 +111,38 @@
       "whispering_woods_emerald_leaf.rtex": "1bcf2801139a9f0091271a756e22389855bf34a56d7a76e7fb7a405e3a26fb00"
     },
     "vfx_radial": null,
-    "vfx_vertical": null
+    "vfx_vertical": null,
+    "Other": {
+      ".gitignore": "40c45db7143984eb7d56f23445fe9d84a1280d107a3d333b0c490cdd38d3bf9e",
+      "AGENTS.md": "ed84b427a57f5d943d2bff0416e73ec77a21329b9f1a3963ee31686de2906f0a",
+      "Directory.Build.targets": "78e34a25cb8ab8340c598c9b1ba5d1ae2e6a8989ea69bc50a7425d5aa2be9695",
+      "LICENSE.md": "cf7660fe2a1e73d981dd627c1f47b53992d3135f14dd6fdd3b7d87cd4c1daa05",
+      "MapScript.cs": "3dd04b0b66372dba6b29ff22f3973be351596b2fae36e8c9fe5f5a0a6e11db76",
+      "MapScript.csproj": "f0e2e3698d2c152cf4362eb414f2f1f413faee74302c744fb5731d5baa2cbed9",
+      "MapTemplates.g.cs": "a20e347c51cb818f3661855e967e6f7f951ecab8606607fe21ebe7bd5749ebd1",
+      "metadata.json": "f0158c5e0aa48cc91574b1eaf26d277af581365efbb030ff3d35b0776fb8e45e",
+      "NuGet.config": "2211ce92e32f9c93bc98f9172c70cae0d41e5fe750e3a28a245eb754e6c3a389",
+      "README.md": "e2b2959776348b31c40f9914b2fe28959a5b61246a761519bd99ee607ddb6b64",
+      "temp_map_workspace.slnx": "a29acf8e4ae490cce5f30e0f0c8b0eac95d3d192da239c846ffae8d926432bcb",
+      "terrain.json": "53a80e888d24a807d81ec3090009098c4ed8d8698ea5bc960b684667644eee7a",
+      "terrain_cliff_splat_indices.exr": "0b0d3ba9cc53be409b9267feb2f80cb195eed4735b0f63d9ade2857cd1aa05a5",
+      "terrain_cliff_splat_weights.exr": "ff4d0d84f8963850a0df40e455ae592445fd9f20e6910e2f5082a835182f79fd",
+      "terrain_heights.exr": "29302809c92adbe57d051ef4a7f351a6b84b72752752ffa69af847346c714069",
+      "terrain_pathing.png": "a9c68460c3f52104f09c7901c863968e4dc12ec215626c0180d41492ae74f618",
+      "terrain_splat_indices.exr": "e9c517cb53bbdaeccbb2035af0b47cd9f594c143b8bb3b6174a0d734b93249d1",
+      "terrain_splat_weights.exr": "f58dd4bc5aeb58e64e5deeeb830a3c4a5a22fe1397e90054397d11f4db7f7d28",
+      "terrain_water.exr": "242f72a14dad53f286110578ebf0bffdec7f15a9564e619e1c230e3dae59a02c",
+      "WasmEntryPoint.g.cs": "41ffd43ff0f3c702b322f94251a31cb3982066e867e70d3865106ce91394b642",
+      "lib/Realm.Ecs.dll": "d3bbc5aef4543a857694ab3e03a7024be69551dbb958cceda3659396879bb910",
+      "lib/Realm.Ecs.pdb": "7358e446dd36cd2a46a0f60691099b83844427bde69decc71ca893947da3a6d7",
+      "lib/Realm.Ecs.xml": "ae6be43dca6abe8815ae746de8c4fedf30f62fa5ba957fa8867655f6e0cbe7cc",
+      "lib/Realm.EditorAPI.dll": "e031bbfa48f118fca5801550db7cd1c580e19a3c59254b21318e4a9916613e52",
+      "lib/Realm.EditorAPI.pdb": "74af3e39248d2a21195cf4cac5f35c4f3f152de97ee488da117cbbbc88c05dbb",
+      "lib/Realm.EditorAPI.xml": "a5c79f8eefcd9ce53b8d1d1816ca8286ce46bc01687cd18cb8bb892067d17767",
+      "lib/Realm.MapAPI.dll": "35a054b144351310ac1ad7f7de65a9fe79801eca5a0d68dcd262f348f877b776",
+      "lib/Realm.MapAPI.pdb": "bacc34655f5548bf2b9a721dd23c74e87dd20337fd152b01c9f35f365be4581a",
+      "lib/Realm.MapAPI.xml": "81e4a6aed08fe049baffa824c3dc2e88fc57d3edec96456d45024862db71637e",
+      "wit/game.g.wit": "d613cf156686cebd4ae44738c25eb68dbb8820a751ff3cb1a73f4bb8fc9a50e8"
+    }
   }
 }

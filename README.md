@@ -2,13 +2,15 @@
 
 The board: `terrain.json`, its height and splat maps, the water field, the props it places, the artwork under `Assets/`, and the `Models` and environment settings its `metadata.json` declares.
 
+It also states the game's placement: the four `SpawnAnchors` a seated player starts at, and the twelve melee resource nodes, placed as props whose templates the Melee Ruleset declares. The rules read both from here rather than carrying coordinates of their own, so this board can change where a seat begins or where a mine stands without the ruleset changing at all.
+
 ## Composed with the Melee Ruleset
 
 This folder is also a composing map. `references.json` names the Melee Ruleset, and every save takes that map's files into this folder, so the result is one ordinary map: it can be edited, tested, exported, published and played like any other, and nothing downstream has to resolve anything.
 
 | Referenced map | What it contributes |
 | :--- | :--- |
-| Melee Ruleset v1.0.0 (`750a0671…`) | The rules engine of the map: `MapScript.cs` (the script itself), the melee templates it registers in `metadata.json`, and its relics, factions, deck and economy. |
+| Melee Ruleset v1.0.0 (`ec2649e8…`) | The rules engine of the map: `MapScript.cs` (the script itself), the melee templates it registers in `metadata.json` (including the two resource node types this board places), and its relics, factions, deck and economy. |
 
 Who keeps a file:
 

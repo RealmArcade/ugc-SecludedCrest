@@ -9,12 +9,36 @@ namespace Realm.Maps;
 
 public static class UnitIds
 {
+	public const string Vale = "hero/vale";
+	public const string Sable = "hero/sable";
+	public const string Corvus = "hero/corvus";
+	public const string Shieldbearer = "unit/shieldbearer";
+	public const string Axeman = "unit/axeman";
+	public const string SpearMilitia = "unit/spear_militia";
+	public const string Bowman = "unit/bowman";
+	public const string Slinger = "unit/slinger";
+	public const string BoltThrower = "unit/bolt_thrower";
+	public const string Mender = "unit/mender";
+	public const string StandardBearer = "unit/standard_bearer";
+	public const string Warder = "unit/warder";
+	public const string CrestBoar = "unit/crest_boar";
+	public const string RidgeGiant = "unit/ridge_giant";
 	public const string FantasyWarriorUnit1 = "unit/fantasy_warrior_unit_1";
 	public const string OrcWarrior7 = "unit/orc_warrior_7";
 }
 
 public static class BuildingIds
 {
+	public const string Nexus = "building/nexus";
+	public const string BulwarkHall = "building/bulwark_hall";
+	public const string WarbandYard = "building/warband_yard";
+	public const string SpearLodge = "building/spear_lodge";
+	public const string ArcheryRange = "building/archery_range";
+	public const string BoltFoundry = "building/bolt_foundry";
+	public const string SlingCamp = "building/sling_camp";
+	public const string MenderShrine = "building/mender_shrine";
+	public const string SignalPost = "building/signal_post";
+	public const string VigilBastion = "building/vigil_bastion";
 	public const string IceCastle1 = "building/ice_castle_1";
 	public const string TimberFramedHouse = "building/timber_framed_house";
 	public const string DarkTowerKeep1 = "building/dark_tower_keep_1";
@@ -27,6 +51,8 @@ public static class BuildingIds
 
 public static class ResourceIds
 {
+	public const string MeleeGoldMine = "resource/melee_gold_mine";
+	public const string MeleeWoodland = "resource/melee_woodland";
 	public const string BonsaiTree = "resource/bonsai_tree";
 	public const string CherryBlossomTree = "resource/cherry_blossom_tree";
 	public const string ConiferousTree1 = "resource/coniferous_tree_1";
@@ -55,6 +81,19 @@ public static class PropIds
 
 public static class AbilityIds
 {
+	public const string GroundingShout = "ability/grounding_shout";
+	public const string HoldFast = "ability/hold_fast";
+	public const string ShieldBash = "ability/shield_bash";
+	public const string EmberLance = "ability/ember_lance";
+	public const string Cinderfield = "ability/cinderfield";
+	public const string Backdraft = "ability/backdraft";
+	public const string Requisition = "ability/requisition";
+	public const string ForcedMarch = "ability/forced_march";
+	public const string EmergencyLevy = "ability/emergency_levy";
+	public const string Mend = "ability/mend";
+	public const string WardingAegis = "ability/warding_aegis";
+	public const string StandardAura = "ability/standard_aura";
+	public const string BeginConstruction = "ability/begin_construction";
 	public const string Fireball = "ability/fireball";
 	public const string Holylight = "ability/holylight";
 	public const string Lightning = "ability/lightning";
@@ -70,6 +109,12 @@ public static class UpgradeIds
 
 public static class ItemIds
 {
+	public const string SigilOfTheWall = "item/sigil_of_the_wall";
+	public const string CouriersKnot = "item/couriers_knot";
+	public const string SpikedBarricades = "item/spiked_barricades";
+	public const string DeepGranaries = "item/deep_granaries";
+	public const string WardensWrit = "item/wardens_writ";
+	public const string MusterBell = "item/muster_bell";
 }
 
 public static class VfxIds

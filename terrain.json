@@ -3272,6 +3272,102 @@
       "Scale": 0.65
     },
     {
+      "TemplateId": "resource/melee_gold_mine",
+      "PosX": -44,
+      "PosY": 3,
+      "PosZ": -58,
+      "RotationY": 0,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "resource/melee_gold_mine",
+      "PosX": -20,
+      "PosY": 3,
+      "PosZ": 15,
+      "RotationY": 0,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "resource/melee_gold_mine",
+      "PosX": 44,
+      "PosY": 3,
+      "PosZ": -58,
+      "RotationY": 0,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "resource/melee_gold_mine",
+      "PosX": 20,
+      "PosY": 2.7286425,
+      "PosZ": 15,
+      "RotationY": 0,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "resource/melee_gold_mine",
+      "PosX": -44,
+      "PosY": 2.8719242,
+      "PosZ": 92,
+      "RotationY": 0,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "resource/melee_gold_mine",
+      "PosX": 44,
+      "PosY": 3,
+      "PosZ": 92,
+      "RotationY": 0,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "resource/melee_woodland",
+      "PosX": -58,
+      "PosY": 2.6925821,
+      "PosZ": -44,
+      "RotationY": 0,
+      "Scale": 2.4
+    },
+    {
+      "TemplateId": "resource/melee_woodland",
+      "PosX": 0,
+      "PosY": 3,
+      "PosZ": -36,
+      "RotationY": 0,
+      "Scale": 2.4
+    },
+    {
+      "TemplateId": "resource/melee_woodland",
+      "PosX": 58,
+      "PosY": 3,
+      "PosZ": -44,
+      "RotationY": 0,
+      "Scale": 2.4
+    },
+    {
+      "TemplateId": "resource/melee_woodland",
+      "PosX": 0,
+      "PosY": 3,
+      "PosZ": 62,
+      "RotationY": 0,
+      "Scale": 2.4
+    },
+    {
+      "TemplateId": "resource/melee_woodland",
+      "PosX": -58,
+      "PosY": 3,
+      "PosZ": 106,
+      "RotationY": 0,
+      "Scale": 2.4
+    },
+    {
+      "TemplateId": "resource/melee_woodland",
+      "PosX": 58,
+      "PosY": 3,
+      "PosZ": 106,
+      "RotationY": 0,
+      "Scale": 2.4
+    },
+    {
       "TemplateId": "resource/mossy_rock_3",
       "PosX": -95.447205,
       "PosY": 2.987387,
@@ -3558,110 +3654,14 @@
       "PosZ": 93.32293,
       "RotationY": 164.99997,
       "Scale": 5
-    },
-    {
-      "TemplateId": "resource/melee_gold_mine",
-      "PosX": -44,
-      "PosY": 3,
-      "PosZ": -58,
-      "RotationY": 0,
-      "Scale": 1.6
-    },
-    {
-      "TemplateId": "resource/melee_gold_mine",
-      "PosX": 44,
-      "PosY": 3,
-      "PosZ": -58,
-      "RotationY": 0,
-      "Scale": 1.6
-    },
-    {
-      "TemplateId": "resource/melee_gold_mine",
-      "PosX": -44,
-      "PosY": 2.8719,
-      "PosZ": 92,
-      "RotationY": 0,
-      "Scale": 1.6
-    },
-    {
-      "TemplateId": "resource/melee_gold_mine",
-      "PosX": 44,
-      "PosY": 3,
-      "PosZ": 92,
-      "RotationY": 0,
-      "Scale": 1.6
-    },
-    {
-      "TemplateId": "resource/melee_gold_mine",
-      "PosX": -20,
-      "PosY": 3,
-      "PosZ": 15,
-      "RotationY": 0,
-      "Scale": 1.6
-    },
-    {
-      "TemplateId": "resource/melee_gold_mine",
-      "PosX": 20,
-      "PosY": 2.7286,
-      "PosZ": 15,
-      "RotationY": 0,
-      "Scale": 1.6
-    },
-    {
-      "TemplateId": "resource/melee_woodland",
-      "PosX": -58,
-      "PosY": 2.6926,
-      "PosZ": -44,
-      "RotationY": 0,
-      "Scale": 2.4
-    },
-    {
-      "TemplateId": "resource/melee_woodland",
-      "PosX": 58,
-      "PosY": 3,
-      "PosZ": -44,
-      "RotationY": 0,
-      "Scale": 2.4
-    },
-    {
-      "TemplateId": "resource/melee_woodland",
-      "PosX": -58,
-      "PosY": 3,
-      "PosZ": 106,
-      "RotationY": 0,
-      "Scale": 2.4
-    },
-    {
-      "TemplateId": "resource/melee_woodland",
-      "PosX": 58,
-      "PosY": 3,
-      "PosZ": 106,
-      "RotationY": 0,
-      "Scale": 2.4
-    },
-    {
-      "TemplateId": "resource/melee_woodland",
-      "PosX": 0,
-      "PosY": 3,
-      "PosZ": -36,
-      "RotationY": 0,
-      "Scale": 2.4
-    },
-    {
-      "TemplateId": "resource/melee_woodland",
-      "PosX": 0,
-      "PosY": 3,
-      "PosZ": 62,
-      "RotationY": 0,
-      "Scale": 2.4
     }
   ],
   "Decals": [],
   "Vfx": [],
-  "CameraBoundsLeft": -95,
-  "CameraBoundsRight": 95,
-  "CameraBoundsTop": -95,
-  "CameraBoundsBottom": 125,
+  "CameraBoundsLeft": -128,
+  "CameraBoundsRight": 128,
+  "CameraBoundsTop": -128,
+  "CameraBoundsBottom": 128,
   "SkyboxPath": "Assets/skyboxes/jade_shrine.png",
   "Coordinates": [],
   "SpawnAnchors": [

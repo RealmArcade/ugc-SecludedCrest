@@ -2,23 +2,6 @@
   "MapProperties": {
     "MapName": "Secluded Crest",
     "ShroudType": "ExplorationShroud",
-    "MinimapImage": null,
-    "WeatherType": null,
-    "TerrainBaseHeight": null,
-    "ShadowIntensity": null,
-    "PlayableWidth": null,
-    "PlayableHeight": null,
-    "LoadingImage": null,
-    "LoadingMusic": null,
-    "LoadingTitle": null,
-    "LoadingSubtitle": null,
-    "LoadingBodyText": null,
-    "Changelog": null,
-    "PlayerSlots": null,
-    "Teams": null,
-    "TestAiPlayerCount": null,
-    "TestRandomizeSlots": null,
-    "TestRandomSeed": null,
     "MaxTestPlayers": null
   },
   "Templates": {
@@ -39,21 +22,21 @@
         "CostStone": 0,
         "PopCost": 0,
         "ProductionTime": 0,
-        "AttackType": null,
-        "ArmorType": null,
         "Strength": 0,
         "Agility": 0,
         "Vitality": 0,
         "Intelligence": 0,
         "Wisdom": 0,
         "Fortune": 0,
+        "LevelGrowth": null,
         "HpRegen": 0,
         "HpRegenCombatDelay": 0,
         "MaxMana": 0,
         "ManaRegen": 0,
-        "RatedArmor": 0,
+        "MagicResistance": 0,
         "FlatArmorPenetration": 0,
         "PercentArmorPenetration": 0,
+        "FlatMagicPenetration": 0,
         "DamageVariance": 0,
         "DamageType": "normal",
         "CritChance": 0,
@@ -71,6 +54,7 @@
         "SightRange": 15,
         "AcquisitionRange": 15,
         "GoldBounty": 0,
+        "RespawnSeconds": 0,
         "ModelPath": "fantasy_warrior_unit_1.rmesh",
         "PortraitModelPath": null,
         "VisualMode": "Mesh",
@@ -86,9 +70,9 @@
         "IsHero": false,
         "Abilities": null,
         "XpBounty": 0,
+        "ExperiencePerLevel": 0,
         "PathingCapabilities": null,
         "PathingType": 9,
-        "ObstacleRadius": null,
         "Targets": null,
         "Weapons": null,
         "ProjectileModelPath": null,
@@ -116,6 +100,7 @@
           ]
         },
         "ObjectAttachments": null,
+        "PseudoSockets": null,
         "Sounds": null,
         "StartingItems": null,
         "ShopItems": null,
@@ -127,7 +112,8 @@
         "ProceduralAnimation": null,
         "EnableProceduralAnimation": null,
         "DespawnShader": null,
-        "ConstructionRange": 4
+        "ConstructionRange": 4,
+        "Attribution_ImportedFromMap": null
       },
       {
         "TemplateID": "unit/orc_warrior_7",
@@ -145,21 +131,21 @@
         "CostStone": 0,
         "PopCost": 0,
         "ProductionTime": 0,
-        "AttackType": null,
-        "ArmorType": null,
         "Strength": 0,
         "Agility": 0,
         "Vitality": 0,
         "Intelligence": 0,
         "Wisdom": 0,
         "Fortune": 0,
+        "LevelGrowth": null,
         "HpRegen": 0,
         "HpRegenCombatDelay": 0,
         "MaxMana": 0,
         "ManaRegen": 0,
-        "RatedArmor": 0,
+        "MagicResistance": 0,
         "FlatArmorPenetration": 0,
         "PercentArmorPenetration": 0,
+        "FlatMagicPenetration": 0,
         "DamageVariance": 0,
         "DamageType": "normal",
         "CritChance": 0,
@@ -177,6 +163,7 @@
         "SightRange": 15,
         "AcquisitionRange": 15,
         "GoldBounty": 0,
+        "RespawnSeconds": 0,
         "ModelPath": "orc_warrior_7.rmesh",
         "PortraitModelPath": null,
         "VisualMode": "Mesh",
@@ -192,9 +179,9 @@
         "IsHero": false,
         "Abilities": null,
         "XpBounty": 0,
+        "ExperiencePerLevel": 0,
         "PathingCapabilities": null,
         "PathingType": 9,
-        "ObstacleRadius": null,
         "Targets": null,
         "Weapons": null,
         "ProjectileModelPath": null,
@@ -222,6 +209,7 @@
           ]
         },
         "ObjectAttachments": null,
+        "PseudoSockets": null,
         "Sounds": null,
         "StartingItems": null,
         "ShopItems": null,
@@ -233,7 +221,8 @@
         "ProceduralAnimation": null,
         "EnableProceduralAnimation": null,
         "DespawnShader": null,
-        "ConstructionRange": 4
+        "ConstructionRange": 4,
+        "Attribution_ImportedFromMap": null
       }
     ],
     "Buildings": [
@@ -253,21 +242,21 @@
         "CostStone": 0,
         "PopCost": 0,
         "ProductionTime": 0,
-        "AttackType": null,
-        "ArmorType": null,
         "Strength": 0,
         "Agility": 0,
         "Vitality": 0,
         "Intelligence": 0,
         "Wisdom": 0,
         "Fortune": 0,
+        "LevelGrowth": null,
         "HpRegen": 0,
         "HpRegenCombatDelay": 0,
         "MaxMana": 0,
         "ManaRegen": 0,
-        "RatedArmor": 0,
+        "MagicResistance": 0,
         "FlatArmorPenetration": 0,
         "PercentArmorPenetration": 0,
+        "FlatMagicPenetration": 0,
         "DamageVariance": 0,
         "DamageType": "normal",
         "CritChance": 0,
@@ -285,6 +274,7 @@
         "SightRange": 15,
         "AcquisitionRange": 15,
         "GoldBounty": 0,
+        "RespawnSeconds": 0,
         "ModelPath": "ice_castle_1.rmesh",
         "PortraitModelPath": null,
         "VisualMode": "Mesh",
@@ -300,14 +290,15 @@
         "IsHero": false,
         "Abilities": null,
         "XpBounty": 0,
+        "ExperiencePerLevel": 0,
         "PathingCapabilities": null,
         "PathingType": 32,
-        "ObstacleRadius": null,
         "Targets": null,
         "Weapons": null,
         "ProjectileModelPath": null,
         "Animations": {},
         "ObjectAttachments": null,
+        "PseudoSockets": null,
         "Sounds": null,
         "StartingItems": null,
         "ShopItems": null,
@@ -319,7 +310,8 @@
         "ProceduralAnimation": null,
         "EnableProceduralAnimation": null,
         "DespawnShader": null,
-        "ConstructionRange": 4
+        "ConstructionRange": 4,
+        "Attribution_ImportedFromMap": null
       },
       {
         "TemplateID": "building/timber_framed_house",
@@ -337,21 +329,21 @@
         "CostStone": 0,
         "PopCost": 0,
         "ProductionTime": 0,
-        "AttackType": null,
-        "ArmorType": null,
         "Strength": 0,
         "Agility": 0,
         "Vitality": 0,
         "Intelligence": 0,
         "Wisdom": 0,
         "Fortune": 0,
+        "LevelGrowth": null,
         "HpRegen": 0,
         "HpRegenCombatDelay": 0,
         "MaxMana": 0,
         "ManaRegen": 0,
-        "RatedArmor": 0,
+        "MagicResistance": 0,
         "FlatArmorPenetration": 0,
         "PercentArmorPenetration": 0,
+        "FlatMagicPenetration": 0,
         "DamageVariance": 0,
         "DamageType": "normal",
         "CritChance": 0,
@@ -369,6 +361,7 @@
         "SightRange": 15,
         "AcquisitionRange": 15,
         "GoldBounty": 0,
+        "RespawnSeconds": 0,
         "ModelPath": "timber_framed_house.rmesh",
         "PortraitModelPath": null,
         "VisualMode": "Mesh",
@@ -384,14 +377,15 @@
         "IsHero": false,
         "Abilities": null,
         "XpBounty": 0,
+        "ExperiencePerLevel": 0,
         "PathingCapabilities": null,
         "PathingType": 32,
-        "ObstacleRadius": null,
         "Targets": null,
         "Weapons": null,
         "ProjectileModelPath": null,
         "Animations": {},
         "ObjectAttachments": null,
+        "PseudoSockets": null,
         "Sounds": null,
         "StartingItems": null,
         "ShopItems": null,
@@ -403,7 +397,8 @@
         "ProceduralAnimation": null,
         "EnableProceduralAnimation": null,
         "DespawnShader": null,
-        "ConstructionRange": 4
+        "ConstructionRange": 4,
+        "Attribution_ImportedFromMap": null
       },
       {
         "TemplateID": "building/dark_tower_keep_1",
@@ -421,21 +416,21 @@
         "CostStone": 0,
         "PopCost": 0,
         "ProductionTime": 0,
-        "AttackType": null,
-        "ArmorType": null,
         "Strength": 0,
         "Agility": 0,
         "Vitality": 0,
         "Intelligence": 0,
         "Wisdom": 0,
         "Fortune": 0,
+        "LevelGrowth": null,
         "HpRegen": 0,
         "HpRegenCombatDelay": 0,
         "MaxMana": 0,
         "ManaRegen": 0,
-        "RatedArmor": 0,
+        "MagicResistance": 0,
         "FlatArmorPenetration": 0,
         "PercentArmorPenetration": 0,
+        "FlatMagicPenetration": 0,
         "DamageVariance": 0,
         "DamageType": "normal",
         "CritChance": 0,
@@ -453,6 +448,7 @@
         "SightRange": 15,
         "AcquisitionRange": 15,
         "GoldBounty": 0,
+        "RespawnSeconds": 0,
         "ModelPath": "dark_tower_keep_1.rmesh",
         "PortraitModelPath": null,
         "VisualMode": "Mesh",
@@ -468,14 +464,15 @@
         "IsHero": false,
         "Abilities": null,
         "XpBounty": 0,
+        "ExperiencePerLevel": 0,
         "PathingCapabilities": null,
         "PathingType": 32,
-        "ObstacleRadius": null,
         "Targets": null,
         "Weapons": null,
         "ProjectileModelPath": null,
         "Animations": null,
         "ObjectAttachments": null,
+        "PseudoSockets": null,
         "Sounds": null,
         "StartingItems": null,
         "ShopItems": null,
@@ -487,7 +484,8 @@
         "ProceduralAnimation": null,
         "EnableProceduralAnimation": null,
         "DespawnShader": null,
-        "ConstructionRange": 4
+        "ConstructionRange": 4,
+        "Attribution_ImportedFromMap": null
       },
       {
         "TemplateID": "building/fairytale_castle",
@@ -505,21 +503,21 @@
         "CostStone": 0,
         "PopCost": 0,
         "ProductionTime": 0,
-        "AttackType": null,
-        "ArmorType": null,
         "Strength": 0,
         "Agility": 0,
         "Vitality": 0,
         "Intelligence": 0,
         "Wisdom": 0,
         "Fortune": 0,
+        "LevelGrowth": null,
         "HpRegen": 0,
         "HpRegenCombatDelay": 0,
         "MaxMana": 0,
         "ManaRegen": 0,
-        "RatedArmor": 0,
+        "MagicResistance": 0,
         "FlatArmorPenetration": 0,
         "PercentArmorPenetration": 0,
+        "FlatMagicPenetration": 0,
         "DamageVariance": 0,
         "DamageType": "normal",
         "CritChance": 0,
@@ -537,6 +535,7 @@
         "SightRange": 15,
         "AcquisitionRange": 15,
         "GoldBounty": 0,
+        "RespawnSeconds": 0,
         "ModelPath": "fairytale_castle.rmesh",
         "PortraitModelPath": null,
         "VisualMode": "Mesh",
@@ -552,14 +551,15 @@
         "IsHero": false,
         "Abilities": null,
         "XpBounty": 0,
+        "ExperiencePerLevel": 0,
         "PathingCapabilities": null,
         "PathingType": 32,
-        "ObstacleRadius": null,
         "Targets": null,
         "Weapons": null,
         "ProjectileModelPath": null,
         "Animations": null,
         "ObjectAttachments": null,
+        "PseudoSockets": null,
         "Sounds": null,
         "StartingItems": null,
         "ShopItems": null,
@@ -571,7 +571,8 @@
         "ProceduralAnimation": null,
         "EnableProceduralAnimation": null,
         "DespawnShader": null,
-        "ConstructionRange": 4
+        "ConstructionRange": 4,
+        "Attribution_ImportedFromMap": null
       },
       {
         "TemplateID": "building/dark_tower_keep",
@@ -589,21 +590,21 @@
         "CostStone": 0,
         "PopCost": 0,
         "ProductionTime": 0,
-        "AttackType": null,
-        "ArmorType": null,
         "Strength": 0,
         "Agility": 0,
         "Vitality": 0,
         "Intelligence": 0,
         "Wisdom": 0,
         "Fortune": 0,
+        "LevelGrowth": null,
         "HpRegen": 0,
         "HpRegenCombatDelay": 0,
         "MaxMana": 0,
         "ManaRegen": 0,
-        "RatedArmor": 0,
+        "MagicResistance": 0,
         "FlatArmorPenetration": 0,
         "PercentArmorPenetration": 0,
+        "FlatMagicPenetration": 0,
         "DamageVariance": 0,
         "DamageType": "normal",
         "CritChance": 0,
@@ -621,6 +622,7 @@
         "SightRange": 15,
         "AcquisitionRange": 15,
         "GoldBounty": 0,
+        "RespawnSeconds": 0,
         "ModelPath": "dark_tower_keep.rmesh",
         "PortraitModelPath": null,
         "VisualMode": "Mesh",
@@ -636,14 +638,15 @@
         "IsHero": false,
         "Abilities": null,
         "XpBounty": 0,
+        "ExperiencePerLevel": 0,
         "PathingCapabilities": null,
         "PathingType": 32,
-        "ObstacleRadius": null,
         "Targets": null,
         "Weapons": null,
         "ProjectileModelPath": null,
         "Animations": null,
         "ObjectAttachments": null,
+        "PseudoSockets": null,
         "Sounds": null,
         "StartingItems": null,
         "ShopItems": null,
@@ -655,7 +658,8 @@
         "ProceduralAnimation": null,
         "EnableProceduralAnimation": null,
         "DespawnShader": null,
-        "ConstructionRange": 4
+        "ConstructionRange": 4,
+        "Attribution_ImportedFromMap": null
       },
       {
         "TemplateID": "building/fantasy_tower_building_4",
@@ -673,21 +677,21 @@
         "CostStone": 0,
         "PopCost": 0,
         "ProductionTime": 0,
-        "AttackType": null,
-        "ArmorType": null,
         "Strength": 0,
         "Agility": 0,
         "Vitality": 0,
         "Intelligence": 0,
         "Wisdom": 0,
         "Fortune": 0,
+        "LevelGrowth": null,
         "HpRegen": 0,
         "HpRegenCombatDelay": 0,
         "MaxMana": 0,
         "ManaRegen": 0,
-        "RatedArmor": 0,
+        "MagicResistance": 0,
         "FlatArmorPenetration": 0,
         "PercentArmorPenetration": 0,
+        "FlatMagicPenetration": 0,
         "DamageVariance": 0,
         "DamageType": "normal",
         "CritChance": 0,
@@ -705,6 +709,7 @@
         "SightRange": 15,
         "AcquisitionRange": 15,
         "GoldBounty": 0,
+        "RespawnSeconds": 0,
         "ModelPath": "fantasy_tower_building_4.rmesh",
         "PortraitModelPath": null,
         "VisualMode": "Mesh",
@@ -720,14 +725,15 @@
         "IsHero": false,
         "Abilities": null,
         "XpBounty": 0,
+        "ExperiencePerLevel": 0,
         "PathingCapabilities": null,
         "PathingType": 32,
-        "ObstacleRadius": null,
         "Targets": null,
         "Weapons": null,
         "ProjectileModelPath": null,
         "Animations": null,
         "ObjectAttachments": null,
+        "PseudoSockets": null,
         "Sounds": null,
         "StartingItems": null,
         "ShopItems": null,
@@ -739,7 +745,8 @@
         "ProceduralAnimation": null,
         "EnableProceduralAnimation": null,
         "DespawnShader": null,
-        "ConstructionRange": 4
+        "ConstructionRange": 4,
+        "Attribution_ImportedFromMap": null
       },
       {
         "TemplateID": "building/watch_tower_building",
@@ -757,21 +764,21 @@
         "CostStone": 0,
         "PopCost": 0,
         "ProductionTime": 0,
-        "AttackType": null,
-        "ArmorType": null,
         "Strength": 0,
         "Agility": 0,
         "Vitality": 0,
         "Intelligence": 0,
         "Wisdom": 0,
         "Fortune": 0,
+        "LevelGrowth": null,
         "HpRegen": 0,
         "HpRegenCombatDelay": 0,
         "MaxMana": 0,
         "ManaRegen": 0,
-        "RatedArmor": 0,
+        "MagicResistance": 0,
         "FlatArmorPenetration": 0,
         "PercentArmorPenetration": 0,
+        "FlatMagicPenetration": 0,
         "DamageVariance": 0,
         "DamageType": "normal",
         "CritChance": 0,
@@ -789,6 +796,7 @@
         "SightRange": 15,
         "AcquisitionRange": 15,
         "GoldBounty": 0,
+        "RespawnSeconds": 0,
         "ModelPath": "watch_tower_building.rmesh",
         "PortraitModelPath": null,
         "VisualMode": "Mesh",
@@ -804,14 +812,15 @@
         "IsHero": false,
         "Abilities": null,
         "XpBounty": 0,
+        "ExperiencePerLevel": 0,
         "PathingCapabilities": null,
         "PathingType": 32,
-        "ObstacleRadius": null,
         "Targets": null,
         "Weapons": null,
         "ProjectileModelPath": null,
         "Animations": null,
         "ObjectAttachments": null,
+        "PseudoSockets": null,
         "Sounds": null,
         "StartingItems": null,
         "ShopItems": null,
@@ -823,7 +832,8 @@
         "ProceduralAnimation": null,
         "EnableProceduralAnimation": null,
         "DespawnShader": null,
-        "ConstructionRange": 4
+        "ConstructionRange": 4,
+        "Attribution_ImportedFromMap": null
       },
       {
         "TemplateID": "building/scroll_and_scroll_holder",
@@ -841,21 +851,21 @@
         "CostStone": 0,
         "PopCost": 0,
         "ProductionTime": 0,
-        "AttackType": null,
-        "ArmorType": null,
         "Strength": 0,
         "Agility": 0,
         "Vitality": 0,
         "Intelligence": 0,
         "Wisdom": 0,
         "Fortune": 0,
+        "LevelGrowth": null,
         "HpRegen": 0,
         "HpRegenCombatDelay": 0,
         "MaxMana": 0,
         "ManaRegen": 0,
-        "RatedArmor": 0,
+        "MagicResistance": 0,
         "FlatArmorPenetration": 0,
         "PercentArmorPenetration": 0,
+        "FlatMagicPenetration": 0,
         "DamageVariance": 0,
         "DamageType": "normal",
         "CritChance": 0,
@@ -873,6 +883,7 @@
         "SightRange": 15,
         "AcquisitionRange": 15,
         "GoldBounty": 0,
+        "RespawnSeconds": 0,
         "ModelPath": "scroll_and_scroll_holder.rmesh",
         "PortraitModelPath": null,
         "VisualMode": "Mesh",
@@ -888,14 +899,15 @@
         "IsHero": false,
         "Abilities": null,
         "XpBounty": 0,
+        "ExperiencePerLevel": 0,
         "PathingCapabilities": null,
         "PathingType": 32,
-        "ObstacleRadius": null,
         "Targets": null,
         "Weapons": null,
         "ProjectileModelPath": null,
         "Animations": null,
         "ObjectAttachments": null,
+        "PseudoSockets": null,
         "Sounds": null,
         "StartingItems": null,
         "ShopItems": null,
@@ -907,7 +919,8 @@
         "ProceduralAnimation": null,
         "EnableProceduralAnimation": null,
         "DespawnShader": null,
-        "ConstructionRange": 4
+        "ConstructionRange": 4,
+        "Attribution_ImportedFromMap": null
       }
     ],
     "Resources": [
@@ -933,7 +946,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "MaxCapacity": 0,
@@ -957,7 +974,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "MaxCapacity": 0,
@@ -981,7 +1002,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "MaxCapacity": 0,
@@ -1005,7 +1030,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "MaxCapacity": 0,
@@ -1029,7 +1058,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "MaxCapacity": 0,
@@ -1053,7 +1086,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "MaxCapacity": 0,
@@ -1077,7 +1114,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "MaxCapacity": 0,
@@ -1101,7 +1142,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "MaxCapacity": 0,
@@ -1125,7 +1170,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "MaxCapacity": 0,
@@ -1149,7 +1198,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "MaxCapacity": 2000,
@@ -1173,7 +1226,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "MaxCapacity": 0,
@@ -1197,7 +1254,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "MaxCapacity": 0,
@@ -1221,7 +1282,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "MaxCapacity": 0,
@@ -1245,7 +1310,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       }
     ],
     "Props": [
@@ -1267,7 +1336,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "Scale": 1.25,
@@ -1287,7 +1360,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "Scale": 1.25,
@@ -1307,7 +1384,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "Scale": 1.25,
@@ -1327,7 +1408,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "Scale": 1.25,
@@ -1347,7 +1432,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "Scale": 1.25,
@@ -1367,7 +1456,11 @@
         "PathingType": 255,
         "SpawnShader": null,
         "DeathShader": null,
-        "DespawnShader": null
+        "ProceduralAnimation": null,
+        "EnableProceduralAnimation": null,
+        "PseudoSockets": null,
+        "DespawnShader": null,
+        "Attribution_ImportedFromMap": null
       }
     ],
     "Abilities": [
@@ -1375,67 +1468,73 @@
         "TemplateID": "ability/fireball",
         "Name": "Bola de fuego",
         "Description": "[X] Bola de fuego — Daño 50 en área (radio 4)",
+        "Role": null,
         "AbilityType": "target_spell",
         "IconPath": "res://Assets/UI/fire_spell.png",
         "ManaCost": 0,
+        "CostGold": 0,
+        "CostWood": 0,
+        "CostStone": 0,
         "Cooldown": 12,
         "TargetRange": 12,
         "VisualEffect": null,
+        "ProjectileId": null,
         "CastSound": null,
-        "AppliedStatusEffects": null,
+        "AutoCast": null,
         "AreaOfEffectRadius": 4,
-        "Damage": 50,
-        "Healing": 0,
-        "SummonedUnitId": null,
-        "SummonCount": 0,
-        "SummonDuration": 0,
+        "Effects": null,
         "GridX": -1,
         "GridY": -1,
-        "Hotkey": null
+        "Hotkey": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "TemplateID": "ability/holylight",
         "Name": "Luz sagrada",
         "Description": "[X] Luz sagrada — Cura 60 en área (radio 4)",
+        "Role": null,
         "AbilityType": "target_spell",
         "IconPath": "res://Assets/UI/magic_upgrade_arrow.png",
         "ManaCost": 0,
+        "CostGold": 0,
+        "CostWood": 0,
+        "CostStone": 0,
         "Cooldown": 15,
         "TargetRange": 12,
         "VisualEffect": null,
+        "ProjectileId": null,
         "CastSound": null,
-        "AppliedStatusEffects": null,
+        "AutoCast": null,
         "AreaOfEffectRadius": 4,
-        "Damage": 0,
-        "Healing": 60,
-        "SummonedUnitId": null,
-        "SummonCount": 0,
-        "SummonDuration": 0,
+        "Effects": null,
         "GridX": -1,
         "GridY": -1,
-        "Hotkey": null
+        "Hotkey": null,
+        "Attribution_ImportedFromMap": null
       },
       {
         "TemplateID": "ability/lightning",
         "Name": "Rayo",
         "Description": "[X] Rayo — Daño 80 en área (radio 2)",
+        "Role": null,
         "AbilityType": "target_spell",
         "IconPath": "res://Assets/UI/lightning_spell.png",
         "ManaCost": 0,
+        "CostGold": 0,
+        "CostWood": 0,
+        "CostStone": 0,
         "Cooldown": 18,
         "TargetRange": 12,
         "VisualEffect": null,
+        "ProjectileId": null,
         "CastSound": null,
-        "AppliedStatusEffects": null,
+        "AutoCast": null,
         "AreaOfEffectRadius": 2,
-        "Damage": 80,
-        "Healing": 0,
-        "SummonedUnitId": null,
-        "SummonCount": 0,
-        "SummonDuration": 0,
+        "Effects": null,
         "GridX": -1,
         "GridY": -1,
-        "Hotkey": null
+        "Hotkey": null,
+        "Attribution_ImportedFromMap": null
       }
     ]
   },
@@ -1464,7 +1563,8 @@
       "Metallic": 0,
       "DefaultPathingCode": 44,
       "DecalBombingRules": [],
-      "VfxBombingRules": []
+      "VfxBombingRules": [],
+      "Attribution_ImportedFromMap": null
     },
     "terrain/bioluminescent_jungle_fungi_bloom": {
       "SwatchIndex": 1,
@@ -1490,7 +1590,8 @@
       "Metallic": 0,
       "DefaultPathingCode": 44,
       "DecalBombingRules": [],
-      "VfxBombingRules": []
+      "VfxBombingRules": [],
+      "Attribution_ImportedFromMap": null
     },
     "terrain/crystal_caverns_shining_tuff": {
       "SwatchIndex": 2,
@@ -1516,7 +1617,8 @@
       "Metallic": 0,
       "DefaultPathingCode": 44,
       "DecalBombingRules": [],
-      "VfxBombingRules": []
+      "VfxBombingRules": [],
+      "Attribution_ImportedFromMap": null
     },
     "terrain/floating_isles_grass_high_peak": {
       "SwatchIndex": 6,
@@ -1542,7 +1644,8 @@
       "Metallic": 0,
       "DefaultPathingCode": 44,
       "DecalBombingRules": [],
-      "VfxBombingRules": []
+      "VfxBombingRules": [],
+      "Attribution_ImportedFromMap": null
     },
     "terrain/sunken_ruins_mossy_dirt": {
       "SwatchIndex": 3,
@@ -1568,7 +1671,8 @@
       "Metallic": 0,
       "DefaultPathingCode": 44,
       "DecalBombingRules": [],
-      "VfxBombingRules": []
+      "VfxBombingRules": [],
+      "Attribution_ImportedFromMap": null
     },
     "terrain/whispering_forest_fern_leaf": {
       "SwatchIndex": 4,
@@ -1594,7 +1698,8 @@
       "Metallic": 0,
       "DefaultPathingCode": 44,
       "DecalBombingRules": [],
-      "VfxBombingRules": []
+      "VfxBombingRules": [],
+      "Attribution_ImportedFromMap": null
     },
     "terrain/whispering_woods_dry_twig": {
       "SwatchIndex": 7,
@@ -1620,7 +1725,8 @@
       "Metallic": 0,
       "DefaultPathingCode": 44,
       "DecalBombingRules": [],
-      "VfxBombingRules": []
+      "VfxBombingRules": [],
+      "Attribution_ImportedFromMap": null
     },
     "terrain/whispering_woods_emerald_leaf": {
       "SwatchIndex": 5,
@@ -1646,7 +1752,8 @@
       "Metallic": 0,
       "DefaultPathingCode": 44,
       "DecalBombingRules": [],
-      "VfxBombingRules": []
+      "VfxBombingRules": [],
+      "Attribution_ImportedFromMap": null
     }
   },
   "vfx_spritesheets": {
@@ -1655,14 +1762,16 @@
       "Rows": 4,
       "Fps": 20,
       "SubframeBlend": false,
-      "TexturePath": null
+      "TexturePath": null,
+      "Attribution_ImportedFromMap": null
     },
     "spritesheet/solar_flare_sheet": {
       "Columns": 4,
       "Rows": 4,
       "Fps": 20,
       "SubframeBlend": false,
-      "TexturePath": null
+      "TexturePath": null,
+      "Attribution_ImportedFromMap": null
     }
   },
   "SpawnShader": {
@@ -1679,7 +1788,8 @@
       "VertexDisplacement": 0.25,
       "AlphaFade": 1,
       "Duration": 1.1,
-      "AssetType": "SpawnShader"
+      "AssetType": "SpawnShader",
+      "Attribution_ImportedFromMap": null
     },
     "SpawnShader/fire_demolish": {
       "Name": "Fire Ember Dissolve",
@@ -1694,7 +1804,8 @@
       "VertexDisplacement": 0.15,
       "AlphaFade": 1,
       "Duration": 1.5,
-      "AssetType": "SpawnShader"
+      "AssetType": "SpawnShader",
+      "Attribution_ImportedFromMap": null
     },
     "SpawnShader/frost_crystallize": {
       "Name": "Frost Crystallize",
@@ -1709,7 +1820,8 @@
       "VertexDisplacement": 0.03,
       "AlphaFade": 0.95,
       "Duration": 1.3,
-      "AssetType": "SpawnShader"
+      "AssetType": "SpawnShader",
+      "Attribution_ImportedFromMap": null
     },
     "SpawnShader/hologram_warp": {
       "Name": "Hologram Scanlines",
@@ -1724,7 +1836,8 @@
       "VertexDisplacement": 0.02,
       "AlphaFade": 0.75,
       "Duration": 1,
-      "AssetType": "SpawnShader"
+      "AssetType": "SpawnShader",
+      "Attribution_ImportedFromMap": null
     },
     "SpawnShader/magic_blueprint": {
       "Name": "Magic Blueprint",
@@ -1739,7 +1852,8 @@
       "VertexDisplacement": 0,
       "AlphaFade": 0.9,
       "Duration": 1.2,
-      "AssetType": "SpawnShader"
+      "AssetType": "SpawnShader",
+      "Attribution_ImportedFromMap": null
     },
     "SpawnShader/shadow_void": {
       "Name": "Shadow Void Collapse",
@@ -1754,7 +1868,8 @@
       "VertexDisplacement": 0.18,
       "AlphaFade": 1,
       "Duration": 1.4,
-      "AssetType": "SpawnShader"
+      "AssetType": "SpawnShader",
+      "Attribution_ImportedFromMap": null
     }
   },
   "Models": {

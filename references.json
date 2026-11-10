@@ -8,7 +8,5 @@
       "FolderPath": "D:/git/Realm/MeleeRuleset"
     }
   ],
-  "ConflictPriorities": {
-    "MapScript.cs": "Melee Ruleset"
-  }
+  "ConflictPriorities": {}
 }

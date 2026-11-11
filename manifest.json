@@ -121,13 +121,13 @@
       "MapComposition.g.cs": "b79928be8ef3b1cfeea8c6676910eb0938ef50774c15f776cf7f1d0d3a46f4b0",
       "MapScript.cs": "99a786d4ace7f65caa6f3a0c05a6eb2b880a01de8aa0db382b0e1c6ecd9b49e4",
       "MapScript.csproj": "f0e2e3698d2c152cf4362eb414f2f1f413faee74302c744fb5731d5baa2cbed9",
-      "MapTemplates.g.cs": "df24b30fe75f289d2c258b6a6553d061e02955dc5a55fb21d75cb7cfb8b40833",
-      "metadata.json": "12cf0cbb79ee4fa9aa6571dd694ce71cba4c3fb903cc4cdc9aed196b4c0b8e45",
+      "MapTemplates.g.cs": "6e17a276cac4c64c3d5e4c73485b94a62b3e6a5d9ce6ce7510a23dc030bb0e2f",
+      "metadata.json": "98b3807140069593263e7d99014481a9413facebae6713263579c6a3cb522c60",
       "NuGet.config": "2211ce92e32f9c93bc98f9172c70cae0d41e5fe750e3a28a245eb754e6c3a389",
       "README.md": "e2b2959776348b31c40f9914b2fe28959a5b61246a761519bd99ee607ddb6b64",
       "realm_lldb.py": "7a1f12b546518397e27af3c14c9f9f036e78d176d1b04a1a66b228055fea7db4",
       "temp_map_workspace.slnx": "a29acf8e4ae490cce5f30e0f0c8b0eac95d3d192da239c846ffae8d926432bcb",
-      "terrain.json": "7f37d3f0d465455bc397c042e39940370831ef28f19c1b530a1b1496f4c81063",
+      "terrain.json": "2f1dbd0209af85e01145848851e603858a27bfaa630f117b073892a2f2810632",
       "terrain_cliff_splat_indices.exr": "d19ef54d3374e086d090cb6b38b25e96e9e9065625bbee932ffd350049cc53d8",
       "terrain_cliff_splat_weights.exr": "77a5275f075bcdb416bf958aed1461e61aac2fc281f91a5d786b484a674f5509",
       "terrain_heights.exr": "77926aa9f812d5aef8ce502d9eff1625c7c702d5aecfe6b591c0bb8fa5ebd743",
@@ -149,7 +149,7 @@
       "bin/script/MapScript.wasm": "c4371d0f8f14b3b654ac8c6bc04673e2457098bbcb885c0e631c125b174c7912",
       "composed/MeleeRuleset/MapScript.cs": "99a786d4ace7f65caa6f3a0c05a6eb2b880a01de8aa0db382b0e1c6ecd9b49e4",
       "composed/MeleeRuleset/MapScript.DamageAffinity.cs": "7b5cd51198488eafa571039ae9e4a815fd5e64de2efb001d1a70dd6ccdc433c4",
-      "composed/MeleeRuleset/MapTemplates.g.cs": "df24b30fe75f289d2c258b6a6553d061e02955dc5a55fb21d75cb7cfb8b40833",
+      "composed/MeleeRuleset/MapTemplates.g.cs": "6e17a276cac4c64c3d5e4c73485b94a62b3e6a5d9ce6ce7510a23dc030bb0e2f",
       "bin/Release/net10.0/wasi-wasm/native/MapScript.wasm": "c4371d0f8f14b3b654ac8c6bc04673e2457098bbcb885c0e631c125b174c7912"
     }
   }

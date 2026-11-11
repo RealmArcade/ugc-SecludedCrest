@@ -538,7 +538,7 @@
     {
       "TemplateId": "prop/crystal_cluster_25",
       "PosX": 23.948292,
-      "PosY": 3.0001607,
+      "PosY": 3.077568,
       "PosZ": -12.631371,
       "RotationY": 0,
       "Scale": 3.85
@@ -546,7 +546,7 @@
     {
       "TemplateId": "prop/crystal_cluster_25",
       "PosX": 23.280176,
-      "PosY": 3.066649,
+      "PosY": 3.3046842,
       "PosZ": -8.444233,
       "RotationY": 0,
       "Scale": 1.95
@@ -2882,7 +2882,7 @@
     {
       "TemplateId": "resource/grass_tuft_1",
       "PosX": 21.722404,
-      "PosY": 3,
+      "PosY": 3.4927826,
       "PosZ": -15.671476,
       "RotationY": 0,
       "Scale": 0.65
@@ -2890,7 +2890,7 @@
     {
       "TemplateId": "resource/grass_tuft_1",
       "PosX": 21.976576,
-      "PosY": 3.0022779,
+      "PosY": 6,
       "PosZ": -13.491658,
       "RotationY": 0,
       "Scale": 0.65
@@ -2906,7 +2906,7 @@
     {
       "TemplateId": "resource/grass_tuft_1",
       "PosX": 22.543829,
-      "PosY": 3.0142326,
+      "PosY": 5.187331,
       "PosZ": -11.057175,
       "RotationY": 0,
       "Scale": 0.65

@@ -7,84 +7,89 @@ using Realm.MapAPI;
 
 public partial class MapScript : IWasmModule, ILobbyScript
 {
-	private const string NexusTemplateId = "building/nexus";
-	private const string GoldNodeTemplateId = "resource/melee_gold_mine";
-	private const string WoodNodeTemplateId = "resource/melee_woodland";
+	protected const string NexusTemplateId = "building/nexus";
+	protected const string GoldNodeTemplateId = "resource/melee_gold_mine";
+	protected const string WoodNodeTemplateId = "resource/melee_woodland";
 
-	private const int DefaultMaximumBuildingsPerPlayer = 5;
-	private const int MaximumBuildingLimit = 24;
-	private const string ConstructionAbilityId = "ability/begin_construction";
-	private const string AbandonConstructionAbilityId = "ability/abandon_construction";
-	private const float BuildingWoodCost = 100f;
-	private const int DefaultDraftOptionCount = 3;
-	private const int MaximumDraftOptions = 24;
-	private const int DraftRow = 2;
-	private const int DraftAbandonSlot = 3;
-	private const int MaximumPopulation = 80;
-	private const float StartingGold = 200f;
-	private const float StartingWood = 100f;
-	private const float UnderAttackAlertCooldownSeconds = 8f;
-	private const float BaseRevivalSeconds = 12f;
-	private const float RevivalSecondsPerDeath = 3f;
-	private const float RevivalSecondsCap = 45f;
-	private const float IncomeTickSeconds = 1f;
-	private const float IncomeTaxPerBuilding = 0.15f;
-	private const float CinderMarkDamagePerSecond = 6f;
-	private const float RequisitionCompletionFraction = 0.3f;
-	private const float BulwarkRecalculateSeconds = 1f;
-	private const float BulwarkSoldierRadius = 10f;
-	private const float BulwarkArmorPerSoldier = 0.6f;
-	private const float BulwarkMagicResistancePerSoldier = 0.6f;
-	private const float BulwarkArmorPerBuilding = 1.5f;
-	private const float BulwarkMagicResistancePerBuilding = 1.5f;
+	protected const int DefaultMaximumBuildingsPerPlayer = 5;
+	protected const int MaximumBuildingLimit = 24;
+	protected const string ConstructionAbilityId = "ability/begin_construction";
+	protected const string AbandonConstructionAbilityId = "ability/abandon_construction";
+	protected const float BuildingWoodCost = 100f;
+	protected const int DefaultDraftOptionCount = 3;
+	protected const int MaximumDraftOptions = 24;
+	protected const int DraftRow = 2;
+	protected const int DraftAbandonSlot = 3;
+	protected const int MaximumPopulation = 80;
+	protected const float StartingGold = 200f;
+	protected const float StartingWood = 100f;
+	protected const float UnderAttackAlertCooldownSeconds = 8f;
+	protected const float BaseRevivalSeconds = 12f;
+	protected const float RevivalSecondsPerDeath = 3f;
+	protected const float RevivalSecondsCap = 45f;
+	protected const float IncomeTickSeconds = 1f;
+	protected const float IncomeTaxPerBuilding = 0.15f;
+	protected const float CinderMarkDamagePerSecond = 6f;
+	protected const float CinderfieldRadius = 5f;
+	protected const float CinderfieldDamagePerSecond = 25f;
+	protected const float CinderfieldTickSeconds = 0.5f;
+	protected const float CinderfieldBaseDurationSeconds = 4f;
+	protected const float RequisitionBaseCompletionFraction = 0.3f;
+	protected const float RequisitionMaximumCompletionFraction = 0.5f;
+	protected const float BulwarkRecalculateSeconds = 1f;
+	protected const float BulwarkSoldierRadius = 10f;
+	protected const float BulwarkArmorPerSoldier = 0.6f;
+	protected const float BulwarkMagicResistancePerSoldier = 0.6f;
+	protected const float BulwarkArmorPerBuilding = 1.5f;
+	protected const float BulwarkMagicResistancePerBuilding = 1.5f;
 
-	private const float RelicCost = 100f;
-	private const int RelicSlotCount = 6;
-	private const float FormationFrontDistance = 3.4f;
-	private const float FormationFlankDistance = 3.0f;
-	private const float FormationBackDistance = 3.4f;
-	private const float FormationRowSpacing = 1.7f;
-	private const float FormationColumnSpacing = 2.1f;
-	private const float FormationSlotTolerance = 1.5f;
-	private const float FormationLeashDistance = 24f;
-	private const float FormationOrderIntervalSeconds = 0.45f;
-	private const float EngageLeashDistance = 18f;
-	private const float StandardTargetMemorySeconds = 4f;
-	private const float TargetRetrySeconds = 0.6f;
-	private const int ReadoutRowCount = 8;
-	private const int FormationFrontSize = 3;
-	private const int FormationFlankSize = 2;
+	protected const float RelicCost = 100f;
+	protected const int RelicSlotCount = 6;
+	protected const float FormationFrontDistance = 3.4f;
+	protected const float FormationFlankDistance = 3.0f;
+	protected const float FormationBackDistance = 3.4f;
+	protected const float FormationRowSpacing = 1.7f;
+	protected const float FormationColumnSpacing = 2.1f;
+	protected const float FormationSlotTolerance = 1.5f;
+	protected const float FormationLeashDistance = 24f;
+	protected const float FormationOrderIntervalSeconds = 0.45f;
+	protected const float EngageLeashDistance = 18f;
+	protected const float StandardTargetMemorySeconds = 4f;
+	protected const float TargetRetrySeconds = 0.6f;
+	protected const int ReadoutRowCount = 8;
+	protected const int FormationFrontSize = 3;
+	protected const int FormationFlankSize = 2;
 
-	private const string MendAbilityId = "ability/mend";
-	private const string WardingAegisAbilityId = "ability/warding_aegis";
-	private const string StandardAuraAbilityId = "ability/standard_aura";
-	private const string StandardAuraBuffId = "buff/standard_aura";
-	private const string MenderTemplateId = "unit/mender";
-	private const string WarderTemplateId = "unit/warder";
-	private const string StandardBearerTemplateId = "unit/standard_bearer";
-	private const float MendRadius = 8f;
-	private const float MendCooldownSeconds = 2.2f;
-	private const float MendHealthFractionBelow = 0.9f;
-	private const float WardingAegisRadius = 8f;
-	private const float WardingAegisCooldownSeconds = 12f;
-	private const float StandardAuraRadius = 7f;
-	private const float StandardAuraCooldownSeconds = 5f;
+	protected const string MendAbilityId = "ability/mend";
+	protected const string WardingAegisAbilityId = "ability/warding_aegis";
+	protected const string StandardAuraAbilityId = "ability/standard_aura";
+	protected const string StandardAuraBuffId = "buff/standard_aura";
+	protected const string MenderTemplateId = "unit/mender";
+	protected const string WarderTemplateId = "unit/warder";
+	protected const string StandardBearerTemplateId = "unit/standard_bearer";
+	protected const float MendRadius = 8f;
+	protected const float MendCooldownSeconds = 2.2f;
+	protected const float MendHealthFractionBelow = 0.9f;
+	protected const float WardingAegisRadius = 8f;
+	protected const float WardingAegisCooldownSeconds = 12f;
+	protected const float StandardAuraRadius = 7f;
+	protected const float StandardAuraCooldownSeconds = 5f;
 
-	private enum SoldierFormation
+	protected enum SoldierFormation
 	{
 		Front,
 		Flank,
 		Back
 	}
 
-	private enum SoldierTargetingRule
+	protected enum SoldierTargetingRule
 	{
 		Standard,
 		TankShredder,
 		Assassin
 	}
 
-	private readonly record struct SoldierProfile(
+	protected readonly record struct SoldierProfile(
 		string SoldierTemplateId,
 		string BuildingTemplateId,
 		int Capacity,
@@ -95,14 +100,14 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		SoldierFormation Formation,
 		SoldierTargetingRule TargetingRule);
 
-	private readonly record struct BuildingProfile(
+	protected readonly record struct BuildingProfile(
 		string TemplateId,
 		float GoldPerMinute,
 		float WoodPerMinute);
 
-	private static readonly string[] HeroTemplateIds = { "hero/vale", "hero/sable", "hero/corvus" };
-	private static readonly string[] HeroFactionNames = { "Vale", "Sable", "Corvus" };
-	private static readonly string[] RelicIds =
+	protected static readonly string[] HeroTemplateIds = { "hero/vale", "hero/sable", "hero/corvus" };
+	protected static readonly string[] HeroFactionNames = { "Vale", "Sable", "Corvus" };
+	protected static readonly string[] RelicIds =
 	{
 		"item/sigil_of_the_wall",
 		"item/couriers_knot",
@@ -112,7 +117,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		"item/muster_bell"
 	};
 
-	private static readonly string[] RelicNames =
+	protected static readonly string[] RelicNames =
 	{
 		"Sigil of the Wall",
 		"Courier's Knot",
@@ -122,7 +127,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		"Muster Bell"
 	};
 
-	private static readonly string[] RelicEffects =
+	protected static readonly string[] RelicEffects =
 	{
 		"Front-formation soldiers gain 10% maximum health.",
 		"Soldier-building recharge is 10% faster.",
@@ -132,10 +137,10 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		"Soldier-building recharge is 10% faster."
 	};
 
-	private static readonly string[] RelicHotkeys = { "1", "2", "3", "4", "5", "6" };
-	private static readonly string[] InnateNames = { "Unbroken", "Cinder Mark", "Standing Ledger" };
+	protected static readonly string[] RelicHotkeys = { "1", "2", "3", "4", "5", "6" };
+	protected static readonly string[] InnateNames = { "Unbroken", "Cinder Mark", "Standing Ledger" };
 
-	private static readonly SoldierProfile[] SoldierProfiles =
+	protected static readonly SoldierProfile[] SoldierProfiles =
 	{
 		new("unit/shieldbearer", "building/bulwark_hall", 6, 3, 22f, 5f, 12f, SoldierFormation.Front, SoldierTargetingRule.Standard),
 		new("unit/axeman", "building/warband_yard", 6, 3, 20f, 4f, 12f, SoldierFormation.Flank, SoldierTargetingRule.Standard),
@@ -148,7 +153,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		new("unit/warder", "building/vigil_bastion", 3, 2, 26f, 6f, 12f, SoldierFormation.Front, SoldierTargetingRule.Standard)
 	};
 
-	private static readonly BuildingProfile[] BuildingProfiles =
+	protected static readonly BuildingProfile[] BuildingProfiles =
 	{
 		new("building/bulwark_hall", 30f, 0f),
 		new("building/warband_yard", 16f, 0f),
@@ -161,71 +166,78 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		new("building/vigil_bastion", 10f, 0f)
 	};
 
-	private readonly float[] _productionTimers = new float[EcsSharedMemory.MAX_ENTITIES];
-	private readonly int[] _lastBadgeValues = new int[EcsSharedMemory.MAX_ENTITIES];
-	private readonly byte[] _producing = new byte[EcsSharedMemory.MAX_ENTITIES];
-	private readonly int[] _soldierCounts = new int[SoldierProfiles.Length];
-	private readonly int[] _capacityCounts = new int[SoldierProfiles.Length];
+	protected readonly float[] _productionTimers = new float[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly int[] _lastBadgeValues = new int[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly byte[] _producing = new byte[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly int[] _soldierCounts = new int[SoldierProfiles.Length];
+	protected readonly int[] _capacityCounts = new int[SoldierProfiles.Length];
 
-	private static readonly float[] ConstructionSecondsByProfile = { 30f, 30f, 30f, 30f, 30f, 30f, 35f, 35f, 35f };
+	protected static readonly float[] ConstructionSecondsByProfile = { 30f, 30f, 30f, 30f, 30f, 30f, 35f, 35f, 35f };
 
-	private static readonly string[] DraftHotkeys =
+	protected static readonly string[] DraftHotkeys =
 	{
 		"Z", "X", "C", "A", "S", "D", "F", "G", "Q", "W", "E", "R",
 		"T", "Y", "U", "I", "O", "P", "J", "K", "L", "N", "M", "B"
 	};
 
-	private readonly byte[] _draftOpen = new byte[EcsSharedMemory.MAX_PLAYERS];
-	private readonly int[] _draftOptionCounts = new int[EcsSharedMemory.MAX_PLAYERS];
-	private readonly int[] _draftOptions = new int[EcsSharedMemory.MAX_PLAYERS * MaximumDraftOptions];
-	private readonly float[] _draftSitePositionsX = new float[EcsSharedMemory.MAX_PLAYERS];
-	private readonly float[] _draftSitePositionsZ = new float[EcsSharedMemory.MAX_PLAYERS];
-	private int _deckTakenBuildings;
+	protected readonly byte[] _draftOpen = new byte[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly int[] _draftOptionCounts = new int[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly int[] _draftOptions = new int[EcsSharedMemory.MAX_PLAYERS * MaximumDraftOptions];
+	protected readonly float[] _draftSitePositionsX = new float[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _draftSitePositionsZ = new float[EcsSharedMemory.MAX_PLAYERS];
+	protected int _deckTakenBuildings;
 
 	// The parameters the lobby's host set for this match. Each one starts at the value the ruleset itself states and is
 	// replaced only when the host configured it, so a lobby that touched nothing plays the authored ruleset.
-	private int _maximumBuildingsPerPlayer = DefaultMaximumBuildingsPerPlayer;
-	private int _draftOptionsPerDraw = DefaultDraftOptionCount;
-	private float _capacityMultiplier = 1f;
-	private float _chargeMultiplier = 1f;
-	private bool _mirroredDraft;
-	private bool _openPoolDrafting;
+	protected int _maximumBuildingsPerPlayer = DefaultMaximumBuildingsPerPlayer;
+	protected int _draftOptionsPerDraw = DefaultDraftOptionCount;
+	protected float _capacityMultiplier = 1f;
+	protected float _chargeMultiplier = 1f;
+	protected bool _mirroredDraft;
+	protected bool _openPoolDrafting;
 
-	private readonly int[] _heroEntities = new int[EcsSharedMemory.MAX_PLAYERS];
-	private readonly int[] _nexusEntities = new int[EcsSharedMemory.MAX_PLAYERS];
-	private readonly int[] _heroDeaths = new int[EcsSharedMemory.MAX_PLAYERS];
-	private readonly int[] _heroTemplateIndices = new int[EcsSharedMemory.MAX_PLAYERS];
-	private readonly float[] _reviveAtTimes = new float[EcsSharedMemory.MAX_PLAYERS];
-	private readonly float[] _heroExperiences = new float[EcsSharedMemory.MAX_PLAYERS];
-	private readonly int[] _heroLevelsBeforeDeath = new int[EcsSharedMemory.MAX_PLAYERS];
-	private readonly float[] _heroFacing = new float[EcsSharedMemory.MAX_PLAYERS];
-	private readonly float[] _heroLastPositionsX = new float[EcsSharedMemory.MAX_PLAYERS];
-	private readonly float[] _heroLastPositionsZ = new float[EcsSharedMemory.MAX_PLAYERS];
-	private readonly int[] _heroRecentTargets = new int[EcsSharedMemory.MAX_PLAYERS];
-	private readonly float[] _heroRecentTargetTimes = new float[EcsSharedMemory.MAX_PLAYERS];
-	private readonly int[] _assignedTargets = new int[EcsSharedMemory.MAX_ENTITIES];
-	private readonly float[] _nextTargetTimes = new float[EcsSharedMemory.MAX_ENTITIES];
-	private readonly float[] _nextAttackRefreshTimes = new float[EcsSharedMemory.MAX_ENTITIES];
-	private readonly float[] _nextFormationOrderTimes = new float[EcsSharedMemory.MAX_ENTITIES];
-	private readonly byte[] _soldierControlled = new byte[EcsSharedMemory.MAX_ENTITIES];
-	private readonly int[] _sourceBuildings = new int[EcsSharedMemory.MAX_ENTITIES];
-	private readonly ulong[] _readoutSignatures = new ulong[EcsSharedMemory.MAX_ENTITIES * ReadoutRowCount];
-	private readonly ulong[] _buildingReadoutStates = new ulong[EcsSharedMemory.MAX_ENTITIES];
-	private readonly ulong[] _heroReadoutStates = new ulong[EcsSharedMemory.MAX_PLAYERS];
-	private readonly float[] _lastAlertTimes = new float[EcsSharedMemory.MAX_PLAYERS];
-	private readonly byte[] _relicFlags = new byte[EcsSharedMemory.MAX_PLAYERS];
-	private readonly byte[] _burningFromMark = new byte[EcsSharedMemory.MAX_ENTITIES];
-	private readonly float[] _cinderMarkDamage = new float[EcsSharedMemory.MAX_ENTITIES];
-	private readonly float[] _mendTimers = new float[EcsSharedMemory.MAX_ENTITIES];
-	private readonly float[] _wardingAegisTimers = new float[EcsSharedMemory.MAX_ENTITIES];
-	private readonly float[] _standardAuraTimers = new float[EcsSharedMemory.MAX_ENTITIES];
-	private readonly byte[] _eliminated = new byte[EcsSharedMemory.MAX_PLAYERS];
-	private readonly float[] _nexusPositionsX = new float[EcsSharedMemory.MAX_PLAYERS];
-	private readonly float[] _nexusPositionsZ = new float[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly int[] _heroEntities = new int[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly int[] _nexusEntities = new int[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly int[] _heroDeaths = new int[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly int[] _heroTemplateIndices = new int[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _reviveAtTimes = new float[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _heroExperiences = new float[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly int[] _heroLevelsBeforeDeath = new int[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _heroFacing = new float[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _heroLastPositionsX = new float[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _heroLastPositionsZ = new float[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly int[] _heroRecentTargets = new int[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _heroRecentTargetTimes = new float[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly int[] _assignedTargets = new int[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly float[] _nextTargetTimes = new float[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly float[] _nextAttackRefreshTimes = new float[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly float[] _nextFormationOrderTimes = new float[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly byte[] _soldierControlled = new byte[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly int[] _sourceBuildings = new int[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly ulong[] _readoutSignatures = new ulong[EcsSharedMemory.MAX_ENTITIES * ReadoutRowCount];
+	protected readonly ulong[] _buildingReadoutStates = new ulong[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly ulong[] _heroReadoutStates = new ulong[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _lastAlertTimes = new float[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly byte[] _relicFlags = new byte[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly byte[] _burningFromMark = new byte[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly float[] _cinderMarkDamage = new float[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly byte[] _cinderfieldActive = new byte[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly int[] _cinderfieldCasters = new int[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly int[] _cinderfieldOwners = new int[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _cinderfieldCentersX = new float[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _cinderfieldCentersZ = new float[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _cinderfieldRemainingSeconds = new float[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _cinderfieldDamageTimers = new float[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _mendTimers = new float[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly float[] _wardingAegisTimers = new float[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly float[] _standardAuraTimers = new float[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly byte[] _eliminated = new byte[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _nexusPositionsX = new float[EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _nexusPositionsZ = new float[EcsSharedMemory.MAX_PLAYERS];
 
-	private IGameAPI _api = null!;
-	private float _incomeTimer;
-	private float _bulwarkTimer;
+	protected IGameAPI _api = null!;
+	protected float _incomeTimer;
+	protected float _bulwarkTimer;
 
 	public void Initialize(IGameAPI api)
 	{
@@ -243,10 +255,10 @@ public partial class MapScript : IWasmModule, ILobbyScript
 			api.RegisterResourceWorkerUnit(HeroTemplateIds[index]);
 		}
 
-		api.RegisterBuffModifier("buff/grounding_shout", "MovementSpeed", true, -25f);
+		api.RegisterBuffModifier("buff/grounding_shout", "MovementSpeed", true, -0.25f);
 		api.RegisterBuffModifier("buff/hold_fast", "Armor", false, 4f);
-		api.RegisterBuffModifier("buff/forced_march", "MovementSpeed", true, 20f);
-		api.RegisterBuffModifier("buff/standard_aura", "MovementSpeed", true, 10f);
+		api.RegisterBuffModifier("buff/forced_march", "MovementSpeed", true, 0.2f);
+		api.RegisterBuffModifier("buff/standard_aura", "MovementSpeed", true, 0.1f);
 		api.RegisterBuffModifier("buff/cinder_mark", "HpRegen", false, 0f);
 
 		for (int index = 0; index < _lastAlertTimes.Length; index++)
@@ -272,7 +284,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private static void WarnWhenTheBoardIsNotAuthoredForMelee(IGameAPI api)
+	protected static void WarnWhenTheBoardIsNotAuthoredForMelee(IGameAPI api)
 	{
 		bool hasAnchors = api.GetSpawnAnchorCount() > 0;
 		bool hasResourceNodes = api.GetResourceNodes().Length > 0;
@@ -301,6 +313,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 			AdvanceOwnConstruction(api, player, delta);
 		}
 
+		UpdateCinderfields(api, delta);
 		UpdateDamageAffinity(api, delta);
 
 		_bulwarkTimer += delta;
@@ -353,7 +366,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return false;
 	}
 
-	private void ConfigurePlayer(IGameAPI api, PlayerId player)
+	protected void ConfigurePlayer(IGameAPI api, PlayerId player)
 	{
 		int playerIndex = player.Value;
 		player.Gold = StartingGold;
@@ -398,7 +411,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		player.ShowFeedbackText($"{HeroFactionNames[heroTemplateIndex]} answers the call.", new Vector3(0.85f, 0.95f, 1f));
 	}
 
-	private void UpdateArmyLevel(IGameAPI api, PlayerId player)
+	protected void UpdateArmyLevel(IGameAPI api, PlayerId player)
 	{
 		int heroEntityId = _heroEntities[player.Value];
 		if (heroEntityId <= 0) return;
@@ -420,7 +433,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void UpdateRevival(IGameAPI api, PlayerId player)
+	protected void UpdateRevival(IGameAPI api, PlayerId player)
 	{
 		int playerIndex = player.Value;
 		int heroEntityId = _heroEntities[playerIndex];
@@ -454,7 +467,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		player.ShowFeedbackText("Your hero returns to the field.", new Vector3(0.6f, 1f, 0.7f));
 	}
 
-	private void UpdateProduction(IGameAPI api, PlayerId player, float delta)
+	protected void UpdateProduction(IGameAPI api, PlayerId player, float delta)
 	{
 		int playerIndex = player.Value;
 		if (_heroEntities[playerIndex] <= 0) return;
@@ -531,7 +544,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void SpawnSoldier(IGameAPI api, PlayerId player, SoldierProfile profile, UnitId building)
+	protected void SpawnSoldier(IGameAPI api, PlayerId player, SoldierProfile profile, UnitId building)
 	{
 		Vector3 origin = building.Position;
 		float angle = (building.UniqueId % 8) * (MathF.Tau / 8f);
@@ -557,7 +570,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		ApplyRelicsToUnit(api, player.Value, soldier);
 	}
 
-	private void ApplyIncome(IGameAPI api, PlayerId player, float delta)
+	protected void ApplyIncome(IGameAPI api, PlayerId player, float delta)
 	{
 		int playerIndex = player.Value;
 		ReadOnlySpan<UnitId> owned = player.GetUnits();
@@ -596,7 +609,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	///     the damage callback does not re-mark its victim: a burn that refreshed itself each tick would never end, and the
 	///     2 s burn is meant to run out once the hits stop.
 	/// </summary>
-	private void ApplyCinderMarks(IGameAPI api, PlayerId player, float delta)
+	protected void ApplyCinderMarks(IGameAPI api, PlayerId player, float delta)
 	{
 		if (delta <= 0f) return;
 		if (!IsCinderMarkHero(player.Value)) return;
@@ -633,7 +646,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	///     soldiers around it. The map keeps each caster's own clock, because these abilities are never triggered by a
 	///     player and the authority has no order to spend a cooldown on.
 	/// </summary>
-	private void ApplyAutoCasts(IGameAPI api, PlayerId player, float delta)
+	protected void ApplyAutoCasts(IGameAPI api, PlayerId player, float delta)
 	{
 		if (delta <= 0f) return;
 
@@ -660,7 +673,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void UpdateMend(IGameAPI api, ReadOnlySpan<UnitId> owned, UnitId caster, float delta)
+	protected void UpdateMend(IGameAPI api, ReadOnlySpan<UnitId> owned, UnitId caster, float delta)
 	{
 		int entityId = caster.UniqueId;
 		_mendTimers[entityId] -= delta;
@@ -673,7 +686,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		api.CastAbility(caster, MendAbilityId, patient.Position);
 	}
 
-	private void UpdateWardingAegis(IGameAPI api, ReadOnlySpan<UnitId> owned, UnitId caster, float delta)
+	protected void UpdateWardingAegis(IGameAPI api, ReadOnlySpan<UnitId> owned, UnitId caster, float delta)
 	{
 		int entityId = caster.UniqueId;
 		_wardingAegisTimers[entityId] -= delta;
@@ -686,7 +699,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		api.CastAbility(caster, WardingAegisAbilityId, ward.Position);
 	}
 
-	private void UpdateStandardAura(IGameAPI api, ReadOnlySpan<UnitId> owned, UnitId caster, float delta)
+	protected void UpdateStandardAura(IGameAPI api, ReadOnlySpan<UnitId> owned, UnitId caster, float delta)
 	{
 		int entityId = caster.UniqueId;
 		_standardAuraTimers[entityId] -= delta;
@@ -699,7 +712,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		api.CastAbility(caster, StandardAuraAbilityId, caster.Position);
 	}
 
-	private static bool TryFindMostWoundedAlly(ReadOnlySpan<UnitId> owned, UnitId caster, float radius, float healthFractionBelow, out UnitId worstWounded)
+	protected static bool TryFindMostWoundedAlly(ReadOnlySpan<UnitId> owned, UnitId caster, float radius, float healthFractionBelow, out UnitId worstWounded)
 	{
 		worstWounded = UnitId.Invalid;
 		Vector3 casterPosition = caster.Position;
@@ -726,7 +739,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return worstWounded.IsValid;
 	}
 
-	private static bool HasAllyWithoutAura(IGameAPI api, ReadOnlySpan<UnitId> owned, UnitId caster)
+	protected static bool HasAllyWithoutAura(IGameAPI api, ReadOnlySpan<UnitId> owned, UnitId caster)
 	{
 		Vector3 casterPosition = caster.Position;
 		float radiusSquared = StandardAuraRadius * StandardAuraRadius;
@@ -744,7 +757,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return false;
 	}
 
-	private void RefreshBulwark(IGameAPI api, PlayerId player)
+	protected void RefreshBulwark(IGameAPI api, PlayerId player)
 	{
 		int playerIndex = player.Value;
 		int heroEntityId = _heroEntities[playerIndex];
@@ -793,7 +806,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		PublishReadout(api, hero, 2, "Bulwark", $"{nearbySoldiers} {soldiers}, {functionalBuildings} {buildings}");
 	}
 
-	private void HandleConstructionFinished(UnitId building)
+	protected void HandleConstructionFinished(UnitId building)
 	{
 		if (!building.IsValid || !building.IsBuilding) return;
 
@@ -816,7 +829,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		player.ShowFeedbackText($"{_api.GetUnitName(building.TemplateID)} is complete.", new Vector3(0.8f, 0.9f, 1f));
 	}
 
-	private void HandleUnitDamaged(UnitId victim, UnitId attacker, float damage)
+	protected void HandleUnitDamaged(UnitId victim, UnitId attacker, float damage)
 	{
 		if (!victim.IsValid || damage <= 0.01f) return;
 
@@ -860,7 +873,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		player.PlayWarningSound();
 	}
 
-	private void HandleUnitDied(UnitId unit, UnitId killer)
+	protected void HandleUnitDied(UnitId unit, UnitId killer)
 	{
 		if (!unit.IsValid) return;
 
@@ -876,7 +889,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void HandleHeroDied(UnitId hero)
+	protected void HandleHeroDied(UnitId hero)
 	{
 		int playerIndex = hero.Player;
 		if (playerIndex <= 0) return;
@@ -918,7 +931,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	///     playing while its ally's Nexus stands, and only the loss of the team's last Nexus ends every seat on it.
 	/// </summary>
 	/// <param name="nexus">The Nexus that was destroyed.</param>
-	private void HandleNexusDestroyed(UnitId nexus)
+	protected void HandleNexusDestroyed(UnitId nexus)
 	{
 		int playerIndex = nexus.Player;
 		if (playerIndex <= 0 || _eliminated[playerIndex] != 0) return;
@@ -951,7 +964,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	/// <param name="team">The team to look at.</param>
 	/// <param name="fallenSeat">The seat whose Nexus this is.</param>
 	/// <returns>Whether another Nexus that belongs to that team is on the board.</returns>
-	private bool TeamHoldsANexus(int team, int fallenSeat)
+	protected bool TeamHoldsANexus(int team, int fallenSeat)
 	{
 		ReadOnlySpan<PlayerId> players = _api.GetActivePlayers();
 		for (int index = 0; index < players.Length; index++)
@@ -967,7 +980,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return false;
 	}
 
-	private void CheckTeamVictory()
+	protected void CheckTeamVictory()
 	{
 		int survivingTeam = 0;
 		bool contested = false;
@@ -1000,7 +1013,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void HandleSpellCast(UnitId caster, string abilityId, Vector3 position)
+	protected void HandleSpellCast(UnitId caster, string abilityId, Vector3 position)
 	{
 		if (!caster.IsValid) return;
 
@@ -1037,14 +1050,23 @@ public partial class MapScript : IWasmModule, ILobbyScript
 			return;
 		}
 
+		if (abilityId == "ability/cinderfield")
+		{
+			BeginCinderfield(_api, caster, position);
+			return;
+		}
+
 		if (abilityId == "ability/emergency_levy")
 		{
 			GrantOneChargeToBuildings(playerIndex);
 		}
 	}
 
-	private void AdvanceActiveConstruction(int playerIndex)
+	protected void AdvanceActiveConstruction(int playerIndex)
 	{
+		UnitId hero = new(_heroEntities[playerIndex]);
+		int heroLevel = hero.IsDead ? 1 : hero.Level;
+
 		ReadOnlySpan<UnitId> owned = _api.GetUnitsOwnedByPlayer(playerIndex);
 		for (int index = 0; index < owned.Length; index++)
 		{
@@ -1055,7 +1077,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 			if (progress >= 1f) continue;
 
 			float remainingSeconds = (1f - progress) * ResolveConstructionSeconds(building.TemplateID);
-			_api.AdvanceUnitConstruction(building, remainingSeconds * RequisitionCompletionFraction);
+			_api.AdvanceUnitConstruction(building, remainingSeconds * RequisitionCompletionFractionForLevel(heroLevel));
 
 			PlayerId player = _api.GetPlayer(playerIndex);
 			player.ShowFeedbackText("Requisition speeds the work along.", new Vector3(0.9f, 0.85f, 0.5f));
@@ -1063,7 +1085,99 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void GrantOneChargeToBuildings(int playerIndex)
+	protected static float RequisitionCompletionFractionForLevel(int level)
+	{
+		int clampedLevel = Math.Clamp(level, 1, 6);
+		return MathF.Min(RequisitionMaximumCompletionFraction, RequisitionBaseCompletionFraction + ((clampedLevel - 1) * 0.05f));
+	}
+
+	protected void BeginCinderfield(IGameAPI api, UnitId caster, Vector3 position)
+	{
+		int playerIndex = caster.Player;
+		if (playerIndex <= 0) return;
+
+		int slot = FindCinderfieldSlot();
+		_cinderfieldActive[slot] = 1;
+		_cinderfieldCasters[slot] = caster.UniqueId;
+		_cinderfieldOwners[slot] = playerIndex;
+		_cinderfieldCentersX[slot] = position.X;
+		_cinderfieldCentersZ[slot] = position.Z;
+		_cinderfieldRemainingSeconds[slot] = CinderfieldDurationForLevel(caster.Level);
+		_cinderfieldDamageTimers[slot] = 0f;
+
+		api.SpawnExpandingGroundRing(position, CinderfieldRadius, CinderfieldRadius, 1.1f, new Vector3(1f, 0.3f, 0.05f));
+		api.GetPlayer(playerIndex).ShowFeedbackText("Cinderfield burns the ground.", new Vector3(1f, 0.4f, 0.15f));
+	}
+
+	protected static float CinderfieldDurationForLevel(int level)
+	{
+		int clampedLevel = Math.Clamp(level, 1, 6);
+		if (clampedLevel <= 3) return CinderfieldBaseDurationSeconds + ((clampedLevel - 1) * 0.25f);
+
+		return 4.5f + ((clampedLevel - 3) * (0.5f / 3f));
+	}
+
+	protected int FindCinderfieldSlot()
+	{
+		int oldestSlot = 0;
+		float shortestRemaining = float.MaxValue;
+
+		for (int index = 0; index < _cinderfieldActive.Length; index++)
+		{
+			if (_cinderfieldActive[index] == 0) return index;
+			if (_cinderfieldRemainingSeconds[index] >= shortestRemaining) continue;
+
+			shortestRemaining = _cinderfieldRemainingSeconds[index];
+			oldestSlot = index;
+		}
+
+		return oldestSlot;
+	}
+
+	protected void UpdateCinderfields(IGameAPI api, float delta)
+	{
+		if (delta <= 0f) return;
+
+		for (int index = 0; index < _cinderfieldActive.Length; index++)
+		{
+			if (_cinderfieldActive[index] == 0) continue;
+
+			_cinderfieldRemainingSeconds[index] -= delta;
+			_cinderfieldDamageTimers[index] += delta;
+
+			while (_cinderfieldDamageTimers[index] >= CinderfieldTickSeconds)
+			{
+				_cinderfieldDamageTimers[index] -= CinderfieldTickSeconds;
+				DamageCinderfield(api, index);
+			}
+
+			if (_cinderfieldRemainingSeconds[index] <= 0f) _cinderfieldActive[index] = 0;
+		}
+	}
+
+	protected void DamageCinderfield(IGameAPI api, int slot)
+	{
+		int playerIndex = _cinderfieldOwners[slot];
+		var center = new Vector3(_cinderfieldCentersX[slot], 0f, _cinderfieldCentersZ[slot]);
+
+		UnitId caster = new(_cinderfieldCasters[slot]);
+		if (caster.IsDead) caster = new(_heroEntities[playerIndex]);
+		if (caster.IsDead) caster = UnitId.Invalid;
+
+		api.SpawnExpandingGroundRing(center, CinderfieldRadius, CinderfieldRadius, CinderfieldTickSeconds + 0.1f, new Vector3(1f, 0.3f, 0.05f));
+
+		ReadOnlySpan<UnitId> caught = api.GetUnitsInRadius(center, CinderfieldRadius);
+		for (int index = 0; index < caught.Length; index++)
+		{
+			UnitId unit = caught[index];
+			if (unit.IsDead) continue;
+			if (api.ArePlayersAllied(unit.Player, playerIndex)) continue;
+
+			api.DealTypedDamage(caster, unit, CinderfieldDamagePerSecond * CinderfieldTickSeconds, "magic");
+		}
+	}
+
+	protected void GrantOneChargeToBuildings(int playerIndex)
 	{
 		ReadOnlySpan<UnitId> owned = _api.GetUnitsOwnedByPlayer(playerIndex);
 		PlayerId player = _api.GetPlayer(playerIndex);
@@ -1090,7 +1204,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void RefillChargesForPlayer(IGameAPI api, PlayerId player)
+	protected void RefillChargesForPlayer(IGameAPI api, PlayerId player)
 	{
 		int playerIndex = player.Value;
 		int extraCharges = IsStandingLedgerHero(playerIndex) ? 1 : 0;
@@ -1112,7 +1226,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void BeginConstruction(int playerIndex, Vector3 position)
+	protected void BeginConstruction(int playerIndex, Vector3 position)
 	{
 		if (playerIndex <= 0 || playerIndex >= EcsSharedMemory.MAX_PLAYERS) return;
 
@@ -1170,7 +1284,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	///     is what a lobby that touched nothing plays.
 	/// </summary>
 	/// <param name="api">The game API the match runs through.</param>
-	private void ReadMatchOptions(IGameAPI api)
+	protected void ReadMatchOptions(IGameAPI api)
 	{
 		int draftOptions = api.GetMatchOption(MatchOption.MaximumBuildingDraftCount);
 		_draftOptionsPerDraw = draftOptions > 0 ? Math.Clamp(draftOptions, 1, MaximumDraftOptions) : DefaultDraftOptionCount;
@@ -1194,7 +1308,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	/// </summary>
 	/// <param name="profileIndex">The index of the soldier profile in <see cref="SoldierProfiles" />.</param>
 	/// <returns>The capacity one building of that profile grants.</returns>
-	private int ScaledCapacity(int profileIndex)
+	protected int ScaledCapacity(int profileIndex)
 	{
 		int capacity = SoldierProfiles[profileIndex].Capacity;
 		if (_capacityMultiplier == 1f) return capacity;
@@ -1207,7 +1321,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	/// </summary>
 	/// <param name="profileIndex">The index of the soldier profile in <see cref="SoldierProfiles" />.</param>
 	/// <returns>The maximum charges one building of that profile holds.</returns>
-	private int ScaledMaximumCharges(int profileIndex)
+	protected int ScaledMaximumCharges(int profileIndex)
 	{
 		int charges = SoldierProfiles[profileIndex].MaximumCharges;
 		if (_chargeMultiplier == 1f) return charges;
@@ -1220,7 +1334,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	///     what this player already stands on, which is the unique-copy rule the content set is balanced against. A deck
 	///     with nothing left is restored first, so a long match never stalls for lack of options.
 	/// </summary>
-	private int DrawDraftOptions(int playerIndex)
+	protected int DrawDraftOptions(int playerIndex)
 	{
 		Span<int> candidates = stackalloc int[SoldierProfiles.Length];
 		int candidateCount = CollectDraftCandidates(playerIndex, candidates);
@@ -1249,7 +1363,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return optionCount;
 	}
 
-	private int CollectDraftCandidates(int playerIndex, Span<int> destination)
+	protected int CollectDraftCandidates(int playerIndex, Span<int> destination)
 	{
 		ReadOnlySpan<UnitId> owned = _api.GetUnitsOwnedByPlayer(playerIndex);
 		int count = 0;
@@ -1264,7 +1378,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return count;
 	}
 
-	private static bool PlayerOwnsBuilding(ReadOnlySpan<UnitId> owned, string templateId)
+	protected static bool PlayerOwnsBuilding(ReadOnlySpan<UnitId> owned, string templateId)
 	{
 		for (int index = 0; index < owned.Length; index++)
 		{
@@ -1281,7 +1395,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	///     building template itself, so a cast names the package the player picked without a second table to keep in step,
 	///     and every hero and Nexus can offer them in its command grid. All of them are hidden until a draw offers them.
 	/// </summary>
-	private void RegisterDraftAbilities(IGameAPI api)
+	protected void RegisterDraftAbilities(IGameAPI api)
 	{
 		for (int index = 0; index < SoldierProfiles.Length; index++)
 		{
@@ -1301,7 +1415,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		AddDraftAbilityToCommandUnits(api, AbandonConstructionAbilityId);
 	}
 
-	private static void AddDraftAbilityToCommandUnits(IGameAPI api, string abilityId)
+	protected static void AddDraftAbilityToCommandUnits(IGameAPI api, string abilityId)
 	{
 		api.AddUnitTypeAbility(NexusTemplateId, abilityId);
 
@@ -1316,7 +1430,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	///     was begun from. Only the drawn packages and the abandon command are visible, so a player sees the three options
 	///     the deck offered and nothing else.
 	/// </summary>
-	private void ApplyDraftAbilityState(IGameAPI api, int playerIndex)
+	protected void ApplyDraftAbilityState(IGameAPI api, int playerIndex)
 	{
 		if (playerIndex <= 0 || playerIndex >= EcsSharedMemory.MAX_PLAYERS) return;
 
@@ -1337,7 +1451,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		if (heroEntityId > 0) api.SetAbilityState(new UnitId(heroEntityId), ConstructionAbilityId, draftOpen, draftOpen);
 	}
 
-	private void SetDraftAbilityVisible(IGameAPI api, int playerIndex, string abilityId, bool visible)
+	protected void SetDraftAbilityVisible(IGameAPI api, int playerIndex, string abilityId, bool visible)
 	{
 		int heroEntityId = _heroEntities[playerIndex];
 		if (heroEntityId > 0) api.SetAbilityState(new UnitId(heroEntityId), abilityId, !visible, !visible);
@@ -1346,7 +1460,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		if (nexusEntityId > 0) api.SetAbilityState(new UnitId(nexusEntityId), abilityId, !visible, !visible);
 	}
 
-	private bool IsDraftOption(int playerIndex, int profileIndex)
+	protected bool IsDraftOption(int playerIndex, int profileIndex)
 	{
 		if (playerIndex <= 0 || playerIndex >= EcsSharedMemory.MAX_PLAYERS) return false;
 		if (_draftOpen[playerIndex] == 0) return false;
@@ -1364,7 +1478,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	///     Locks the building a player cast from its command grid. The deck entry leaves the shared deck here rather than
 	///     when it was drawn, so an option the player declined stays available to everybody else.
 	/// </summary>
-	private void LockDraftOption(int playerIndex, string buildingTemplateId)
+	protected void LockDraftOption(int playerIndex, string buildingTemplateId)
 	{
 		if (playerIndex <= 0 || playerIndex >= EcsSharedMemory.MAX_PLAYERS) return;
 
@@ -1406,7 +1520,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	///     Gives back what an unanswered draft reserved: the deck entries return because nothing was ever taken from the
 	///     deck, and the 100 wood returns because it was charged when the draw was made.
 	/// </summary>
-	private void AbandonOpenDraft(int playerIndex)
+	protected void AbandonOpenDraft(int playerIndex)
 	{
 		if (playerIndex <= 0 || playerIndex >= EcsSharedMemory.MAX_PLAYERS) return;
 		if (_draftOpen[playerIndex] == 0) return;
@@ -1426,7 +1540,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	///     Advances the sites this match started through the draft. Nothing is working them, so the map is the clock that
 	///     builds them; the engine still announces each completion through OnConstructionFinished, where the charges start.
 	/// </summary>
-	private void AdvanceOwnConstruction(IGameAPI api, PlayerId player, float delta)
+	protected void AdvanceOwnConstruction(IGameAPI api, PlayerId player, float delta)
 	{
 		if (delta <= 0f) return;
 
@@ -1441,7 +1555,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void ResetUnitRuntimeState(int entityId)
+	protected void ResetUnitRuntimeState(int entityId)
 	{
 		if (entityId <= 0 || entityId >= EcsSharedMemory.MAX_ENTITIES) return;
 
@@ -1465,7 +1579,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	///     earned rather than resetting it. Facing is the direction the hero last walked, which is what the formation
 	///     slots are built around.
 	/// </summary>
-	private void UpdateHeroMemory(IGameAPI api, PlayerId player)
+	protected void UpdateHeroMemory(IGameAPI api, PlayerId player)
 	{
 		int playerIndex = player.Value;
 		int heroEntityId = _heroEntities[playerIndex];
@@ -1492,7 +1606,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	///     only decides where a soldier belongs and what it should fight, which is the behaviour the design places in the
 	///     ruleset rather than in a player order.
 	/// </summary>
-	private void UpdateArmyBehaviour(IGameAPI api, PlayerId player)
+	protected void UpdateArmyBehaviour(IGameAPI api, PlayerId player)
 	{
 		int playerIndex = player.Value;
 		int heroEntityId = _heroEntities[playerIndex];
@@ -1542,7 +1656,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private static Vector3 ComputeFormationSlot(SoldierFormation formation, int slotIndex, Vector3 heroPosition, float facing)
+	protected static Vector3 ComputeFormationSlot(SoldierFormation formation, int slotIndex, Vector3 heroPosition, float facing)
 	{
 		float forwardX = MathF.Sin(facing);
 		float forwardZ = MathF.Cos(facing);
@@ -1587,7 +1701,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void UpdateSoldierBehaviour(IGameAPI api, PlayerId player, UnitId hero, UnitId soldier, in SoldierProfile profile, Vector3 slot)
+	protected void UpdateSoldierBehaviour(IGameAPI api, PlayerId player, UnitId hero, UnitId soldier, in SoldierProfile profile, Vector3 slot)
 	{
 		int entityId = soldier.UniqueId;
 		float now = api.GameElapsedTime;
@@ -1635,7 +1749,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		_nextFormationOrderTimes[entityId] = now + FormationOrderIntervalSeconds;
 	}
 
-	private bool IsTargetStillReachable(IGameAPI api, int playerIndex, int targetEntityId, Vector3 heroPosition)
+	protected bool IsTargetStillReachable(IGameAPI api, int playerIndex, int targetEntityId, Vector3 heroPosition)
 	{
 		var target = new UnitId(targetEntityId);
 		if (!target.IsValid || target.IsDead) return false;
@@ -1645,7 +1759,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return Vector3.DistanceSquared(target.Position, heroPosition) <= EngageLeashDistance * EngageLeashDistance;
 	}
 
-	private UnitId SelectTarget(IGameAPI api, UnitId soldier, in SoldierProfile profile, PlayerId player)
+	protected UnitId SelectTarget(IGameAPI api, UnitId soldier, in SoldierProfile profile, PlayerId player)
 	{
 		float acquisitionRange = profile.AcquisitionRange;
 		float acquisitionRangeSquared = acquisitionRange * acquisitionRange;
@@ -1708,7 +1822,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return best;
 	}
 
-	private static bool IsTargetCandidate(IGameAPI api, UnitId candidate, int playerIndex, Vector3 soldierPosition, float acquisitionRangeSquared)
+	protected static bool IsTargetCandidate(IGameAPI api, UnitId candidate, int playerIndex, Vector3 soldierPosition, float acquisitionRangeSquared)
 	{
 		if (!candidate.IsValid || candidate.IsDead) return false;
 		if (candidate.Player == playerIndex) return false;
@@ -1719,7 +1833,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return Vector3.DistanceSquared(candidate.Position, soldierPosition) <= acquisitionRangeSquared;
 	}
 
-	private static bool IsRelicAbility(string abilityId)
+	protected static bool IsRelicAbility(string abilityId)
 	{
 		for (int index = 0; index < RelicIds.Length; index++)
 		{
@@ -1729,7 +1843,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return false;
 	}
 
-	private static void RegisterRelicVendor(IGameAPI api)
+	protected static void RegisterRelicVendor(IGameAPI api)
 	{
 		for (int index = 0; index < RelicIds.Length; index++)
 		{
@@ -1748,7 +1862,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void BuyRelic(int playerIndex, string relicId)
+	protected void BuyRelic(int playerIndex, string relicId)
 	{
 		int relicIndex = Array.IndexOf(RelicIds, relicId);
 		if (relicIndex < 0) return;
@@ -1798,7 +1912,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		player.PlayClickSound();
 	}
 
-	private static int CountRelics(UnitId hero)
+	protected static int CountRelics(UnitId hero)
 	{
 		int held = 0;
 		for (int index = 0; index < RelicIds.Length; index++)
@@ -1809,7 +1923,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return held;
 	}
 
-	private void ApplyRelicVendorState(IGameAPI api, PlayerId player)
+	protected void ApplyRelicVendorState(IGameAPI api, PlayerId player)
 	{
 		int playerIndex = player.Value;
 		int nexusEntityId = _nexusEntities[playerIndex];
@@ -1829,7 +1943,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void PublishReadout(IGameAPI api, UnitId unit, int index, string name, string value)
+	protected void PublishReadout(IGameAPI api, UnitId unit, int index, string name, string value)
 	{
 		if (!unit.IsValid || index < 0 || index >= ReadoutRowCount) return;
 
@@ -1842,7 +1956,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		api.SetUnitTooltipText(unit, $"readout.{index}.value", value);
 	}
 
-	private void ClearReadoutRows(IGameAPI api, UnitId unit)
+	protected void ClearReadoutRows(IGameAPI api, UnitId unit)
 	{
 		if (!unit.IsValid) return;
 
@@ -1855,7 +1969,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void PublishHeroReadout(IGameAPI api, PlayerId player)
+	protected void PublishHeroReadout(IGameAPI api, PlayerId player)
 	{
 		int playerIndex = player.Value;
 		int heroEntityId = _heroEntities[playerIndex];
@@ -1898,7 +2012,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		PublishReadout(api, hero, 7, string.Empty, string.Empty);
 	}
 
-	private void RestoreRelicsToHero(IGameAPI api, int playerIndex, UnitId hero)
+	protected void RestoreRelicsToHero(IGameAPI api, int playerIndex, UnitId hero)
 	{
 		byte flags = _relicFlags[playerIndex];
 		for (int index = 0; index < RelicIds.Length; index++)
@@ -1909,7 +2023,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void PublishSoldierReadout(IGameAPI api, UnitId soldier, int profileIndex)
+	protected void PublishSoldierReadout(IGameAPI api, UnitId soldier, int profileIndex)
 	{
 		if (profileIndex < 0) return;
 
@@ -1934,7 +2048,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		PublishSourceChargeReadout(api, soldier);
 	}
 
-	private void PublishSourceChargeReadout(IGameAPI api, UnitId soldier)
+	protected void PublishSourceChargeReadout(IGameAPI api, UnitId soldier)
 	{
 		int sourceEntityId = _sourceBuildings[soldier.UniqueId];
 		if (sourceEntityId <= 0) return;
@@ -1949,7 +2063,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		PublishReadout(api, soldier, 3, "Charges", $"{source.Charges} / {source.MaximumCharges}");
 	}
 
-	private void PublishBuildingReadout(IGameAPI api, UnitId building, int profileIndex, int charges)
+	protected void PublishBuildingReadout(IGameAPI api, UnitId building, int profileIndex, int charges)
 	{
 		int entityId = building.UniqueId;
 		int maintained = _soldierCounts[profileIndex];
@@ -1986,7 +2100,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		PublishReadout(api, building, 7, string.Empty, string.Empty);
 	}
 
-	private void PublishChargeBadge(IGameAPI api, PlayerId player, UnitId building, int charges)
+	protected void PublishChargeBadge(IGameAPI api, PlayerId player, UnitId building, int charges)
 	{
 		int entityId = building.UniqueId;
 		if (_lastBadgeValues[entityId] == charges + 1) return;
@@ -2005,7 +2119,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void RefreshRelics(IGameAPI api, PlayerId player)
+	protected void RefreshRelics(IGameAPI api, PlayerId player)
 	{
 		int playerIndex = player.Value;
 		int heroEntityId = _heroEntities[playerIndex];
@@ -2038,7 +2152,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void ApplySigilOfTheWall(IGameAPI api, PlayerId player)
+	protected void ApplySigilOfTheWall(IGameAPI api, PlayerId player)
 	{
 		ReadOnlySpan<UnitId> owned = player.GetUnits();
 		for (int index = 0; index < owned.Length; index++)
@@ -2051,7 +2165,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void ApplyWardensWrit(IGameAPI api, PlayerId player)
+	protected void ApplyWardensWrit(IGameAPI api, PlayerId player)
 	{
 		ReadOnlySpan<UnitId> owned = player.GetUnits();
 		for (int index = 0; index < owned.Length; index++)
@@ -2059,11 +2173,11 @@ public partial class MapScript : IWasmModule, ILobbyScript
 			UnitId unit = owned[index];
 			if (unit.IsDead) continue;
 
-			api.AddStatModifier(unit, "Tenacity", true, 10f, "relic/wardens_writ");
+			api.AddStatModifier(unit, "Tenacity", false, 0.1f, "relic/wardens_writ");
 		}
 	}
 
-	private void ApplyInnateToUnit(IGameAPI api, int playerIndex, UnitId unit)
+	protected void ApplyInnateToUnit(IGameAPI api, int playerIndex, UnitId unit)
 	{
 		if (!unit.IsValid) return;
 
@@ -2071,7 +2185,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		{
 			case 0:
 				api.AddStatModifier(unit, "Armor", false, 6f, "innate/unbroken");
-				api.AddStatModifier(unit, "Tenacity", true, 10f, "innate/unbroken");
+				api.AddStatModifier(unit, "Tenacity", true, 0.1f, "innate/unbroken");
 				break;
 			case 1:
 				unit.AddBuff("buff/cinder_mark", 2f);
@@ -2079,7 +2193,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		}
 	}
 
-	private void ApplyRelicsToUnit(IGameAPI api, int playerIndex, UnitId unit)
+	protected void ApplyRelicsToUnit(IGameAPI api, int playerIndex, UnitId unit)
 	{
 		if (!unit.IsValid) return;
 
@@ -2091,11 +2205,11 @@ public partial class MapScript : IWasmModule, ILobbyScript
 
 		if ((flags & (1 << 4)) != 0)
 		{
-			api.AddStatModifier(unit, "Tenacity", true, 10f, "relic/wardens_writ");
+			api.AddStatModifier(unit, "Tenacity", false, 0.1f, "relic/wardens_writ");
 		}
 	}
 
-	private float ResolveRechargeMultiplier(int playerIndex)
+	protected float ResolveRechargeMultiplier(int playerIndex)
 	{
 		byte flags = _relicFlags[playerIndex];
 		float multiplier = 1f;
@@ -2105,41 +2219,41 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return multiplier;
 	}
 
-	private static float ResolveConstructionSeconds(string templateId)
+	protected static float ResolveConstructionSeconds(string templateId)
 	{
 		int profileIndex = FindProfileIndexByBuilding(templateId);
 		return profileIndex < 0 ? 30f : ConstructionSecondsByProfile[profileIndex];
 	}
 
-	private static bool IsBuildingOperational(IGameAPI api, UnitId building)
+	protected static bool IsBuildingOperational(IGameAPI api, UnitId building)
 	{
 		if (building.Health <= 0f) return false;
 
 		return api.GetUnitConstructionProgress(building) >= 1f;
 	}
 
-	private bool HasRelic(int playerIndex, int relicIndex)
+	protected bool HasRelic(int playerIndex, int relicIndex)
 	{
 		return (_relicFlags[playerIndex] & (1 << relicIndex)) != 0;
 	}
 
-	private bool IsStandingLedgerHero(int playerIndex)
+	protected bool IsStandingLedgerHero(int playerIndex)
 	{
 		return _heroTemplateIndices[playerIndex] == 2;
 	}
 
-	private bool IsCinderMarkHero(int playerIndex)
+	protected bool IsCinderMarkHero(int playerIndex)
 	{
 		return playerIndex > 0 && playerIndex < EcsSharedMemory.MAX_PLAYERS && _heroTemplateIndices[playerIndex] == 1;
 	}
 
-	private static bool IsFrontFormationSoldier(string templateId)
+	protected static bool IsFrontFormationSoldier(string templateId)
 	{
 		int profileIndex = FindProfileIndexBySoldier(templateId);
 		return profileIndex >= 0 && SoldierProfiles[profileIndex].Formation == SoldierFormation.Front;
 	}
 
-	private static int FindProfileIndexBySoldier(string templateId)
+	protected static int FindProfileIndexBySoldier(string templateId)
 	{
 		if (string.IsNullOrEmpty(templateId)) return -1;
 
@@ -2151,7 +2265,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return -1;
 	}
 
-	private static int FindProfileIndexByBuilding(string templateId)
+	protected static int FindProfileIndexByBuilding(string templateId)
 	{
 		if (string.IsNullOrEmpty(templateId)) return -1;
 
@@ -2163,7 +2277,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return -1;
 	}
 
-	private static string DescribeBuildingIncome(string buildingTemplateId)
+	protected static string DescribeBuildingIncome(string buildingTemplateId)
 	{
 		BuildingProfile building = FindBuildingProfile(buildingTemplateId);
 		if (building.GoldPerMinute > 0f) return $"{building.GoldPerMinute:0.#} gold/min";
@@ -2172,7 +2286,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return "none";
 	}
 
-	private static BuildingProfile FindBuildingProfile(string templateId)
+	protected static BuildingProfile FindBuildingProfile(string templateId)
 	{
 		if (string.IsNullOrEmpty(templateId)) return default;
 
@@ -2184,7 +2298,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		return default;
 	}
 
-	private static int ResolveHeroTemplateIndex(string faction)
+	protected static int ResolveHeroTemplateIndex(string faction)
 	{
 		if (!string.IsNullOrEmpty(faction))
 		{

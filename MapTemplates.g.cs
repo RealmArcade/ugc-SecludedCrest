@@ -9,9 +9,6 @@ namespace Realm.Maps;
 
 public static class UnitIds
 {
-	public const string Vale = "hero/vale";
-	public const string Sable = "hero/sable";
-	public const string Corvus = "hero/corvus";
 	public const string Shieldbearer = "unit/shieldbearer";
 	public const string Axeman = "unit/axeman";
 	public const string SpearMilitia = "unit/spear_militia";
@@ -23,6 +20,9 @@ public static class UnitIds
 	public const string Warder = "unit/warder";
 	public const string CrestBoar = "unit/crest_boar";
 	public const string RidgeGiant = "unit/ridge_giant";
+	public const string Vale = "hero/vale";
+	public const string Sable = "hero/sable";
+	public const string Corvus = "hero/corvus";
 	public const string FantasyWarriorUnit1 = "unit/fantasy_warrior_unit_1";
 	public const string OrcWarrior7 = "unit/orc_warrior_7";
 }
@@ -81,6 +81,12 @@ public static class PropIds
 
 public static class AbilityIds
 {
+	public const string ForcedMarch = "ability/forced_march";
+	public const string EmergencyLevy = "ability/emergency_levy";
+	public const string Mend = "ability/mend";
+	public const string WardingAegis = "ability/warding_aegis";
+	public const string StandardAura = "ability/standard_aura";
+	public const string BeginConstruction = "ability/begin_construction";
 	public const string GroundingShout = "ability/grounding_shout";
 	public const string HoldFast = "ability/hold_fast";
 	public const string ShieldBash = "ability/shield_bash";
@@ -88,12 +94,6 @@ public static class AbilityIds
 	public const string Cinderfield = "ability/cinderfield";
 	public const string Backdraft = "ability/backdraft";
 	public const string Requisition = "ability/requisition";
-	public const string ForcedMarch = "ability/forced_march";
-	public const string EmergencyLevy = "ability/emergency_levy";
-	public const string Mend = "ability/mend";
-	public const string WardingAegis = "ability/warding_aegis";
-	public const string StandardAura = "ability/standard_aura";
-	public const string BeginConstruction = "ability/begin_construction";
 	public const string Fireball = "ability/fireball";
 	public const string Holylight = "ability/holylight";
 	public const string Lightning = "ability/lightning";

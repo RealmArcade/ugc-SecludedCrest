@@ -7,8 +7,5 @@
       "ManifestBlake3": "d745fd3771961bcfed6f690f4e2b88ff26d8407483bda26ad0434e4b7a8aaf25",
       "FolderPath": "D:/git/Realm/MeleeRuleset"
     }
-  ],
-  "ConflictPriorities": {
-    "MapScript.cs": "Melee Ruleset"
-  }
+  ]
 }

@@ -9,9 +9,6 @@ namespace Realm.Maps;
 
 public static class UnitIds
 {
-	public const string Vale = "hero/vale";
-	public const string Sable = "hero/sable";
-	public const string Corvus = "hero/corvus";
 	public const string Shieldbearer = "unit/shieldbearer";
 	public const string Axeman = "unit/axeman";
 	public const string SpearMilitia = "unit/spear_militia";
@@ -23,6 +20,12 @@ public static class UnitIds
 	public const string Warder = "unit/warder";
 	public const string CrestBoar = "unit/crest_boar";
 	public const string RidgeGiant = "unit/ridge_giant";
+	public const string Blueprint = "unit/blueprint";
+	public const string Worker = "unit/worker";
+	public const string Vale = "hero/vale";
+	public const string Sable = "hero/sable";
+	public const string Corvus = "hero/corvus";
+	public const string BuildingWorker = "unit/building_worker";
 	public const string FantasyWarriorUnit1 = "unit/fantasy_warrior_unit_1";
 	public const string OrcWarrior7 = "unit/orc_warrior_7";
 }
@@ -81,6 +84,9 @@ public static class PropIds
 
 public static class AbilityIds
 {
+	public const string InnateUnbroken = "ability/innate_unbroken";
+	public const string InnateCinderMark = "ability/innate_cinder_mark";
+	public const string InnateStandingLedger = "ability/innate_standing_ledger";
 	public const string GroundingShout = "ability/grounding_shout";
 	public const string HoldFast = "ability/hold_fast";
 	public const string ShieldBash = "ability/shield_bash";
@@ -109,6 +115,8 @@ public static class UpgradeIds
 
 public static class ItemIds
 {
+	public const string Wood = "item/wood";
+	public const string Gold = "item/gold";
 	public const string SigilOfTheWall = "item/sigil_of_the_wall";
 	public const string CouriersKnot = "item/couriers_knot";
 	public const string SpikedBarricades = "item/spiked_barricades";

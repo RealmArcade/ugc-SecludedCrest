@@ -418,6 +418,9 @@
         <member name="M:Realm.MapAPI.GameAPI.HandleCommandSink.SetUnitGatherSwing(Realm.Ecs.UnitId,System.Single,System.Single)">
             <summary>States what one gathering swing takes from a node and how long the swing lasts.</summary>
         </member>
+        <member name="M:Realm.MapAPI.GameAPI.HandleCommandSink.SetUnitGatherTaxRate(Realm.Ecs.UnitId,System.Single)">
+            <summary>States the share of each delivered swing the map keeps.</summary>
+        </member>
         <member name="M:Realm.MapAPI.GameAPI.HandleCommandSink.SetUnitFrozen(Realm.Ecs.UnitId,System.Boolean)">
             <summary>Turns all unit activity on or off, covering movement, orders and animation together.</summary>
         </member>
@@ -1248,6 +1251,18 @@
             </summary>
             <param name="unit">The harvesting unit.</param>
             <param name="resourceNode">The target resource node.</param>
+        </member>
+        <member name="M:Realm.MapAPI.IGameAPI.IssueRepairOrder(Realm.Ecs.UnitId,Realm.Ecs.UnitId)">
+            <summary>
+            Issues a repair order, sending a unit that can mend buildings to put a standing building back together.
+            </summary>
+            <remarks>
+            The unit walks to the building and mends it at its own repair rate while it stands there; walking away leaves the
+            building exactly as far along as the unit left it. Any allied unit that carries a repair rate may mend any allied
+            repairable building, and the building keeps its charges and its production queue while it waits.
+            </remarks>
+            <param name="unit">The unit doing the mending.</param>
+            <param name="building">The allied building to mend.</param>
         </member>
         <member name="M:Realm.MapAPI.IGameAPI.IssueStopOrder(Realm.Ecs.UnitId)">
             <summary>
@@ -2948,6 +2963,59 @@
             <param name="unit">The gathering unit.</param>
             <param name="swingAmount">The amount one swing takes from the node, or zero to use the node's own harvest rate.</param>
             <param name="swingSeconds">The seconds one swing lasts, or zero for one second.</param>
+        </member>
+        <member name="M:Realm.MapAPI.IGameAPI.SetUnitGatherTaxRate(Realm.Ecs.UnitId,System.Single)">
+            <summary>
+            States the share of each delivered swing the map keeps, so a ruleset can tax a worker's income.
+            </summary>
+            <remarks>
+            The tax is taken from the delivery, never from the swing: the node still loses exactly the amount the building
+            advertises, and only what reaches the player's purse is reduced. The fraction of a resource a taxed delivery leaves
+            behind is carried into that worker's next delivery rather than rounded away, so a run pays the total its advertised
+            rate states. Zero pays every delivery in full, which is what a worker nobody taxed pays; values are clamped between
+            zero and 0.99 so a delivery always pays something unless the map pays nothing. The call does nothing for a unit that
+            is not gathering. Taxing each worker at its own building's rank among the player's buildings is what makes a
+            progressive, marginal income tax: earlier buildings keep the share they were given, and a new building pays less
+            than the one before it without changing what the earlier ones pay.
+            </remarks>
+            <param name="unit">The gathering unit whose deliveries are taxed.</param>
+            <param name="taxRate">The fraction kept from each delivered swing, from zero to 0.99.</param>
+        </member>
+        <member name="M:Realm.MapAPI.IGameAPI.SetUnitRepairRate(Realm.Ecs.UnitId,System.Single)">
+            <summary>
+            States how fast a unit mends a building, as a fraction of the building's maximum health per second.
+            </summary>
+            <remarks>
+            A rate above zero is what lets a unit accept a repair order at all, so a ruleset decides which units mend and how
+            fast by stating a rate per unit rather than the engine assuming a builder. Because the rate is a share of the
+            building's maximum health, a hero spends the same time raising any building from zero to whole, and a rate that a
+            buff or a relic raises mends every building faster. A rate of zero, or a call with no rate, takes the ability
+            away and ends any mending the unit was doing. The rate belongs to the repairer, so two units can mend the same
+            building at different speeds.
+            </remarks>
+            <param name="unit">The unit that mends buildings.</param>
+            <param name="healthPercentPerSecond">The fraction of the building's maximum health restored each second.</param>
+        </member>
+        <member name="M:Realm.MapAPI.IGameAPI.GetUnitRepairRate(Realm.Ecs.UnitId)">
+            <summary>
+            Answers how fast a unit mends buildings, as a fraction of the building's maximum health per second.
+            </summary>
+            <param name="unit">The unit whose repair rate is read.</param>
+            <returns>The fraction restored each second, or zero when the unit cannot repair.</returns>
+        </member>
+        <member name="M:Realm.MapAPI.IGameAPI.SetUnitRepairable(Realm.Ecs.UnitId,System.Boolean)">
+            <summary>
+            States whether a building falls dormant when its health runs out instead of being destroyed.
+            </summary>
+            <remarks>
+            A repairable building at zero health stays in the world: it is invulnerable, it earns nothing, it recharges
+            nothing, it produces nothing and it attacks nothing, while the charges and the production queue it already holds
+            are kept. A repairing unit raises it back toward full health, and the building only starts working again once it
+            is whole. A building the map never marked repairable is destroyed at zero health, which is what every building did
+            before a map asked for this, so a ruleset that has no repair has nothing to configure.
+            </remarks>
+            <param name="unit">The building.</param>
+            <param name="repairable">True to let the building fall dormant instead of dying at zero health.</param>
         </member>
         <member name="M:Realm.MapAPI.IGameAPI.SetUnitHideHealthAndManaBars(Realm.Ecs.UnitId,System.Boolean)">
             <summary>
@@ -4893,6 +4961,9 @@
         <member name="M:Realm.MapAPI.UnitIdScriptExtensions.get_IsDead(Realm.Ecs.UnitId)">
             <inheritdoc cref="P:Realm.MapAPI.UnitIdScriptExtensions.&lt;G&gt;$A8628E50ED1168F4F3C0EE102E85FD56.IsDead"/>
         </member>
+        <member name="M:Realm.MapAPI.UnitIdScriptExtensions.get_IsDormant(Realm.Ecs.UnitId)">
+            <inheritdoc cref="P:Realm.MapAPI.UnitIdScriptExtensions.&lt;G&gt;$A8628E50ED1168F4F3C0EE102E85FD56.IsDormant"/>
+        </member>
         <member name="M:Realm.MapAPI.UnitIdScriptExtensions.MoveTo(Realm.Ecs.UnitId,System.Numerics.Vector3)">
             <inheritdoc cref="M:Realm.MapAPI.UnitIdScriptExtensions.&lt;G&gt;$A8628E50ED1168F4F3C0EE102E85FD56.MoveTo(System.Numerics.Vector3)"/>
         </member>
@@ -5048,6 +5119,12 @@
         <member name="P:Realm.MapAPI.UnitIdScriptExtensions.&lt;G&gt;$A8628E50ED1168F4F3C0EE102E85FD56.IsDead">
             <summary>
             Gets a value indicating whether this unit is dead.
+            </summary>
+        </member>
+        <member name="P:Realm.MapAPI.UnitIdScriptExtensions.&lt;G&gt;$A8628E50ED1168F4F3C0EE102E85FD56.IsDormant">
+            <summary>
+            Gets a value indicating whether this building is dormant, which is what a repairable building becomes when its
+            health runs out: it is invulnerable, it works at nothing, and it is waiting for a repairing unit to restore it.
             </summary>
         </member>
         <member name="M:Realm.MapAPI.UnitIdScriptExtensions.&lt;G&gt;$A8628E50ED1168F4F3C0EE102E85FD56.MoveTo(System.Numerics.Vector3)">

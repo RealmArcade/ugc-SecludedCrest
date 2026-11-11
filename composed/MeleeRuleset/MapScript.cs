@@ -34,6 +34,11 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	// how far it has to walk, so a node next to the building pays more than one across the board.
 	protected const float WorkerSwingSeconds = 1f;
 	protected const float WorkerCheckSeconds = 1f;
+
+	// A player's k-th income building is paid the k-th share of what its worker delivers. Each share is smaller than the
+	// one before it, so every additional building adds less net income than the last without changing what the buildings
+	// already standing are paid, and the sum always rises: 1, 1.65, 2.15, 2.55 and 2.9 swings' worth at five buildings.
+	protected static readonly float[] IncomeTaxShares = { 1f, 0.65f, 0.5f, 0.4f, 0.35f };
 	protected const float WorkerSearchRadius = 400f;
 	protected const float CinderMarkDamagePerSecond = 6f;
 	protected const float CinderfieldRadius = 5f;
@@ -48,6 +53,8 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	protected const float BulwarkMagicResistancePerSoldier = 0.6f;
 	protected const float BulwarkArmorPerBuilding = 1.5f;
 	protected const float BulwarkMagicResistancePerBuilding = 1.5f;
+	protected const float HeroRepairHealthPercentPerSecond = 0.03f;
+	protected const ulong DormantReadoutState = ulong.MaxValue;
 
 	protected const float RelicCost = 100f;
 	protected const int RelicSlotCount = 6;
@@ -245,6 +252,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	protected IGameAPI _api = null!;
 	protected readonly int[] _workerBuildingOf = new int[EcsSharedMemory.MAX_ENTITIES];
 	protected readonly int[] _workerNodeOf = new int[EcsSharedMemory.MAX_ENTITIES];
+	protected readonly byte[] _workerPausedOf = new byte[EcsSharedMemory.MAX_ENTITIES];
 	protected readonly byte[] _workerResourceOf = new byte[EcsSharedMemory.MAX_ENTITIES];
 	protected readonly float[] _workerSwingOf = new float[EcsSharedMemory.MAX_ENTITIES];
 	protected float _workerCheckTimer;
@@ -408,6 +416,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		_heroLastPositionsZ[playerIndex] = hero.Position.Z;
 		_heroReadoutStates[playerIndex] = ulong.MaxValue;
 		api.SetUnitLevel(hero, 1);
+		api.SetUnitRepairRate(hero, HeroRepairHealthPercentPerSecond);
 		ApplyInnateToUnit(api, playerIndex, hero);
 		ApplyDraftAbilityState(api, playerIndex);
 		ResetUnitRuntimeState(hero.UniqueId);
@@ -461,6 +470,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		int retainedLevel = Math.Max(1, _heroLevelsBeforeDeath[playerIndex]);
 		api.SetUnitLevel(hero, retainedLevel);
 		api.SetUnitExperience(hero, _heroExperiences[playerIndex]);
+		api.SetUnitRepairRate(hero, HeroRepairHealthPercentPerSecond);
 		ApplyInnateToUnit(api, playerIndex, hero);
 		RestoreRelicsToHero(api, playerIndex, hero);
 		ApplyRelicsToUnit(api, playerIndex, hero);
@@ -510,10 +520,18 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		{
 			UnitId building = owned[index];
 			if (building.IsDead || !building.IsBuilding) continue;
-			if (!IsBuildingOperational(api, building)) continue;
 
 			int profileIndex = FindProfileIndexByBuilding(building.TemplateID);
 			if (profileIndex < 0) continue;
+
+			if (building.IsDormant)
+			{
+				_producing[building.UniqueId] = 0;
+				PublishDormantBuildingReadout(api, building);
+				continue;
+			}
+
+			if (!IsBuildingOperational(api, building)) continue;
 
 			SoldierProfile profile = SoldierProfiles[profileIndex];
 			int entityId = building.UniqueId;
@@ -604,6 +622,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		api.EnableUnitAutoCombat(worker, false);
 
 		AssignWorkerToNearestNode(api, workerId, building, resource);
+		api.SetUnitGatherTaxRate(worker, ResolveIncomeTaxRate(player, building.UniqueId));
 	}
 
 	protected void AssignWorkerToNearestNode(IGameAPI api, int workerId, UnitId building, byte resource)
@@ -692,12 +711,57 @@ public partial class MapScript : IWasmModule, ILobbyScript
 					continue;
 				}
 
+				// A destroyed building pays nothing while it waits to be mended, so its worker stands down rather than
+				// mining a node the building cannot be paid from. It walks back to work the moment the building stands.
+				if (building.IsDormant)
+				{
+					if (_workerPausedOf[workerId] == 0)
+					{
+						_workerPausedOf[workerId] = 1;
+						api.IssueStopOrder(unit);
+					}
+
+					continue;
+				}
+
+				if (_workerPausedOf[workerId] != 0)
+				{
+					_workerPausedOf[workerId] = 0;
+					AssignWorkerToNearestNode(api, workerId, building, _workerResourceOf[workerId]);
+					continue;
+				}
+
+				api.SetUnitGatherTaxRate(unit, ResolveIncomeTaxRate(player, buildingId));
+
 				int nodeState = _workerNodeOf[workerId];
 				if (nodeState > 0 && api.GetResourceNodeAmount(new ResourceNodeId(nodeState - 1)) > 0.01f) continue;
 
 				AssignWorkerToNearestNode(api, workerId, building, _workerResourceOf[workerId]);
 			}
 		}
+	}
+
+	/// <summary>
+	///     Works out what share of its deliveries a building's worker keeps by ranking that building among the player's
+	///     income buildings, oldest first. The rank is what makes the tax marginal: a building keeps the share its rank was
+	///     given for as long as it stands, so raising another building never changes what an earlier one pays, and only the
+	///     new building takes the next, smaller share.
+	/// </summary>
+	protected float ResolveIncomeTaxRate(PlayerId player, int buildingId)
+	{
+		int rank = 1;
+		ReadOnlySpan<UnitId> owned = player.GetUnits();
+		for (int index = 0; index < owned.Length; index++)
+		{
+			UnitId unit = owned[index];
+			if (unit.IsDead) continue;
+
+			int home = _workerBuildingOf[unit.UniqueId];
+			if (home > 0 && home < buildingId) rank++;
+		}
+
+		int shareIndex = Math.Min(rank, IncomeTaxShares.Length) - 1;
+		return 1f - IncomeTaxShares[shareIndex];
 	}
 
 	/// <summary>
@@ -1650,6 +1714,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 			return;
 		}
 
+		_api.SetUnitRepairable(site, true);
 		RetireDraftSite(playerIndex);
 
 		// The package leaves the shared deck only once its building actually stands, so a placement the map had to
@@ -2286,6 +2351,20 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		PublishReadout(api, building, 7, string.Empty, string.Empty);
 	}
 
+	/// <summary>
+	///     States a destroyed building's condition where its production line normally reads. The charges and the queue it
+	///     was holding are still there, so the readout says what would bring them back rather than pretending the building
+	///     is merely recharging.
+	/// </summary>
+	protected void PublishDormantBuildingReadout(IGameAPI api, UnitId building)
+	{
+		int entityId = building.UniqueId;
+		if (_buildingReadoutStates[entityId] == DormantReadoutState) return;
+
+		_buildingReadoutStates[entityId] = DormantReadoutState;
+		PublishReadout(api, building, 3, "Production", "Destroyed (repair to restore)");
+	}
+
 	protected void PublishChargeBadge(IGameAPI api, PlayerId player, UnitId building, int charges)
 	{
 		int entityId = building.UniqueId;
@@ -2413,7 +2492,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 
 	protected static bool IsBuildingOperational(IGameAPI api, UnitId building)
 	{
-		if (building.Health <= 0f) return false;
+		if (building.IsDormant || building.Health <= 0f) return false;
 
 		return api.GetUnitConstructionProgress(building) >= 1f;
 	}

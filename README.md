@@ -10,7 +10,7 @@ This folder is also a composing map. `references.json` names the Melee Ruleset, 
 
 | Referenced map | What it contributes |
 | :--- | :--- |
-| Melee Ruleset v1.0.0 (`ec2649e8…`) | The rules engine of the map: `MapScript.cs` (the script itself), the melee templates it registers in `metadata.json` (including the two resource node types this board places), and its relics, factions, deck and economy. |
+| Melee Ruleset v1.0.0 (pinned in `references.json`) | The rules engine of the map: `MapScript.cs` (the script itself), the melee templates it registers in `metadata.json` (including the two resource node types this board places), and its relics, factions, deck and economy. |
 
 Who keeps a file:
 

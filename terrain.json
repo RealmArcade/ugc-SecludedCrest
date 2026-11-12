@@ -3663,27 +3663,52 @@
   "CameraBoundsTop": -128,
   "CameraBoundsBottom": 128,
   "SkyboxPath": "Assets/skyboxes/jade_shrine.png",
-  "Coordinates": [],
+  "Coordinates": [
+    {
+      "Name": "Base_Player1",
+      "MinX": -65,
+      "MinZ": -65,
+      "MaxX": -51,
+      "MaxZ": -51
+    },
+    {
+      "Name": "Base_Player2",
+      "MinX": 51,
+      "MinZ": -65,
+      "MaxX": 65,
+      "MaxZ": -51
+    },
+    {
+      "Name": "Base_Player3",
+      "MinX": -65,
+      "MinZ": 85,
+      "MaxX": -51,
+      "MaxZ": 99
+    },
+    {
+      "Name": "Base_Player4",
+      "MinX": 51,
+      "MinZ": 85,
+      "MaxX": 65,
+      "MaxZ": 99
+    }
+  ],
   "SpawnAnchors": [
     {
       "Player": 1,
-      "PosX": -58,
-      "PosZ": -58
+      "CoordinateName": "Base_Player1"
     },
     {
       "Player": 2,
-      "PosX": 58,
-      "PosZ": -58
+      "CoordinateName": "Base_Player2"
     },
     {
       "Player": 3,
-      "PosX": -58,
-      "PosZ": 92
+      "CoordinateName": "Base_Player3"
     },
     {
       "Player": 4,
-      "PosX": 58,
-      "PosZ": 92
+      "CoordinateName": "Base_Player4"
     }
   ]
 }

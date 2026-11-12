@@ -3281,10 +3281,34 @@
     },
     {
       "TemplateId": "resource/melee_gold_mine",
+      "PosX": -94.382545,
+      "PosY": 2.9894567,
+      "PosZ": -63.29796,
+      "RotationY": 90,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "resource/melee_gold_mine",
+      "PosX": -94.1894,
+      "PosY": 3,
+      "PosZ": 20.520788,
+      "RotationY": 120,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "resource/melee_gold_mine",
       "PosX": -20,
       "PosY": 3,
       "PosZ": 15,
       "RotationY": 0,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "resource/melee_gold_mine",
+      "PosX": -32.199715,
+      "PosY": 3,
+      "PosZ": 33.128998,
+      "RotationY": 314.9999,
       "Scale": 1.6
     },
     {
@@ -3305,6 +3329,14 @@
     },
     {
       "TemplateId": "resource/melee_gold_mine",
+      "PosX": 88.148476,
+      "PosY": 3,
+      "PosZ": -83.65346,
+      "RotationY": 299.9999,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "resource/melee_gold_mine",
       "PosX": -44,
       "PosY": 2.8719242,
       "PosZ": 92,
@@ -3313,10 +3345,34 @@
     },
     {
       "TemplateId": "resource/melee_gold_mine",
+      "PosX": -33.839375,
+      "PosY": 3,
+      "PosZ": 92.25337,
+      "RotationY": 224.99995,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "resource/melee_gold_mine",
+      "PosX": 93.24375,
+      "PosY": 3,
+      "PosZ": -3.6150837,
+      "RotationY": 284.99997,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "resource/melee_gold_mine",
       "PosX": 44,
       "PosY": 3,
       "PosZ": 92,
       "RotationY": 0,
+      "Scale": 1.6
+    },
+    {
+      "TemplateId": "resource/melee_gold_mine",
+      "PosX": 63.448097,
+      "PosY": 2.9255672,
+      "PosZ": 93.32293,
+      "RotationY": 164.99995,
       "Scale": 1.6
     },
     {
@@ -3598,62 +3654,6 @@
       "PosZ": 85.288925,
       "RotationY": 0,
       "Scale": 1.8
-    },
-    {
-      "TemplateId": "resource/melee_gold_mine",
-      "PosX": -94.382545,
-      "PosY": 2.9894567,
-      "PosZ": -63.29796,
-      "RotationY": 90,
-      "Scale": 1.6
-    },
-    {
-      "TemplateId": "resource/melee_gold_mine",
-      "PosX": -94.1894,
-      "PosY": 3,
-      "PosZ": 20.520788,
-      "RotationY": 120,
-      "Scale": 1.6
-    },
-    {
-      "TemplateId": "resource/melee_gold_mine",
-      "PosX": -32.199715,
-      "PosY": 3,
-      "PosZ": 33.128998,
-      "RotationY": 314.9999,
-      "Scale": 1.6
-    },
-    {
-      "TemplateId": "resource/melee_gold_mine",
-      "PosX": 88.148476,
-      "PosY": 3,
-      "PosZ": -83.65346,
-      "RotationY": 299.9999,
-      "Scale": 1.6
-    },
-    {
-      "TemplateId": "resource/melee_gold_mine",
-      "PosX": -33.839375,
-      "PosY": 3,
-      "PosZ": 92.25337,
-      "RotationY": 224.99995,
-      "Scale": 1.6
-    },
-    {
-      "TemplateId": "resource/melee_gold_mine",
-      "PosX": 93.24375,
-      "PosY": 3,
-      "PosZ": -3.6150837,
-      "RotationY": 284.99997,
-      "Scale": 1.6
-    },
-    {
-      "TemplateId": "resource/melee_gold_mine",
-      "PosX": 63.448097,
-      "PosY": 2.9255672,
-      "PosZ": 93.32293,
-      "RotationY": 164.99995,
-      "Scale": 1.6
     }
   ],
   "Decals": [],

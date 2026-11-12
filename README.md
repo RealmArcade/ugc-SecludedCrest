@@ -15,7 +15,8 @@ This folder is also a composing map. `references.json` names the Melee Ruleset, 
 Who keeps a file:
 
 * `metadata.json` is always merged. Objects merge key by key, arrays are combined with each entry kept once by its `TemplateID`, and this map merges last, so everything it states stands over the rules map's. A property this map leaves `null` states nothing and lets the rules map's value through, which is how the board keeps its own name, build number, shroud and camera while the game rules, units, abilities and relics arrive from the rules map.
-* Every other file comes whole from exactly one map. This map keeps its own copy of anything both carry, unless `references.json` states a priority; `MapScript.cs` is the one file stated to come from the rules map, because the ruleset is defined there.
+* Every other file comes whole from exactly one map. This map keeps its own copy of anything both carry, unless `references.json` states a priority.
+* Scripts are not copied at all. The rules map's C# is composed into `composed/MeleeRuleset/` under `Realm.Maps.Composed.MeleeRuleset`, so its script and this board's compile into one assembly without colliding, and this board's `MapScript.cs` starts each composed script through the generated `MapComposition.g.cs`.
 * `MapTemplates.g.cs` and `WasmEntryPoint.g.cs` are generated for this workspace from this map's merged metadata and from the engine's current template, so they are never taken from a referenced map, and they are not part of the package manifest, which a workspace rebuild would otherwise move. They are regenerated when the folder is opened.
 * Files taken from the rules map are read-only here. Editing one is reverted by the next save, which reports every file it replaced.
 
@@ -37,4 +38,6 @@ The board's `GameBuildNumber` is `v0.0.6`, the build its content is played on, a
 
 ## The board has no rules of its own
 
-Its `MapScript.cs` is the rules map's script once a save has run. Until then the file here is the empty template every new map starts from, and a save replaces it.
+Its `MapScript.cs` is a thin entry script: it starts, ticks and hands the lobby to every ruleset the generated `MapComposition.g.cs` names, and states nothing itself about how a match is played. The rules live in `composed/MeleeRuleset/`, which every save rewrites from the referenced map, so an edit made there is replaced by the next save.
+
+What the board does state is the ground: the terrain, the props, the spawn anchors, the resource nodes and the neutral camps its `metadata.json` and `terrain.json` place. The ruleset reads that placement rather than carrying coordinates, which is what lets several boards share it.

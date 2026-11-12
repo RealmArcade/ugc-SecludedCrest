@@ -179,14 +179,15 @@
       "lib/Realm.MapAPI.pdb": "aa1f262991b7ad14de815a6df51ed0b3987da8dbcba225d22e8312657d6ccffa",
       "lib/Realm.MapAPI.xml": "8a1b3537032002d0d57b87d11d1117fa6afb61846a8cc33b6be3bcd81849baff",
       "wit/game.g.wit": "c3996d8e592a4091b6006fe5f9935516c27fc9dc44b7486ab392859deb9a6a17",
-      "bin/script/MapScript.wasm": "a3471abb3bf067b163315f09bbe5bac1cfda5ddf7b8c97126cc2385da6f7f291",
+      "bin/script/MapScript.wasm": "6de94acfd52390c90e6a5301989795ca89487cb4a2adf63e31850cf2af1d271b",
       "composed/MeleeRuleset/MapScript.cs": "8fd2f8eacfab5b2de9d791bb3d300935510cd49d4a8dcc737dba2c9bb08454ee",
       "composed/MeleeRuleset/MapScript.DamageAffinity.cs": "d7e08e2ecc78a7338df4192707d3412f87e0a27d60863d9e6ec1f22ac2aa64d0",
       "composed/MeleeRuleset/MapScript.Instructions.cs": "503cbc0770079159da99e24c9a81a2364990e64cfe9cc2ab92ec09b6a3fdbc47",
       "composed/MeleeRuleset/MapTemplates.g.cs": "e28cd2b93ea49b6fad995b1a24c2395a6332a55ce375dced9588f4bdaeb5db87",
       ".agent/skills/skill-assign-asset/SKILL.md": "a7583c99f6d151f7620ffce513f40e073c3936a61d9330eee608544d459bdcde",
       ".agent/skills/skill-translate-map/SKILL.md": "d3c499ee4dc4868d7519dc670f010fd8186c5c5c102c927d409bd259b5330966",
-      ".agent/skills/skill-translate-map/verify_keys.py": "496ecbd3ccbba070fb0067b4f04d63519cfad1e61ea14b15861856df2cec4656"
+      ".agent/skills/skill-translate-map/verify_keys.py": "496ecbd3ccbba070fb0067b4f04d63519cfad1e61ea14b15861856df2cec4656",
+      "bin/Release/net10.0/wasi-wasm/native/MapScript.wasm": "6de94acfd52390c90e6a5301989795ca89487cb4a2adf63e31850cf2af1d271b"
     }
   }
 }

@@ -10,13 +10,13 @@ This folder is also a composing map. `references.json` names the Melee Ruleset, 
 
 | Referenced map | What it contributes |
 | :--- | :--- |
-| Melee Ruleset v1.0.0 (pinned in `references.json`) | The rules engine of the map: `MapScript.cs` (the script itself), the melee templates it registers in `metadata.json` (including the two resource node types this board places), and its relics, factions, deck and economy. |
+| Melee Ruleset v1.0.0 (pinned in `references.json`) | The rules engine of the map: `MapScript.cs` (the script itself), the `locale/*.json` catalogs that translate everything it says, the melee templates it registers in `metadata.json` (including the two resource node types this board places), and its relics, factions, deck and economy. |
 
 Who keeps a file:
 
 * `metadata.json` is always merged. Objects merge key by key, arrays are combined with each entry kept once by its `TemplateID`, and this map merges last, so everything it states stands over the rules map's. A property this map leaves `null` states nothing and lets the rules map's value through, which is how the board keeps its own name, build number, shroud and camera while the game rules, units, abilities and relics arrive from the rules map.
 * Every other file comes whole from exactly one map. This map keeps its own copy of anything both carry, unless `references.json` states a priority; `MapScript.cs` is the one file stated to come from the rules map, because the ruleset is defined there.
-* `MapTemplates.g.cs` and `WasmEntryPoint.g.cs` are generated for this workspace from this map's merged metadata and from the engine's current template, so they are never taken from a referenced map.
+* `MapTemplates.g.cs` and `WasmEntryPoint.g.cs` are generated for this workspace from this map's merged metadata and from the engine's current template, so they are never taken from a referenced map, and they are not part of the package manifest, which a workspace rebuild would otherwise move. They are regenerated when the folder is opened.
 * Files taken from the rules map are read-only here. Editing one is reverted by the next save, which reports every file it replaced.
 
 A save reads the rules map from the helper folder `references.json` names while that folder exists, and otherwise from the map store by name, version and pinned manifest hash. `metadata.partial.json` holds the keys this map overrides in the merge, and is regenerated on every save by diffing this map's `metadata.json` against the merge of the referenced map, so upgrading the rules map to a new version and re-saving drops the old version's data instead of carrying it forward.
@@ -26,6 +26,10 @@ A save reads the rules map from the helper folder `references.json` names while 
 * `references.json`'s `FolderPath` points at the sibling `MeleeRuleset` checkout.
 * The script compiles here, in this folder, from the referenced `MapScript.cs` and `MapScript.csproj`. The rules map's own `bin/` is build output and is never copied.
 * `lib/` holds the current `Realm.MapAPI`, `Realm.Ecs` and `Realm.EditorAPI` assemblies. A map that compiles the ruleset needs all three, or the referenced script will not build.
+
+### Translations come from the rules map
+
+This board writes no rules text of its own, so it translates none: the `locale/*.json` catalogs the rules map ships are taken exactly like any other file, and they are what a player's client reads when the composed map loads. Editing text or a translation is a change to the rules map, which every board composed from it then carries. A language the rules map ships is therefore not this board's to author: a catalog written here for one of those languages collides with the copy the save brings in, and the save reports the collision instead of merging the two.
 
 ## What changed when this map became the composing map
 

@@ -2,7 +2,7 @@
 
 The board: `terrain.json`, its height and splat maps, the water field, the props it places, the artwork under `Assets/`, and the `Models` and environment settings its `metadata.json` declares.
 
-It also states the game's placement: the four `SpawnAnchors` a seated player starts at, the twelve melee resource nodes, placed as props whose templates the Melee Ruleset declares, and the neutral camps - four Crest Boars and one Ridge Giant - placed as units nobody owns. The rules read all of it from here rather than carrying coordinates of their own, so this board can change where a seat begins, where a mine stands or where a camp waits without the ruleset changing at all.
+It also states the game's placement: the four `SpawnAnchors` a seated player starts at, the nineteen melee resource nodes - thirteen gold mines and six woodlands - placed as props whose templates the Melee Ruleset declares, and the neutral camps - four Crest Boars and one Ridge Giant - placed as units nobody owns. The rules read all of it from here rather than carrying coordinates of their own, so this board can change where a seat begins, where a mine stands or where a camp waits without the ruleset changing at all.
 
 ## Composed with the Melee Ruleset
 

@@ -66,7 +66,6 @@ public static class ResourceIds
 	public const string GrassTuft1 = "resource/grass_tuft_1";
 	public const string MossyRock3 = "resource/mossy_rock_3";
 	public const string PalmTree = "resource/palm_tree";
-	public const string Resource001 = "resource/resource_001";
 	public const string RockFormation8 = "resource/rock_formation_8";
 	public const string SpiritTree2 = "resource/spirit_tree_2";
 	public const string VolcanicTerrain1 = "resource/volcanic_terrain_1";

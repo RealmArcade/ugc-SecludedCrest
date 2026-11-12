@@ -4,8 +4,9 @@
     {
       "MapName": "Melee Ruleset",
       "Version": "1.0.0",
-      "ManifestBlake3": "bb44c3729cda5540d188352d7ef0e49507fb5cf0290d46d83f876dc2667d5c08",
+      "ManifestBlake3": "50e3d11da0f1779795acdf674dd7339509abb1d1f018b9d5c7a97381eab7d433",
       "FolderPath": "D:/git/Realm/MeleeRuleset"
     }
-  ]
+  ],
+  "ConflictPriorities": {}
 }

@@ -962,7 +962,7 @@
         "PercentArmorPenetration": 0,
         "FlatMagicPenetration": 0,
         "DamageVariance": 0,
-        "DamageType": "physical",
+        "DamageType": "magic",
         "CritChance": 0,
         "CritMultiplier": 1,
         "SplashType": "None",

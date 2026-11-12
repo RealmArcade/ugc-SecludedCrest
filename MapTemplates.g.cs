@@ -23,7 +23,6 @@ public static class UnitIds
 	public const string Warder = "unit/warder";
 	public const string CrestBoar = "unit/crest_boar";
 	public const string RidgeGiant = "unit/ridge_giant";
-	public const string Blueprint = "unit/blueprint";
 	public const string Worker = "unit/worker";
 	public const string BuildingWorker = "unit/building_worker";
 	public const string FantasyWarriorUnit1 = "unit/fantasy_warrior_unit_1";
@@ -33,6 +32,7 @@ public static class UnitIds
 public static class BuildingIds
 {
 	public const string Nexus = "building/nexus";
+	public const string ConstructionSite = "building/construction_site";
 	public const string BulwarkHall = "building/bulwark_hall";
 	public const string WarbandYard = "building/warband_yard";
 	public const string SpearLodge = "building/spear_lodge";

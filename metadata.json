@@ -1488,7 +1488,7 @@
         "Range": 1.6,
         "Armor": 1,
         "Speed": 4.4,
-        "AttackCooldown": 1.2,
+        "AttackCooldown": 0.8,
         "ScanRadius": 0,
         "CostGold": 0,
         "CostWood": 0,
@@ -3507,12 +3507,12 @@
     ],
     "Resources": [
       {
-        "MaxCapacity": 5000,
+        "MaxCapacity": 600,
         "HarvestRate": 8,
         "GrowthRate": 0,
         "MaxWorkers": 0,
         "Level": 1,
-        "MaxCapacityPerLevel": 1500,
+        "MaxCapacityPerLevel": 300,
         "Armor": 24,
         "ArmorPerLevel": 2.5,
         "MagicResistance": 24,
@@ -3544,12 +3544,12 @@
         "Attribution_ImportedFromMap": null
       },
       {
-        "MaxCapacity": 4000,
+        "MaxCapacity": 800,
         "HarvestRate": 8,
         "GrowthRate": 0,
         "MaxWorkers": 0,
         "Level": 1,
-        "MaxCapacityPerLevel": 1200,
+        "MaxCapacityPerLevel": 400,
         "Armor": 20,
         "ArmorPerLevel": 2,
         "MagicResistance": 20,

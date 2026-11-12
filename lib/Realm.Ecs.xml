@@ -175,12 +175,6 @@
                 and Godot orchestrators without cross-layer coupling.
             </summary>
         </member>
-        <member name="F:Realm.Ecs.Common.ResourceConstants.GatherReach">
-            <summary>
-                How close a gatherer has to stand to a node to mine it. A unit walks until the node's own collision stops it, so
-                the reach has to clear the largest node the engine places rather than the smallest.
-            </summary>
-        </member>
         <member name="T:Realm.Ecs.Common.ResourceDefinition">
             <summary>
                 Represents a Resource Definition.
@@ -591,23 +585,6 @@
             <summary>
             Holds the items a unit carries together with the number of charges left for each, in the order they were picked up.
             </summary>
-        </member>
-        <member name="M:Realm.Ecs.Components.Core.Inventory.AvailableRoom(System.String,System.Int32)">
-            <summary>
-                Answers how many more of an item the inventory could take when each slot holds at most the stated number.
-            </summary>
-            <param name="itemId">The item definition identifier.</param>
-            <param name="maxStacks">The greatest number one slot may hold.</param>
-            <returns>The number of pieces that would fit, never negative.</returns>
-        </member>
-        <member name="M:Realm.Ecs.Components.Core.Inventory.AddItem(System.String,System.Int32,System.Int32)">
-            <summary>
-                Adds an item, filling each slot only up to the stated stack limit and opening further slots for the overflow.
-            </summary>
-            <param name="itemId">The item definition identifier.</param>
-            <param name="count">The number of pieces to add; values below one are treated as one.</param>
-            <param name="maxStacks">The greatest number one slot may hold.</param>
-            <returns>True when every requested piece was added; otherwise false.</returns>
         </member>
         <member name="T:Realm.Ecs.Components.Core.InventorySlot">
             <summary>
@@ -1076,65 +1053,19 @@
         </member>
         <member name="T:Realm.Ecs.Components.Resources.Gatherer">
             <summary>
-                Stores the gathering state for a worker unit entity, including the resource type, the amount each swing takes
-                from the node, how long a swing lasts, what the worker carries and where it is taking it.
+                Stores the gathering state for a worker unit entity, including the resource type,
+                carried amount, capacity, and the target resource node entity.
             </summary>
-        </member>
-        <member name="F:Realm.Ecs.Components.Resources.Gatherer.SwingAmount">
-            <summary>Gets or sets the amount one swing takes from the node, or zero to take what the node advertises.</summary>
-        </member>
-        <member name="F:Realm.Ecs.Components.Resources.Gatherer.SwingSeconds">
-            <summary>Gets or sets the seconds one swing lasts, or zero to swing once a second.</summary>
-        </member>
-        <member name="F:Realm.Ecs.Components.Resources.Gatherer.SwingProgress">
-            <summary>Gets or sets the seconds accumulated toward the swing the worker is taking.</summary>
-        </member>
-        <member name="F:Realm.Ecs.Components.Resources.Gatherer.GatherTaxRate">
-            <summary>Gets or sets the fraction of each delivered swing the map keeps, or zero to pay the whole swing.</summary>
-        </member>
-        <member name="F:Realm.Ecs.Components.Resources.Gatherer.PendingIncomeRemainder">
-            <summary>Gets or sets the fraction of a resource the worker has earned but not yet been paid, so a taxed delivery stays exact over a run.</summary>
-        </member>
-        <member name="F:Realm.Ecs.Components.Resources.Gatherer.ItemStringId">
-            <summary>Gets or sets the item the node yields, which is what the worker carries home and pays back.</summary>
-        </member>
-        <member name="F:Realm.Ecs.Components.Resources.Gatherer.HarvestRemainder">
-            <summary>Gets or sets the fraction of a point of the node's health the last hit earned but had not yet filled.</summary>
         </member>
         <member name="T:Realm.Ecs.Components.Resources.Gold">
             <summary>
                 Represents the Gold resource.
             </summary>
         </member>
-        <member name="T:Realm.Ecs.Components.Resources.Harvestable">
-            <summary>
-                Marks a node whose health is its remaining resource, and states which item each point of damage taken from it puts
-                into the attacker's inventory.
-            </summary>
-        </member>
         <member name="T:Realm.Ecs.Components.Resources.PlayerResources">
             <summary>
             A component holding all resource stockpile amounts for a player slot directly in unmanaged memory.
             </summary>
-        </member>
-        <member name="T:Realm.Ecs.Components.Resources.RepairTask">
-            <summary>
-                Tracks the building a unit is mending. The work advances only while the unit stands within reach of the
-                building, so walking away from it leaves the building exactly as far along as the hero left it.
-            </summary>
-        </member>
-        <member name="F:Realm.Ecs.Components.Resources.RepairTask.BuildingEntity">
-            <summary>Gets or sets the building this unit is mending.</summary>
-        </member>
-        <member name="T:Realm.Ecs.Components.Resources.RepairWorker">
-            <summary>
-                Stores how fast a unit mends a building, as a fraction of the building's maximum health per second. A unit
-                carrying it accepts a repair order; the rate belongs to the repairer, so two heroes can mend the same building at
-                different speeds and a building of any size takes the same share of a given hero's time.
-            </summary>
-        </member>
-        <member name="F:Realm.Ecs.Components.Resources.RepairWorker.HealthPercentPerSecond">
-            <summary>Gets or sets the fraction of the repaired building's maximum health restored each second.</summary>
         </member>
         <member name="T:Realm.Ecs.Components.Resources.ResourceCost">
             <summary>
@@ -1164,12 +1095,6 @@
         <member name="T:Realm.Ecs.Components.Resources.Wood">
             <summary>
                 Represents the Wood resource.
-            </summary>
-        </member>
-        <member name="T:Realm.Ecs.Components.Resources.WorkerAssignment">
-            <summary>
-                Names the resource a worker was assigned to by the building that raised it, which is what the map's worker AI
-                sends it to gather.
             </summary>
         </member>
         <member name="T:Realm.Ecs.Components.Stats.ArmorStat">
@@ -1300,12 +1225,6 @@
                 Tag indicating the entity is dead and awaiting cleanup.
             </summary>
         </member>
-        <member name="T:Realm.Ecs.Components.Tags.Dormant">
-            <summary>
-                Tag marking a building that was reduced to zero health and is waiting to be repaired: it is invulnerable, its
-                charges stop recharging, it produces nothing and takes no deliveries until it stands whole again.
-            </summary>
-        </member>
         <member name="T:Realm.Ecs.Components.Tags.Hero">
             <summary>
                 Tag indicating the entity is a unique, powerful hero unit.
@@ -1331,20 +1250,9 @@
                 Tag indicating the entity represents a player.
             </summary>
         </member>
-        <member name="T:Realm.Ecs.Components.Tags.PlayerOrdersLocked">
-            <summary>
-                Tag indicating the entity belongs to a player but takes no orders from that player, because the map script drives it.
-            </summary>
-        </member>
         <member name="T:Realm.Ecs.Components.Tags.Prop">
             <summary>
                 Tag indicating the entity is a static or destructible world object.
-            </summary>
-        </member>
-        <member name="T:Realm.Ecs.Components.Tags.RepairableBuilding">
-            <summary>
-                Tag marking a building the map lets fall dormant at zero health instead of being destroyed, so a repairing unit
-                can raise it back to working order. A building without it dies the moment its health runs out.
             </summary>
         </member>
         <member name="T:Realm.Ecs.Components.Tags.SpellImmune">
@@ -1360,12 +1268,6 @@
         <member name="T:Realm.Ecs.Components.Tags.Unit">
             <summary>
                 Tag indicating the entity is a primary game unit.
-            </summary>
-        </member>
-        <member name="T:Realm.Ecs.Components.Tags.Worker">
-            <summary>
-                Tag marking a unit as a resource worker: workers body-block the workers of their own player and pass through the
-                workers of every other player, so a gathering crew never jams on itself while rival crews walk through one another.
             </summary>
         </member>
         <member name="T:Realm.Ecs.Components.Terrain.ShroudGridRegistry">
@@ -1800,8 +1702,6 @@
             <summary>picking a target for each attacker.</summary>
             <summary>resolving an attack, from range check to damage and projectiles.</summary>
             <summary>the public damage and heal entry points and the aoe passes behind them.</summary>
-            <summary>The building lifecycle: which buildings fall dormant at zero health instead of dying, and what dormant means.</summary>
-            <summary>taking resource out of a gatherable node with the same hit the unit would land in combat.</summary>
             <summary>healer ticks, targets and the heal itself.</summary>
             <summary>range, reach and the navmesh route check behind them.</summary>
             <summary>splash damage around an impact.</summary>
@@ -1888,49 +1788,6 @@
         </member>
         <member name="M:Realm.Ecs.Services.CombatAndDamageService.HealSingle(Realm.Ecs.Entity,Realm.Ecs.Entity,System.Single)">
             <summary>Heals one unit, honouring the caster's healing multiplier.</summary>
-        </member>
-        <member name="F:Realm.Ecs.Services.CombatAndDamageService.OnBuildingDormantRequested">
-            <summary>
-                Called when a repairable building has just lost its last point of health, so the authority can stop what the
-                building was doing and pay whoever destroyed it. The building stays in the world, dormant, until a repair
-                restores it.
-            </summary>
-        </member>
-        <member name="M:Realm.Ecs.Services.CombatAndDamageService.TryFallDormant(Realm.Ecs.Entity)">
-            <summary>
-                Moves a repairable building into the dormant state, which is the state a destroyed but standing building is
-                drawn and read in: nothing targets it, it takes no damage, it attacks nothing, it earns nothing, it recharges
-                nothing and it produces nothing, while its charges and queue are kept for the repair.
-            </summary>
-            <param name="entity">The entity that ran out of health.</param>
-            <returns>True when the entity is dormant and must not be removed from the world.</returns>
-        </member>
-        <member name="M:Realm.Ecs.Services.CombatAndDamageService.StopOperating(Realm.Ecs.Entity)">
-            <summary>Ends the work a building was doing, keeping what it had banked for when it is repaired.</summary>
-        </member>
-        <member name="M:Realm.Ecs.Services.CombatAndDamageService.HarvestFromNode(Realm.Ecs.Entity,Realm.Ecs.Entity,System.Single@,System.Int32)">
-            <summary>
-                Lands one gathering hit on a node: the worker's own attack, critical strike and penetration meet the node's
-                resistances, and what survives that mitigation is taken off the node's health, which is its remaining resource.
-            </summary>
-            <remarks>
-                A point of the node's health is one resource piece, so only whole points are ever taken. The fraction a hit
-                leaves over waits in <paramref name="damageBank" /> and is joined by the next hit, which keeps what the node
-                lost exactly equal to what the worker carries however small each hit's damage is.
-            </remarks>
-            <param name="worker">The unit taking the resource.</param>
-            <param name="node">The gatherable node being worked.</param>
-            <param name="damageBank">The fraction of a point of damage the worker's previous hit left over.</param>
-            <param name="maximumPoints">The greatest number of whole points the hit may take, which is the room left in the worker's inventory.</param>
-            <returns>The whole points of health the node lost, or zero when the hit yields no whole point yet.</returns>
-        </member>
-        <member name="M:Realm.Ecs.Services.CombatAndDamageService.GetGatherInterval(Realm.Ecs.Entity)">
-            <summary>
-                States how long the unit waits between gathering hits, which is the attack interval it would swing at in
-                combat after its own attack speed has been applied.
-            </summary>
-            <param name="unit">The unit about to take a hit at a node.</param>
-            <returns>The seconds between hits, never below a small floor.</returns>
         </member>
         <member name="M:Realm.Ecs.Services.CombatAndDamageService.GetUnitContactRadius(Realm.Ecs.Entity)">
             <summary>
@@ -2176,15 +2033,6 @@
                 gets the badge on its own.
             </summary>
         </member>
-        <member name="M:Realm.Ecs.Services.MapRulesCatalog.IsResourceWorkerUnit(System.String)">
-            <summary>
-                Answers whether a unit may gather, which is a rule the map states rather than a unit template the engine knows.
-                A ruleset that gives the job to a hero or a builder registers that template and every gather order is checked
-                against it.
-            </summary>
-            <param name="definitionId">The template id of the unit asking to gather.</param>
-            <returns>True when the definition is one the map registered as a resource worker.</returns>
-        </member>
         <member name="M:Realm.Ecs.Services.MapRulesCatalog.ApplyCatalogEntry(System.String,System.String,System.String,System.Single)">
             <summary>
                 Takes one rule a peer published, ignoring one this match already has. A rule that arrived by either route —
@@ -2254,28 +2102,6 @@
                 as a flat ground marker - blocks nothing, exactly as it contributes no obstacle volume to the navigation bake.
             </summary>
         </member>
-        <member name="M:Realm.Ecs.Services.MovementAndPathfindingService.GhostsUnitCollision(Realm.Ecs.Entity,Realm.Ecs.Entity)">
-            <summary>
-                Answers whether the moving body passes through the other body instead of being stopped by it, which is what a
-                hero does to every soldier and what a worker does to every worker of another player.
-            </summary>
-            <remarks>
-                A hero is not body-blocked by soldiers, so a hero's retreat is never walled in by its own army. The rule is
-                one-directional in effect: a soldier still resolves against a hero, so the soldier steps aside while the hero
-                keeps its line. Two heroes, and two workers of the same player, resolve against each other, so a gathering
-                crew keeps its shape while a rival crew walks through it.
-            </remarks>
-        </member>
-        <member name="M:Realm.Ecs.Services.MovementAndPathfindingService.GhostsObstacleCollision(Realm.Ecs.Entity,Realm.Ecs.Entity)">
-            <summary>
-                Answers whether a hero passes through a static obstacle: allied buildings, enemy buildings still in their
-                construction silhouette, and enemy buildings that were reduced to zero health and wait to be repaired.
-            </summary>
-            <remarks>
-                Terrain props always block, so a hero cannot walk through a rock or a tree line. An enemy building that is
-                functional or merely damaged still blocks, which is what makes a building worth defending.
-            </remarks>
-        </member>
         <member name="M:Realm.Ecs.Services.MovementAndPathfindingService.CollectPreviewMovementWorkItemAction(Realm.Ecs.Entity,Realm.Ecs.Components.Core.Position@,Realm.Ecs.Components.Movement.PreviewMoveTo@,Realm.Ecs.Components.Movement.MovementStats@)">
             <summary>
                 Plans the route a click drew before the authority answered it. The order it stands for has not been decided
@@ -2338,20 +2164,6 @@
         <member name="T:Realm.Ecs.Services.PlayerResourceService">
             <summary>
                 Demonstrates how player-specific resource data is used with archetype definition data.
-            </summary>
-        </member>
-        <member name="F:Realm.Ecs.Services.ResourceEconomyService.ItemMaxStacksProvider">
-            <summary>
-                States the number of pieces one inventory slot holds for an item. The map's catalog answers it, so the engine
-                needs no knowledge of which items exist, and a worker with a full slot opens another before it stops gathering.
-            </summary>
-        </member>
-        <member name="M:Realm.Ecs.Services.ResourceEconomyService.MineResource(Realm.Ecs.Entity,Realm.Ecs.Components.Resources.Gatherer@,Realm.Ecs.Entity,System.Numerics.Vector3)">
-            <summary>
-                Works the node the worker is standing at, one hit at a time. The hit is the unit's own attack, resolved against
-                the node's resistances, so the resource a node loses is the damage the worker would have dealt in combat and the
-                pieces it yields are that damage in items. A worker that cannot hold another piece carries what it has home,
-                which is what makes the walk, the hit rate and the damage all show up in income.
             </summary>
         </member>
         <member name="T:Realm.Ecs.Services.RouteReachabilityEntry">
@@ -2527,13 +2339,6 @@
         <member name="M:Realm.Ecs.Services.UnitOrderService.Gather(Realm.Ecs.EcsWorld,Realm.Ecs.Entity,Realm.Ecs.Entity,System.String)">
             <summary>Sends a worker to a resource node.</summary>
         </member>
-        <member name="M:Realm.Ecs.Services.UnitOrderService.Repair(Realm.Ecs.EcsWorld,Realm.Ecs.Entity,Realm.Ecs.Entity)">
-            <summary>
-                Sends a unit that carries a repair rate to mend a repairable building, or to raise a construction site. The unit
-                walks there and works only while it stands within reach, so a unit called away leaves the building as far along
-                as it was. A site is work like any other: nothing about a building advances from a unit merely standing near it.
-            </summary>
-        </member>
         <member name="M:Realm.Ecs.Services.UnitOrderService.Stop(Realm.Ecs.EcsWorld,Realm.Ecs.Entity)">
             <summary>Stops a unit where it stands without holding it there.</summary>
         </member>
@@ -2684,18 +2489,6 @@
         </member>
         <member name="F:Realm.Ecs.ComponentIds.PlayerDamageEffectiveness">
             <summary>Player damage effectiveness component identifier, holding the multiplier a seat's damage carries against each other seat.</summary>
-        </member>
-        <member name="F:Realm.Ecs.ComponentIds.PlayerOrdersLocked">
-            <summary>Player orders locked tag component identifier, marking player-owned units the map drives itself.</summary>
-        </member>
-        <member name="F:Realm.Ecs.ComponentIds.Dormant">
-            <summary>Dormant tag component identifier, marking a repairable building that was reduced to zero health.</summary>
-        </member>
-        <member name="F:Realm.Ecs.ComponentIds.RepairableBuilding">
-            <summary>Repairable building tag component identifier, marking a building that falls dormant instead of dying.</summary>
-        </member>
-        <member name="F:Realm.Ecs.ComponentIds.Worker">
-            <summary>Worker tag component identifier, marking a unit that follows the worker collision rule.</summary>
         </member>
         <member name="T:Realm.Ecs.ComponentMask">
             <summary>
@@ -3491,19 +3284,6 @@
             <param name="unit">The unit to freeze orders on.</param>
             <param name="value">True to ignore movement and attack orders; false to accept them again.</param>
         </member>
-        <member name="M:Realm.Ecs.IHandleCommands.SetUnitPlayerOrdersLocked(Realm.Ecs.UnitId,System.Boolean)">
-            <summary>
-            Locks the unit to the map script that drives it, or gives it back to its player.
-            </summary>
-            <remarks>
-            A locked unit keeps its owner, abilities and position, but its player cannot move, attack, hold, patrol or gather
-            with it, and clients draw its ability cards disabled. Orders the script issues itself still apply, so a ruleset can
-            run an autonomous army the player can watch but not command. Setting the flag again is a no-op rather than a
-            stacked count, and false removes it cleanly.
-            </remarks>
-            <param name="unit">The unit to lock to its map.</param>
-            <param name="value">True to refuse player orders; false to accept them again.</param>
-        </member>
         <member name="M:Realm.Ecs.IHandleCommands.SetUnitFrozen(Realm.Ecs.UnitId,System.Boolean)">
             <summary>
             Pins the unit in place, or releases it again, by freezing its animation and its orders together.
@@ -3781,9 +3561,6 @@
         </member>
         <member name="F:Realm.Ecs.MatchOption.ChargeMultiplierPercent">
             <summary>The percentage every player's maximum charges is multiplied by.</summary>
-        </member>
-        <member name="F:Realm.Ecs.MatchOption.MaximumBuildingSupply">
-            <summary>How many buildings a player may construct and hold, which is the player's building supply.</summary>
         </member>
         <member name="T:Realm.Ecs.MatchShroudMode">
             <summary>
@@ -4504,17 +4281,6 @@
             to move, stop, hold or attack commands, and clients hide those command buttons for it. Ability
             casting and ability buttons stay available, so map-authored abilities such as rerolls keep
             working. Setting the property to the value it already has does nothing.
-            </remarks>
-        </member>
-        <member name="P:Realm.Ecs.UnitId.PlayerOrdersLocked">
-            <summary>
-            Gets or sets a value indicating whether the unit refuses the orders of the player who owns it.
-            </summary>
-            <remarks>
-            A locked unit is still a player's unit: it keeps its owner, its abilities and its place in the army, but the
-            player cannot move, attack, hold, patrol or gather with it, and clients show its ability cards disabled. Orders
-            the map script issues itself still apply, which is what lets a ruleset drive an autonomous army while the player
-            can only watch it. Setting the property to the value it already has does nothing.
             </remarks>
         </member>
         <member name="P:Realm.Ecs.UnitId.Frozen">

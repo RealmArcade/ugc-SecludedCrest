@@ -9,6 +9,9 @@ namespace Realm.Maps;
 
 public static class UnitIds
 {
+	public const string Vale = "hero/vale";
+	public const string Sable = "hero/sable";
+	public const string Corvus = "hero/corvus";
 	public const string Shieldbearer = "unit/shieldbearer";
 	public const string Axeman = "unit/axeman";
 	public const string SpearMilitia = "unit/spear_militia";
@@ -22,9 +25,6 @@ public static class UnitIds
 	public const string RidgeGiant = "unit/ridge_giant";
 	public const string Blueprint = "unit/blueprint";
 	public const string Worker = "unit/worker";
-	public const string Vale = "hero/vale";
-	public const string Sable = "hero/sable";
-	public const string Corvus = "hero/corvus";
 	public const string BuildingWorker = "unit/building_worker";
 	public const string FantasyWarriorUnit1 = "unit/fantasy_warrior_unit_1";
 	public const string OrcWarrior7 = "unit/orc_warrior_7";

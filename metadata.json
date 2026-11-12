@@ -1919,14 +1919,7 @@
         "PseudoSockets": null,
         "Sounds": null,
         "StartingItems": null,
-        "ShopItems": [
-          "item/sigil_of_the_wall",
-          "item/couriers_knot",
-          "item/spiked_barricades",
-          "item/deep_granaries",
-          "item/wardens_writ",
-          "item/muster_bell"
-        ],
+        "ShopItems": null,
         "Upgrades": null,
         "StatusEffects": null,
         "SoundEvents": null,

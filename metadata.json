@@ -4248,6 +4248,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 0,
         "Effects": null,
@@ -4272,6 +4273,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 0,
         "Effects": null,
@@ -4296,6 +4298,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 0,
         "Effects": null,
@@ -4320,6 +4323,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 4,
         "Effects": [
@@ -4389,6 +4393,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 6,
         "Effects": [
@@ -4440,6 +4445,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 0,
         "Effects": [
@@ -4509,6 +4515,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 0,
         "Effects": [
@@ -4560,6 +4567,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 5,
         "Effects": null,
@@ -4584,6 +4592,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 4,
         "Effects": [
@@ -4653,6 +4662,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 0,
         "Effects": null,
@@ -4677,6 +4687,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 8,
         "Effects": [
@@ -4720,6 +4731,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 0,
         "Effects": null,
@@ -4744,6 +4756,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 0,
         "Effects": [
@@ -4787,6 +4800,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 0,
         "Effects": [
@@ -4830,6 +4844,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 7,
         "Effects": [
@@ -4870,10 +4885,10 @@
         "CostStone": 0,
         "Cooldown": 0,
         "TargetRange": 8,
-        "PlacementTemplateId": "unit/blueprint",
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": "unit/blueprint",
         "AutoCast": null,
         "AreaOfEffectRadius": 0,
         "Effects": null,
@@ -4898,6 +4913,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -4928,6 +4944,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -4958,6 +4975,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -4988,6 +5006,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -5018,6 +5037,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -5048,6 +5068,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -5078,6 +5099,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -5108,6 +5130,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -5138,6 +5161,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -5168,6 +5192,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -5198,6 +5223,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -5228,6 +5254,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -5258,6 +5285,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -5288,6 +5316,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -5318,6 +5347,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -5348,6 +5378,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -5378,6 +5409,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -5408,6 +5440,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": {
           "Enabled": true,
           "RequiresEnemyTarget": false,
@@ -5438,6 +5471,7 @@
         "VisualEffect": null,
         "ProjectileId": null,
         "CastSound": null,
+        "PlacementTemplateId": null,
         "AutoCast": null,
         "AreaOfEffectRadius": 0,
         "Effects": [

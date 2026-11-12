@@ -603,6 +603,9 @@
               "ExperiencePerLevel": {
                 "type": "number"
               },
+              "MaxLevel": {
+                "type": "integer"
+              },
               "PathingCapabilities": {
                 "type": [
                   "array",
@@ -1112,6 +1115,30 @@
               "MaxWorkers": {
                 "type": "integer"
               },
+              "Level": {
+                "type": "integer"
+              },
+              "MaxCapacityPerLevel": {
+                "type": "number"
+              },
+              "Armor": {
+                "type": "number"
+              },
+              "ArmorPerLevel": {
+                "type": "number"
+              },
+              "MagicResistance": {
+                "type": "number"
+              },
+              "MagicResistancePerLevel": {
+                "type": "number"
+              },
+              "ResourceType": {
+                "type": "string"
+              },
+              "ItemTemplateId": {
+                "type": "string"
+              },
               "Scale": {
                 "type": "number"
               },
@@ -1543,6 +1570,9 @@
                           "type": "number"
                         },
                         "Cap": {
+                          "type": "number"
+                        },
+                        "Offset": {
                           "type": "number"
                         },
                         "ScalesDuration": {
@@ -2043,6 +2073,15 @@
               },
               "ChargeCount": {
                 "type": "integer"
+              },
+              "MaxStacks": {
+                "type": "integer"
+              },
+              "ResourceType": {
+                "type": [
+                  "string",
+                  "null"
+                ]
               },
               "CooldownLink": {
                 "type": [

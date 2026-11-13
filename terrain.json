@@ -7,7 +7,7 @@
       "PosX": 58.488556,
       "PosY": 3.4758062,
       "PosZ": -59.55932,
-      "RotationY": 69.13391,
+      "RotationY": 1.0813291,
       "Scale": 2.3000007,
       "Player": 0
     },
@@ -16,7 +16,7 @@
       "PosX": 77.37567,
       "PosY": 2.7819033,
       "PosZ": -62.765472,
-      "RotationY": -88.44392,
+      "RotationY": -27.463127,
       "Scale": 2.2000008,
       "Player": 0
     },
@@ -34,7 +34,7 @@
       "PosX": -62.69764,
       "PosY": 2.9155097,
       "PosZ": 89.96145,
-      "RotationY": 164.99994,
+      "RotationY": 164.99992,
       "Scale": 4,
       "Player": 0
     },
@@ -43,8 +43,8 @@
       "PosX": -68.97118,
       "PosY": 3.0479717,
       "PosZ": 67.53322,
-      "RotationY": 164.99994,
-      "Scale": 3,
+      "RotationY": 164.99992,
+      "Scale": 3.0000002,
       "Player": 0
     },
     {
@@ -52,7 +52,7 @@
       "PosX": -52.5965,
       "PosY": 4.684634,
       "PosZ": 68.2028,
-      "RotationY": -164.99998,
+      "RotationY": -164.99997,
       "Scale": 3.0000002,
       "Player": 0
     },
@@ -63,16 +63,18 @@
       "PosZ": -30,
       "RotationY": 0,
       "Scale": 1,
-      "Player": 0
+      "Player": 0,
+      "Level": 2
     },
     {
       "TemplateId": "unit/crest_boar",
       "PosX": 5,
       "PosY": 3,
       "PosZ": -31,
-      "RotationY": -62.79477,
+      "RotationY": 2.1247444,
       "Scale": 1,
-      "Player": 0
+      "Player": 0,
+      "Level": 2
     },
     {
       "TemplateId": "unit/crest_boar",
@@ -81,7 +83,8 @@
       "PosZ": 56,
       "RotationY": 90,
       "Scale": 1,
-      "Player": 0
+      "Player": 0,
+      "Level": 2
     },
     {
       "TemplateId": "unit/crest_boar",
@@ -90,7 +93,8 @@
       "PosZ": 57,
       "RotationY": -90,
       "Scale": 1,
-      "Player": 0
+      "Player": 0,
+      "Level": 2
     }
   ],
   "Props": [
@@ -2953,7 +2957,7 @@
     {
       "TemplateId": "resource/grass_tuft_1",
       "PosX": 23.613125,
-      "PosY": 3.2208982,
+      "PosY": 3.0806732,
       "PosZ": -4.3792553,
       "RotationY": 0,
       "Scale": 0.65
@@ -2977,7 +2981,7 @@
     {
       "TemplateId": "resource/grass_tuft_1",
       "PosX": 25.088478,
-      "PosY": 3.0472705,
+      "PosY": 3,
       "PosZ": -3.3604112,
       "RotationY": 0,
       "Scale": 0.65
@@ -2985,7 +2989,7 @@
     {
       "TemplateId": "resource/grass_tuft_1",
       "PosX": 24.334835,
-      "PosY": 2.971427,
+      "PosY": 3,
       "PosZ": -2.2538228,
       "RotationY": 0,
       "Scale": 0.65
@@ -3268,7 +3272,8 @@
       "PosY": 3,
       "PosZ": -58,
       "RotationY": 0,
-      "Scale": 1.6
+      "Scale": 1.6,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_gold_mine",
@@ -3276,7 +3281,8 @@
       "PosY": 2.9894567,
       "PosZ": -63.29796,
       "RotationY": 90,
-      "Scale": 1.6
+      "Scale": 1.6,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_gold_mine",
@@ -3284,7 +3290,8 @@
       "PosY": 3,
       "PosZ": 20.520788,
       "RotationY": 120,
-      "Scale": 1.6
+      "Scale": 1.6,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_gold_mine",
@@ -3292,7 +3299,8 @@
       "PosY": 3,
       "PosZ": 15,
       "RotationY": 0,
-      "Scale": 1.6
+      "Scale": 1.6,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_gold_mine",
@@ -3300,7 +3308,8 @@
       "PosY": 3,
       "PosZ": 33.128998,
       "RotationY": 314.99988,
-      "Scale": 1.6
+      "Scale": 1.6,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_gold_mine",
@@ -3308,7 +3317,8 @@
       "PosY": 3,
       "PosZ": -58,
       "RotationY": 0,
-      "Scale": 1.6
+      "Scale": 1.6,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_gold_mine",
@@ -3316,7 +3326,8 @@
       "PosY": 2.7286425,
       "PosZ": 15,
       "RotationY": 0,
-      "Scale": 1.6
+      "Scale": 1.6,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_gold_mine",
@@ -3324,7 +3335,8 @@
       "PosY": 3,
       "PosZ": -83.65346,
       "RotationY": 299.9999,
-      "Scale": 1.6
+      "Scale": 1.6,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_gold_mine",
@@ -3332,15 +3344,17 @@
       "PosY": 2.8719242,
       "PosZ": 92,
       "RotationY": 0,
-      "Scale": 1.6
+      "Scale": 1.6,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_gold_mine",
       "PosX": -33.839375,
       "PosY": 3,
       "PosZ": 92.25337,
-      "RotationY": 224.99994,
-      "Scale": 1.6
+      "RotationY": 224.99992,
+      "Scale": 1.6,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_gold_mine",
@@ -3348,7 +3362,8 @@
       "PosY": 3,
       "PosZ": -3.6150837,
       "RotationY": 284.99997,
-      "Scale": 1.6
+      "Scale": 1.6,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_gold_mine",
@@ -3356,15 +3371,17 @@
       "PosY": 3,
       "PosZ": 92,
       "RotationY": 0,
-      "Scale": 1.6
+      "Scale": 1.6,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_gold_mine",
       "PosX": 63.448097,
       "PosY": 2.9255672,
       "PosZ": 93.32293,
-      "RotationY": 164.99994,
-      "Scale": 1.6
+      "RotationY": 164.99992,
+      "Scale": 1.6,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_woodland",
@@ -3372,7 +3389,8 @@
       "PosY": 2.6925821,
       "PosZ": -44,
       "RotationY": 0,
-      "Scale": 2.4
+      "Scale": 2.4,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_woodland",
@@ -3380,7 +3398,8 @@
       "PosY": 3,
       "PosZ": -36,
       "RotationY": 0,
-      "Scale": 2.4
+      "Scale": 2.4,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_woodland",
@@ -3388,7 +3407,8 @@
       "PosY": 3,
       "PosZ": -44,
       "RotationY": 0,
-      "Scale": 2.4
+      "Scale": 2.4,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_woodland",
@@ -3396,7 +3416,8 @@
       "PosY": 3,
       "PosZ": 62,
       "RotationY": 0,
-      "Scale": 2.4
+      "Scale": 2.4,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_woodland",
@@ -3404,7 +3425,8 @@
       "PosY": 3,
       "PosZ": 106,
       "RotationY": 0,
-      "Scale": 2.4
+      "Scale": 2.4,
+      "Level": 1
     },
     {
       "TemplateId": "resource/melee_woodland",
@@ -3412,7 +3434,8 @@
       "PosY": 3,
       "PosZ": 106,
       "RotationY": 0,
-      "Scale": 2.4
+      "Scale": 2.4,
+      "Level": 1
     },
     {
       "TemplateId": "resource/mossy_rock_3",
@@ -3648,14 +3671,7 @@
     }
   ],
   "Decals": [],
-  "Items": [
-    {
-      "TemplateId": "item/couriers_knot",
-      "PosX": -63.232307,
-      "PosY": 2.7798972,
-      "PosZ": -57.125443
-    }
-  ],
+  "Items": [],
   "Vfx": [],
   "CameraBoundsLeft": -128,
   "CameraBoundsRight": 128,

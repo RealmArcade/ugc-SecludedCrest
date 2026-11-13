@@ -14,28 +14,28 @@ using Realm.MapAPI;
 /// </summary>
 public partial class MapScript
 {
-	private const float AffinityHalfLifeSeconds = 30f;
-	private const float AffinityRecalculateSeconds = 1f;
-	private const float AffinityMinimumBlowDamage = 5f;
-	private const float AffinityMinimumEffectiveness = 0.05f;
-	private const float AffinityFullEffectiveness = 1f;
-	private const float AffinityShieldFlashCooldownSeconds = 0.6f;
-	private const float AffinityShieldFlashRadius = 2.6f;
-	private const float AffinityThreeWayExponent = 0.38f;
+	protected const float AffinityHalfLifeSeconds = 30f;
+	protected const float AffinityRecalculateSeconds = 1f;
+	protected const float AffinityMinimumBlowDamage = 5f;
+	protected const float AffinityMinimumEffectiveness = 0.05f;
+	protected const float AffinityFullEffectiveness = 1f;
+	protected const float AffinityShieldFlashCooldownSeconds = 0.6f;
+	protected const float AffinityShieldFlashRadius = 2.6f;
+	protected const float AffinityThreeWayExponent = 0.38f;
 
-	private readonly float[] _affinityEnergy = new float[EcsSharedMemory.MAX_PLAYERS * EcsSharedMemory.MAX_PLAYERS];
-	private readonly double[] _affinityTouchedAt = new double[EcsSharedMemory.MAX_PLAYERS * EcsSharedMemory.MAX_PLAYERS];
-	private readonly float[] _affinityApplied = new float[EcsSharedMemory.MAX_PLAYERS * EcsSharedMemory.MAX_PLAYERS];
-	private readonly float[] _affinityShieldFlashedAt = new float[EcsSharedMemory.MAX_ENTITIES];
-	private double _affinityClock;
-	private float _affinityRecalculateTimer;
+	protected readonly float[] _affinityEnergy = new float[EcsSharedMemory.MAX_PLAYERS * EcsSharedMemory.MAX_PLAYERS];
+	protected readonly double[] _affinityTouchedAt = new double[EcsSharedMemory.MAX_PLAYERS * EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _affinityApplied = new float[EcsSharedMemory.MAX_PLAYERS * EcsSharedMemory.MAX_PLAYERS];
+	protected readonly float[] _affinityShieldFlashedAt = new float[EcsSharedMemory.MAX_ENTITIES];
+	protected double _affinityClock;
+	protected float _affinityRecalculateTimer;
 
 	/// <summary>
 	///     Starts the rule and states that every pair begins at full effectiveness, so a board that never sees a third
 	///     party fights exactly as the engine would have it fight.
 	/// </summary>
 	/// <param name="api">The game API reference to manipulate the game world.</param>
-	private void InitializeDamageAffinity(IGameAPI api)
+	protected void InitializeDamageAffinity(IGameAPI api)
 	{
 		_affinityClock = api.GameElapsedTime;
 		_affinityRecalculateTimer = 0f;
@@ -59,7 +59,7 @@ public partial class MapScript
 	/// </summary>
 	/// <param name="api">The game API reference to manipulate the game world.</param>
 	/// <param name="delta">The time elapsed since the last physics tick, in seconds.</param>
-	private void UpdateDamageAffinity(IGameAPI api, float delta)
+	protected void UpdateDamageAffinity(IGameAPI api, float delta)
 	{
 		_affinityClock += delta;
 		_affinityRecalculateTimer += delta;
@@ -79,7 +79,7 @@ public partial class MapScript
 	/// <param name="victim">The unit that was hit.</param>
 	/// <param name="attacker">The unit that landed the blow, or an invalid identifier when nothing did.</param>
 	/// <param name="damageBeforeMitigation">The damage the blow carried before the victim's resistances reduced it.</param>
-	private void HandleUnitDamagedBeforeMitigation(UnitId victim, UnitId attacker, float damageBeforeMitigation)
+	protected void HandleUnitDamagedBeforeMitigation(UnitId victim, UnitId attacker, float damageBeforeMitigation)
 	{
 		if (!victim.IsValid || !attacker.IsValid || damageBeforeMitigation < AffinityMinimumBlowDamage) return;
 
@@ -103,7 +103,7 @@ public partial class MapScript
 	/// <param name="firstTeam">One team of the pair.</param>
 	/// <param name="secondTeam">The other team of the pair.</param>
 	/// <param name="damage">The pre-mitigation damage exchanged.</param>
-	private void AddParticipation(int firstTeam, int secondTeam, float damage)
+	protected void AddParticipation(int firstTeam, int secondTeam, float damage)
 	{
 		int forward = PairIndex(firstTeam, secondTeam);
 		if (forward < 0) return;
@@ -117,7 +117,7 @@ public partial class MapScript
 
 	/// <summary>Fades every pair's participation by the time that passed, keeping the half life the rule states.</summary>
 	/// <param name="elapsedSeconds">The seconds since the participation was last faded.</param>
-	private void DecayParticipation(float elapsedSeconds)
+	protected void DecayParticipation(float elapsedSeconds)
 	{
 		for (int index = 0; index < _affinityEnergy.Length; index++)
 		{
@@ -126,7 +126,7 @@ public partial class MapScript
 		}
 	}
 
-	private void DecayParticipationAt(int pairIndex, double now)
+	protected void DecayParticipationAt(int pairIndex, double now)
 	{
 		float energy = _affinityEnergy[pairIndex];
 		if (energy <= 0f) return;
@@ -153,7 +153,7 @@ public partial class MapScript
 	/// <param name="attackingTeam">The team whose damage is being scaled.</param>
 	/// <param name="defendingTeam">The team the damage is dealt to.</param>
 	/// <returns>The multiplier, between the floor and full effectiveness.</returns>
-	private float ResolveAffinityEffectiveness(int attackingTeam, int defendingTeam)
+	protected float ResolveAffinityEffectiveness(int attackingTeam, int defendingTeam)
 	{
 		int pair = PairIndex(attackingTeam, defendingTeam);
 		if (pair < 0) return AffinityFullEffectiveness;
@@ -199,7 +199,7 @@ public partial class MapScript
 	///     blow the engine resolves and the rule recalculates once a second.
 	/// </summary>
 	/// <param name="api">The game API reference to manipulate the game world.</param>
-	private void ApplyDamageEffectiveness(IGameAPI api)
+	protected void ApplyDamageEffectiveness(IGameAPI api)
 	{
 		ReadOnlySpan<PlayerId> players = api.GetActivePlayers();
 
@@ -234,7 +234,7 @@ public partial class MapScript
 	/// <param name="victim">The unit that was hit.</param>
 	/// <param name="attackingTeam">The team that landed the blow.</param>
 	/// <param name="defendingTeam">The team the victim plays for.</param>
-	private void ShowDamageAffinityShield(UnitId victim, int attackingTeam, int defendingTeam)
+	protected void ShowDamageAffinityShield(UnitId victim, int attackingTeam, int defendingTeam)
 	{
 		float effectiveness = ResolveAffinityEffectiveness(attackingTeam, defendingTeam);
 		if (effectiveness >= 0.999f) return;
@@ -254,7 +254,7 @@ public partial class MapScript
 		_api.SpawnExpandingBurstSphere(victim.Position, AffinityShieldFlashRadius * (0.7f + 0.6f * deepness), 9f, 0.55f, color);
 	}
 
-	private static int PairIndex(int firstPlayerIndex, int secondPlayerIndex)
+	protected static int PairIndex(int firstPlayerIndex, int secondPlayerIndex)
 	{
 		if (firstPlayerIndex <= 0 || secondPlayerIndex <= 0) return -1;
 		if (firstPlayerIndex >= EcsSharedMemory.MAX_PLAYERS || secondPlayerIndex >= EcsSharedMemory.MAX_PLAYERS) return -1;

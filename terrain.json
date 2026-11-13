@@ -7,7 +7,7 @@
       "PosX": 58.488556,
       "PosY": 3.4758062,
       "PosZ": -59.55932,
-      "RotationY": 139.43669,
+      "RotationY": 69.13391,
       "Scale": 2.3000007,
       "Player": 0
     },
@@ -16,7 +16,7 @@
       "PosX": 77.37567,
       "PosY": 2.7819033,
       "PosZ": -62.765472,
-      "RotationY": -32.959564,
+      "RotationY": -88.44392,
       "Scale": 2.2000008,
       "Player": 0
     },
@@ -34,7 +34,7 @@
       "PosX": -62.69764,
       "PosY": 2.9155097,
       "PosZ": 89.96145,
-      "RotationY": 164.99995,
+      "RotationY": 164.99994,
       "Scale": 4,
       "Player": 0
     },
@@ -43,7 +43,7 @@
       "PosX": -68.97118,
       "PosY": 3.0479717,
       "PosZ": 67.53322,
-      "RotationY": 164.99995,
+      "RotationY": 164.99994,
       "Scale": 3,
       "Player": 0
     },
@@ -52,8 +52,8 @@
       "PosX": -52.5965,
       "PosY": 4.684634,
       "PosZ": 68.2028,
-      "RotationY": -165,
-      "Scale": 3,
+      "RotationY": -164.99998,
+      "Scale": 3.0000002,
       "Player": 0
     },
     {
@@ -70,7 +70,7 @@
       "PosX": 5,
       "PosY": 3,
       "PosZ": -31,
-      "RotationY": -126.75968,
+      "RotationY": -62.79477,
       "Scale": 1,
       "Player": 0
     },
@@ -89,15 +89,6 @@
       "PosY": 3,
       "PosZ": 57,
       "RotationY": -90,
-      "Scale": 1,
-      "Player": 0
-    },
-    {
-      "TemplateId": "unit/ridge_giant",
-      "PosX": 0,
-      "PosY": 3,
-      "PosZ": 10,
-      "RotationY": 0,
       "Scale": 1,
       "Player": 0
     }
@@ -3308,7 +3299,7 @@
       "PosX": -32.199715,
       "PosY": 3,
       "PosZ": 33.128998,
-      "RotationY": 314.9999,
+      "RotationY": 314.99988,
       "Scale": 1.6
     },
     {
@@ -3348,7 +3339,7 @@
       "PosX": -33.839375,
       "PosY": 3,
       "PosZ": 92.25337,
-      "RotationY": 224.99995,
+      "RotationY": 224.99994,
       "Scale": 1.6
     },
     {
@@ -3372,7 +3363,7 @@
       "PosX": 63.448097,
       "PosY": 2.9255672,
       "PosZ": 93.32293,
-      "RotationY": 164.99995,
+      "RotationY": 164.99994,
       "Scale": 1.6
     },
     {
@@ -3657,6 +3648,14 @@
     }
   ],
   "Decals": [],
+  "Items": [
+    {
+      "TemplateId": "couriers_knot",
+      "PosX": -63.232307,
+      "PosY": 2.7798972,
+      "PosZ": -57.125443
+    }
+  ],
   "Vfx": [],
   "CameraBoundsLeft": -128,
   "CameraBoundsRight": 128,

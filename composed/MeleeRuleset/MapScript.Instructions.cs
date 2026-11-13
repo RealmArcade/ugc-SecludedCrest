@@ -8,7 +8,7 @@ public partial class MapScript
 	///     Publishes the rules a player reads in the instructions panel. Every section is written from the same numbers
 	///     the script plays by, so the panel cannot drift from the match it describes.
 	/// </summary>
-	private void RegisterInstructions(IGameAPI api)
+	protected void RegisterInstructions(IGameAPI api)
 	{
 		api.AddInstructionsSection(
 			"How a Match Works",

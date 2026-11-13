@@ -214,6 +214,7 @@ def soldier(entry):
         "PathingType": 9,
         "Abilities": abilities or None,
         "IsHero": False,
+        "IncludeInDefaultHotkeySelection": False,
     }
 
 def hero(entry):
@@ -261,6 +262,7 @@ def hero(entry):
         "BuildOptions": None,
         "Abilities": abilities,
         "IsHero": True,
+        "IncludeInDefaultHotkeySelection": True,
     }
 
 def building(entry):

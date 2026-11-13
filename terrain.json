@@ -3650,7 +3650,7 @@
   "Decals": [],
   "Items": [
     {
-      "TemplateId": "couriers_knot",
+      "TemplateId": "item/couriers_knot",
       "PosX": -63.232307,
       "PosY": 2.7798972,
       "PosZ": -57.125443

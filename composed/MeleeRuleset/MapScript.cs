@@ -13,6 +13,9 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	protected const string WoodNodeTemplateId = "resource/melee_woodland";
 
 	protected const int DefaultMaximumBuildingsPerPlayer = 8;
+
+	/// <summary>The players a melee lobby seats, which is the width its board and its building supply are authored for.</summary>
+	protected const int MeleeSeatCount = 8;
 	protected const int DefaultMaximumBuildingCopiesPerPlayer = 1;
 	protected const int MaximumBuildingLimit = 24;
 	protected const string ConstructionAbilityId = "ability/begin_construction";
@@ -26,6 +29,18 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	protected const int ManaPerProduction = 100;
 	protected const int DefaultDraftOptionCount = 3;
 	protected const int MaximumDraftOptions = 24;
+
+	// The identifiers this ruleset declares its own match settings under. They are this map's numbers alone: the engine
+	// only carries the values, and another map is free to declare completely different settings beside them.
+	protected const int LobbySettingDraftOptions = 1;
+	protected const int LobbySettingBuildingSupply = 2;
+	protected const int LobbySettingBuildingCopies = 3;
+	protected const int LobbySettingCapacityPercent = 4;
+	protected const int LobbySettingProductionPercent = 5;
+	protected const int LobbySettingMirroredDraft = 6;
+	protected const int LobbySettingOpenPoolDrafting = 7;
+	protected const int MinimumMultiplierPercent = 10;
+	protected const int MaximumMultiplierPercent = 1000;
 	protected const int DraftRow = 2;
 	protected const int DraftAbandonSlot = 3;
 	protected const int MaximumPopulation = 8;
@@ -419,6 +434,35 @@ public partial class MapScript : IWasmModule, ILobbyScript
 
 		api.SetTeamCount(2);
 		api.SetTeamsTogetherDefault(true);
+		api.SetSpectatorDelayDefault(true);
+
+		// Melee is played with the whole board in view: a host who wants vision limited can still choose it, but the
+		// board itself does not hide anything from the players fighting on it.
+		api.SetShroudModeDefault(MatchShroudMode.None);
+
+		// A melee lobby seats eight players, which is the width its board and its building supply are authored for.
+		api.SetOpenSlotCount(MeleeSeatCount);
+
+		// The rules this ruleset plays with and no other map has: how wide a build is offered, how many locations a player
+		// may hold and how many copies of one building may stand, how much capacity and stored production those buildings
+		// carry, and whether every player draws from the same deck or from the shared pool.
+		api.AddMatchSetting(LobbySettingDraftOptions, LobbySettingControl.Count, "Building options per draft", "How many building options a build offers at once.", DefaultDraftOptionCount);
+		api.SetMatchSettingRange(LobbySettingDraftOptions, 1, MaximumDraftOptions);
+
+		api.AddMatchSetting(LobbySettingBuildingSupply, LobbySettingControl.Count, "Building supply", "How many buildings a player may construct and hold.", DefaultMaximumBuildingsPerPlayer);
+		api.SetMatchSettingRange(LobbySettingBuildingSupply, 1, MaximumBuildingLimit);
+
+		api.AddMatchSetting(LobbySettingBuildingCopies, LobbySettingControl.Count, "Copies of one building", "How many unique instances of one building a player may own.", DefaultMaximumBuildingCopiesPerPlayer);
+		api.SetMatchSettingRange(LobbySettingBuildingCopies, 1, MaximumBuildingLimit);
+
+		api.AddMatchSetting(LobbySettingCapacityPercent, LobbySettingControl.Count, "Capacity multiplier (%)", "The percentage every building's soldier capacity is multiplied by.", 100);
+		api.SetMatchSettingRange(LobbySettingCapacityPercent, MinimumMultiplierPercent, MaximumMultiplierPercent);
+
+		api.AddMatchSetting(LobbySettingProductionPercent, LobbySettingControl.Count, "Production multiplier (%)", "The percentage every building's stored production is multiplied by.", 100);
+		api.SetMatchSettingRange(LobbySettingProductionPercent, MinimumMultiplierPercent, MaximumMultiplierPercent);
+
+		api.AddMatchSetting(LobbySettingMirroredDraft, LobbySettingControl.Toggle, "Mirrored draft", "Every player draws the same buildings, which removes draft asymmetry.", 0);
+		api.AddMatchSetting(LobbySettingOpenPoolDrafting, LobbySettingControl.Toggle, "Open pool drafting", "Drafted buildings stay in the deck instead of leaving it, so the same building can be drafted again.", 0);
 
 		for (int slot = 1; slot <= api.SlotCount; slot++)
 		{
@@ -450,6 +494,14 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		// a location, so a placement the player cannot afford to hold is answered here in words rather than refused by a
 		// count the player never sees.
 		api.SetPlayerBuildingLimit(playerIndex, _maximumBuildingsPerPlayer + 2);
+
+		// A board that declares no anchors is one this ruleset does not seat. The engine answers a point on the board anyway,
+		// because a map is free to place its players itself, so the absence is read from the count rather than from the point.
+		if (api.GetSpawnAnchorCount() == 0)
+		{
+			Say(player, "This board has no ground to seat a player on.", new Vector3(1f, 0.4f, 0.3f));
+			return;
+		}
 
 		Vector3 spawnAnchor = api.GetSpawnAnchor(playerIndex);
 		if (spawnAnchor == Vector3.Zero)
@@ -1649,20 +1701,23 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		PlayerId player = _api.GetPlayer(playerIndex);
 		if (!player.IsActive)
 		{
-			RetireUnansweredSite(playerIndex, site);
+			RefundUnansweredSite(player, playerIndex, site);
 			return;
 		}
 
 		if (_draftOpen[playerIndex] != 0)
 		{
-			RetireUnansweredSite(playerIndex, site);
+			RefundUnansweredSite(player, playerIndex, site);
 			Say(player, "Choose from the buildings already offered.", new Vector3(1f, 0.7f, 0.3f));
 			return;
 		}
 
-		if (_api.GetPlayerBuildingCount(playerIndex) > _maximumBuildingsPerPlayer)
+		// The count this reads already holds the site that was just placed and the Nexus that was there before it, so a
+		// player holding every building they may have still draws: the site is the last one they are allowed, not one too
+		// many.
+		if (_api.GetPlayerBuildingCount(playerIndex) > _maximumBuildingsPerPlayer + 1)
 		{
-			RetireUnansweredSite(playerIndex, site);
+			RefundUnansweredSite(player, playerIndex, site);
 			Say(player, "All {0} building locations are taken.", new Vector3(1f, 0.7f, 0.3f), _maximumBuildingsPerPlayer.ToString(CultureInfo.InvariantCulture));
 			return;
 		}
@@ -1670,7 +1725,7 @@ public partial class MapScript : IWasmModule, ILobbyScript
 		int optionCount = DrawDraftOptions(playerIndex);
 		if (optionCount == 0)
 		{
-			RetireUnansweredSite(playerIndex, site);
+			RefundUnansweredSite(player, playerIndex, site);
 			Say(player, "No building is left to draw.", new Vector3(1f, 0.7f, 0.3f));
 			return;
 		}
@@ -1737,12 +1792,35 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	/// </summary>
 	/// <param name="playerIndex">The player whose placement is being refused.</param>
 	/// <param name="site">The site to remove.</param>
+	/// <summary>
+	///     Gives back the wood a refused placement charged and takes the site away. The placement paid for the site before
+	///     this map saw it, so a draw it will not open has to cost the player nothing.
+	/// </summary>
+	/// <param name="player">The player whose wood is returned.</param>
+	/// <param name="playerIndex">The player's slot.</param>
+	/// <param name="site">The site the refused draw was placed on.</param>
+	protected void RefundUnansweredSite(PlayerId player, int playerIndex, UnitId site)
+	{
+		player.AdjustWood(BuildingWoodCost);
+		RetireUnansweredSite(playerIndex, site);
+	}
+
 	protected void RetireUnansweredSite(int playerIndex, UnitId site)
 	{
 		if (playerIndex <= 0 || playerIndex >= EcsSharedMemory.MAX_PLAYERS) return;
 		if (!site.IsValid) return;
 
 		_draftSiteRetirements[playerIndex] = site.UniqueId;
+
+		// The site is taken away on the following update, because it is still the caster of the ability being answered right
+		// now. Until then it offers nothing: a draw that was refused must not be readable for a tick, or a player watching
+		// the grid would see packages for a construction that no longer exists.
+		for (int index = 0; index < SoldierProfiles.Length; index++)
+		{
+			_api.SetAbilityState(site, SoldierProfiles[index].BuildingTemplateId, true, true);
+		}
+
+		_api.SetAbilityState(site, AbandonConstructionAbilityId, true, true);
 	}
 
 	/// <summary>
@@ -1788,23 +1866,23 @@ public partial class MapScript : IWasmModule, ILobbyScript
 	/// <param name="api">The game API the match runs through.</param>
 	protected void ReadMatchOptions(IGameAPI api)
 	{
-		int draftOptions = api.GetMatchOption(MatchOption.MaximumBuildingDraftCount);
+		int draftOptions = api.GetLobbySetting(LobbySettingDraftOptions);
 		_draftOptionsPerDraw = draftOptions > 0 ? Math.Clamp(draftOptions, 1, MaximumDraftOptions) : DefaultDraftOptionCount;
 
-		int buildingSupply = api.GetMatchOption(MatchOption.MaximumBuildingSupply);
+		int buildingSupply = api.GetLobbySetting(LobbySettingBuildingSupply);
 		_maximumBuildingsPerPlayer = buildingSupply > 0 ? Math.Clamp(buildingSupply, 1, MaximumBuildingLimit) : DefaultMaximumBuildingsPerPlayer;
 
-		int buildingCopies = api.GetMatchOption(MatchOption.MaximumUniqueBuildingInstances);
+		int buildingCopies = api.GetLobbySetting(LobbySettingBuildingCopies);
 		_maximumBuildingCopiesPerPlayer = buildingCopies > 0 ? Math.Clamp(buildingCopies, 1, MaximumBuildingLimit) : DefaultMaximumBuildingCopiesPerPlayer;
 
-		int capacityPercent = api.GetMatchOption(MatchOption.CapacityMultiplierPercent);
+		int capacityPercent = api.GetLobbySetting(LobbySettingCapacityPercent);
 		_capacityMultiplier = capacityPercent > 0 ? capacityPercent / 100f : 1f;
 
-		int productionPercent = api.GetMatchOption(MatchOption.ProductionMultiplierPercent);
+		int productionPercent = api.GetLobbySetting(LobbySettingProductionPercent);
 		_rechargeMultiplier = productionPercent > 0 ? productionPercent / 100f : 1f;
 
-		_mirroredDraft = api.GetMatchOption(MatchOption.MirroredAutoDraft) != 0;
-		_openPoolDrafting = api.GetMatchOption(MatchOption.OpenPoolDrafting) != 0;
+		_mirroredDraft = api.GetLobbySetting(LobbySettingMirroredDraft) != 0;
+		_openPoolDrafting = api.GetLobbySetting(LobbySettingOpenPoolDrafting) != 0;
 	}
 
 	/// <summary>
